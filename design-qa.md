@@ -66,3 +66,9 @@ See `docs/design/verification/browser-results.json` and `scripts/verify-browser.
 - [x] Preserve the real collection data and existing page routes.
 - [x] Verify core interactions, dimensions, contrast, focus, image decoding and responsive overflow.
 - [x] Save representative screenshots, source comparison evidence, and functional validation.
+
+## Follow-up: traditional page width
+
+The user requested a less busy, traditional-width page after reviewing the implementation. The page, header and footer now share a centered 1200px maximum width (previously the layout allowed 1680px and the header was unbounded). Secondary desktop grids use two columns for regions/trips/substamps and three for regional album slots. The directory collapses at 1000px, while the stamp rail still collapses at 1150px. These refinements supersede the earlier directory breakpoint above.
+
+Reviewed `docs/design/verification/desktop-traditional-width.png` at 1435 × 1096. The full existing browser verification passed again at 320, 390, 768, 1024 and 1435px, including overflow, interaction and scoped accessibility checks. The user's width preference overrides the wider reference compositions. Final result remains passed for this scoped refinement.
