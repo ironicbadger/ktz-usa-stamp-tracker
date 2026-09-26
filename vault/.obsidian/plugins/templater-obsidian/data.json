@@ -1,0 +1,13 @@
+{
+  "templates_folder": "Templates",
+  "user_scripts_folder": "Scripts",
+  "trigger_on_file_creation": false,
+  "enable_system_commands": false,
+  "enabled_templates_hotkeys": [
+    "Templates/Record visit.md",
+    "Templates/Edit visit.md",
+    "Templates/Add stamp.md",
+    "Templates/Add stamp photos.md",
+    "Templates/New trip.md"
+  ]
+}

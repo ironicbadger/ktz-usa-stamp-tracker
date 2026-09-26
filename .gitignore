@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars*
+.env*
+!.env.example
+.DS_Store
+vault/.obsidian/workspace*.json
+vault/.obsidian/cache/
+vault/.obsidian/plugins/*/main.js
+vault/.obsidian/plugins/*/styles.css
+vault/.obsidian/plugins/*/manifest.json
+vault/.obsidian/plugins/obsidian-git/data.json
+vault/.obsidian/appearance.json

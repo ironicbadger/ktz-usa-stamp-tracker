@@ -1,0 +1,6498 @@
+[
+  {
+    "code": "abli",
+    "title": "Abraham Lincoln Birthplace National Historical Park",
+    "states": [
+      "KY"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/abli/index.htm",
+      "maps": "https://www.nps.gov/abli/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/abli/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/abli/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "acad",
+    "title": "Acadia National Park",
+    "states": [
+      "ME"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/acad/index.htm",
+      "maps": "https://www.nps.gov/acad/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/acad/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/acad/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "adam",
+    "title": "Adams National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/adam/index.htm",
+      "maps": "https://www.nps.gov/adam/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/adam/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/adam/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "afbg",
+    "title": "African Burial Ground National Monument",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/afbg/index.htm",
+      "maps": "https://www.nps.gov/afbg/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/afbg/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/afbg/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "agfo",
+    "title": "Agate Fossil Beds National Monument",
+    "states": [
+      "NE"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/agfo/index.htm",
+      "maps": "https://www.nps.gov/agfo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/agfo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/agfo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "alag",
+    "title": "Alagnak Wild River",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/alag/index.htm",
+      "maps": "https://www.nps.gov/alag/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/alag/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/alag/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "alfl",
+    "title": "Alibates Flint Quarries National Monument",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/alfl/index.htm",
+      "maps": "https://www.nps.gov/alfl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/alfl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/alfl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "alka",
+    "title": "Ala Kahakai National Historic Trail",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Trails System",
+    "resources": {
+      "website": "https://www.nps.gov/alka/index.htm",
+      "maps": "https://www.nps.gov/alka/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/alka/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/alka/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "alpo",
+    "title": "Allegheny Portage Railroad National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/alpo/index.htm",
+      "maps": "https://www.nps.gov/alpo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/alpo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/alpo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "amch",
+    "title": "Amache National Historic Site",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/amch/index.htm",
+      "maps": "https://www.nps.gov/amch/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/amch/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/amch/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "amis",
+    "title": "Amistad National Recreation Area",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/amis/index.htm",
+      "maps": "https://www.nps.gov/amis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/amis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/amis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "amme",
+    "title": "American Memorial Park",
+    "states": [
+      "MP"
+    ],
+    "designation": "Affiliated Area",
+    "resources": {
+      "website": "https://www.nps.gov/amme/index.htm",
+      "maps": "https://www.nps.gov/amme/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/amme/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/amme/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ande",
+    "title": "Andersonville National Historic Site",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/ande/index.htm",
+      "maps": "https://www.nps.gov/ande/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ande/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ande/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ania",
+    "title": "Aniakchak National Monument",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/ania/index.htm",
+      "maps": "https://www.nps.gov/ania/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ania/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ania/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "anjo",
+    "title": "Andrew Johnson National Historic Site",
+    "states": [
+      "TN"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/anjo/index.htm",
+      "maps": "https://www.nps.gov/anjo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/anjo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/anjo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "anti",
+    "title": "Antietam National Battlefield",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/anti/index.htm",
+      "maps": "https://www.nps.gov/anti/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/anti/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/anti/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "apco",
+    "title": "Appomattox Court House National Historical Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/apco/index.htm",
+      "maps": "https://www.nps.gov/apco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/apco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/apco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "apis",
+    "title": "Apostle Islands National Lakeshore",
+    "states": [
+      "WI"
+    ],
+    "designation": "National Lakeshore",
+    "resources": {
+      "website": "https://www.nps.gov/apis/index.htm",
+      "maps": "https://www.nps.gov/apis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/apis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/apis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "appa",
+    "title": "Appalachian National Scenic Trail",
+    "states": [
+      "CT",
+      "GA",
+      "MA",
+      "MD",
+      "ME",
+      "NC",
+      "NH",
+      "NJ",
+      "NY",
+      "PA",
+      "TN",
+      "VA",
+      "VT",
+      "WV"
+    ],
+    "designation": "National Scenic Trail",
+    "resources": {
+      "website": "https://www.nps.gov/appa/index.htm",
+      "maps": "https://www.nps.gov/appa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/appa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/appa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "arch",
+    "title": "Arches National Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/arch/index.htm",
+      "maps": "https://www.nps.gov/arch/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/arch/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/arch/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "arho",
+    "title": "Arlington House, The Robert E. Lee Memorial",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/arho/index.htm",
+      "maps": "https://www.nps.gov/arho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/arho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/arho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "arpo",
+    "title": "Arkansas Post National Memorial",
+    "states": [
+      "AR"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/arpo/index.htm",
+      "maps": "https://www.nps.gov/arpo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/arpo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/arpo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "asis",
+    "title": "Assateague Island National Seashore",
+    "states": [
+      "MD",
+      "VA"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/asis/index.htm",
+      "maps": "https://www.nps.gov/asis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/asis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/asis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "azru",
+    "title": "Aztec Ruins National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/azru/index.htm",
+      "maps": "https://www.nps.gov/azru/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/azru/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/azru/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "badl",
+    "title": "Badlands National Park",
+    "states": [
+      "SD"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/badl/index.htm",
+      "maps": "https://www.nps.gov/badl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/badl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/badl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "band",
+    "title": "Bandelier National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/band/index.htm",
+      "maps": "https://www.nps.gov/band/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/band/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/band/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bela",
+    "title": "Bering Land Bridge National Preserve",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/bela/index.htm",
+      "maps": "https://www.nps.gov/bela/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bela/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bela/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "beol",
+    "title": "Bent's Old Fort National Historic Site",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/beol/index.htm",
+      "maps": "https://www.nps.gov/beol/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/beol/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/beol/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bepa",
+    "title": "Belmont-Paul Women's Equality National Monument",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/bepa/index.htm",
+      "maps": "https://www.nps.gov/bepa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bepa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bepa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bibe",
+    "title": "Big Bend National Park",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/bibe/index.htm",
+      "maps": "https://www.nps.gov/bibe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bibe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bibe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bica",
+    "title": "Bighorn Canyon National Recreation Area",
+    "states": [
+      "MT",
+      "WY"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/bica/index.htm",
+      "maps": "https://www.nps.gov/bica/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bica/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bica/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bicr",
+    "title": "Birmingham Civil Rights National Monument",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/bicr/index.htm",
+      "maps": "https://www.nps.gov/bicr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bicr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bicr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bicy",
+    "title": "Big Cypress National Preserve",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/bicy/index.htm",
+      "maps": "https://www.nps.gov/bicy/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bicy/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bicy/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "biho",
+    "title": "Big Hole National Battlefield",
+    "states": [
+      "MT"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/biho/index.htm",
+      "maps": "https://www.nps.gov/biho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/biho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/biho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bisc",
+    "title": "Biscayne National Park",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/bisc/index.htm",
+      "maps": "https://www.nps.gov/bisc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bisc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bisc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "biso",
+    "title": "Big South Fork National River and Recreation Area",
+    "states": [
+      "KY",
+      "TN"
+    ],
+    "designation": "National River",
+    "resources": {
+      "website": "https://www.nps.gov/biso/index.htm",
+      "maps": "https://www.nps.gov/biso/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/biso/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/biso/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bith",
+    "title": "Big Thicket National Preserve",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/bith/index.htm",
+      "maps": "https://www.nps.gov/bith/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bith/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bith/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "blca",
+    "title": "Black Canyon of the Gunnison National Park",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/blca/index.htm",
+      "maps": "https://www.nps.gov/blca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/blca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/blca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "blri",
+    "title": "Blue Ridge Parkway",
+    "states": [
+      "NC",
+      "VA"
+    ],
+    "designation": "Parkway",
+    "resources": {
+      "website": "https://www.nps.gov/blri/index.htm",
+      "maps": "https://www.nps.gov/blri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/blri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/blri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "blrv",
+    "title": "Blackstone River Valley National Historical Park",
+    "states": [
+      "MA",
+      "RI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/blrv/index.htm",
+      "maps": "https://www.nps.gov/blrv/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/blrv/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/blrv/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "blsc",
+    "title": "Blackwell School National Historic Site",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/blsc/index.htm",
+      "maps": "https://www.nps.gov/blsc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/blsc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/blsc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "blue",
+    "title": "Bluestone National Scenic River",
+    "states": [
+      "WV"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/blue/index.htm",
+      "maps": "https://www.nps.gov/blue/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/blue/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/blue/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "boaf",
+    "title": "Boston African American National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/boaf/index.htm",
+      "maps": "https://www.nps.gov/boaf/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/boaf/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/boaf/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "boha",
+    "title": "Boston Harbor Islands National Recreation Area",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/boha/index.htm",
+      "maps": "https://www.nps.gov/boha/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/boha/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/boha/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bost",
+    "title": "Boston National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/bost/index.htm",
+      "maps": "https://www.nps.gov/bost/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bost/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bost/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "bowa",
+    "title": "Booker T. Washington National Monument",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/bowa/index.htm",
+      "maps": "https://www.nps.gov/bowa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/bowa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/bowa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "brca",
+    "title": "Bryce Canyon National Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/brca/index.htm",
+      "maps": "https://www.nps.gov/brca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/brca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/brca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "brcr",
+    "title": "Brices Cross Roads National Battlefield Site",
+    "states": [
+      "MS"
+    ],
+    "designation": "National Battlefield Site",
+    "resources": {
+      "website": "https://www.nps.gov/brcr/index.htm",
+      "maps": "https://www.nps.gov/brcr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/brcr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/brcr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "brvb",
+    "title": "Brown v. Board of Education National Historical Park",
+    "states": [
+      "KS"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/brvb/index.htm",
+      "maps": "https://www.nps.gov/brvb/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/brvb/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/brvb/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "buff",
+    "title": "Buffalo National River",
+    "states": [
+      "AR"
+    ],
+    "designation": "National River",
+    "resources": {
+      "website": "https://www.nps.gov/buff/index.htm",
+      "maps": "https://www.nps.gov/buff/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/buff/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/buff/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "buis",
+    "title": "Buck Island Reef National Monument",
+    "states": [
+      "VI"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/buis/index.htm",
+      "maps": "https://www.nps.gov/buis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/buis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/buis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cabr",
+    "title": "Cabrillo National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cabr/index.htm",
+      "maps": "https://www.nps.gov/cabr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cabr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cabr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cach",
+    "title": "Canyon de Chelly National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cach/index.htm",
+      "maps": "https://www.nps.gov/cach/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cach/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cach/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cacl",
+    "title": "Castle Clinton National Monument",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cacl/index.htm",
+      "maps": "https://www.nps.gov/cacl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cacl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cacl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "caco",
+    "title": "Cape Cod National Seashore",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/caco/index.htm",
+      "maps": "https://www.nps.gov/caco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/caco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/caco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cagr",
+    "title": "Casa Grande Ruins National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cagr/index.htm",
+      "maps": "https://www.nps.gov/cagr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cagr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cagr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "caha",
+    "title": "Cape Hatteras National Seashore",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/caha/index.htm",
+      "maps": "https://www.nps.gov/caha/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/caha/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/caha/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cajo",
+    "title": "Captain John Smith Chesapeake National Historic Trail",
+    "states": [
+      "DC",
+      "DE",
+      "MD",
+      "NY",
+      "PA",
+      "VA"
+    ],
+    "designation": "National Trails System",
+    "resources": {
+      "website": "https://www.nps.gov/cajo/index.htm",
+      "maps": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cajo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cajo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cakr",
+    "title": "Cape Krusenstern National Monument",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cakr/index.htm",
+      "maps": "https://www.nps.gov/cakr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cakr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cakr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "calo",
+    "title": "Cape Lookout National Seashore",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/calo/index.htm",
+      "maps": "https://www.nps.gov/calo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/calo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/calo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "camo",
+    "title": "Castle Mountains National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/camo/index.htm",
+      "maps": "https://www.nps.gov/camo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/camo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/camo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cana",
+    "title": "Canaveral National Seashore",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/cana/index.htm",
+      "maps": "https://www.nps.gov/cana/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cana/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cana/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cane",
+    "title": "Camp Nelson National Monument",
+    "states": [
+      "KY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cane/index.htm",
+      "maps": "https://www.nps.gov/cane/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cane/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cane/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cany",
+    "title": "Canyonlands National Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/cany/index.htm",
+      "maps": "https://www.nps.gov/cany/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cany/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cany/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "care",
+    "title": "Capitol Reef National Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/care/index.htm",
+      "maps": "https://www.nps.gov/care/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/care/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/care/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cari",
+    "title": "Cane River Creole National Historical Park",
+    "states": [
+      "LA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/cari/index.htm",
+      "maps": "https://www.nps.gov/cari/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cari/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cari/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "carl",
+    "title": "Carl Sandburg Home National Historic Site",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/carl/index.htm",
+      "maps": "https://www.nps.gov/carl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/carl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/carl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "casa",
+    "title": "Castillo de San Marcos National Monument",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/casa/index.htm",
+      "maps": "https://www.nps.gov/casa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/casa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/casa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cato",
+    "title": "Catoctin Mountain Park",
+    "states": [
+      "MD"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/cato/index.htm",
+      "maps": "https://www.nps.gov/cato/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cato/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cato/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cave",
+    "title": "Carlsbad Caverns National Park",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/cave/index.htm",
+      "maps": "https://www.nps.gov/cave/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cave/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cave/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cavo",
+    "title": "Capulin Volcano National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cavo/index.htm",
+      "maps": "https://www.nps.gov/cavo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cavo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cavo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cawo",
+    "title": "Carter G. Woodson Home National Historic Site",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/cawo/index.htm",
+      "maps": "https://www.nps.gov/cawo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cawo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cawo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cebe",
+    "title": "Cedar Creek and Belle Grove National Historical Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/cebe/index.htm",
+      "maps": "https://www.nps.gov/cebe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cebe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cebe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cebr",
+    "title": "Cedar Breaks National Monument",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cebr/index.htm",
+      "maps": "https://www.nps.gov/cebr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cebr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cebr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cech",
+    "title": "César E. Chávez National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cech/index.htm",
+      "maps": "https://www.nps.gov/cech/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cech/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cech/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cham",
+    "title": "Chamizal National Memorial",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/cham/index.htm",
+      "maps": "https://www.nps.gov/cham/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cham/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cham/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chat",
+    "title": "Chattahoochee River National Recreation Area",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/chat/index.htm",
+      "maps": "https://www.nps.gov/chat/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chat/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chat/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chch",
+    "title": "Chickamauga and Chattanooga National Military Park",
+    "states": [
+      "GA",
+      "TN"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/chch/index.htm",
+      "maps": "https://www.nps.gov/chch/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chch/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chch/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chcu",
+    "title": "Chaco Culture National Historical Park",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/chcu/index.htm",
+      "maps": "https://www.nps.gov/chcu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chcu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chcu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chic",
+    "title": "Chickasaw National Recreation Area",
+    "states": [
+      "OK"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/chic/index.htm",
+      "maps": "https://www.nps.gov/chic/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chic/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chic/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chir",
+    "title": "Chiricahua National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/chir/index.htm",
+      "maps": "https://www.nps.gov/chir/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chir/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chir/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chis",
+    "title": "Channel Islands National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/chis/index.htm",
+      "maps": "https://www.nps.gov/chis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "choh",
+    "title": "Chesapeake and Ohio Canal National Historical Park",
+    "states": [
+      "DC",
+      "MD",
+      "WV"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/choh/index.htm",
+      "maps": "https://www.nps.gov/choh/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/choh/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/choh/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chpi",
+    "title": "Charles Pinckney National Historic Site",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/chpi/index.htm",
+      "maps": "https://www.nps.gov/chpi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chpi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chpi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chri",
+    "title": "Christiansted National Historic Site",
+    "states": [
+      "VI"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/chri/index.htm",
+      "maps": "https://www.nps.gov/chri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chsc",
+    "title": "Little Rock Central High School National Historic Site",
+    "states": [
+      "AR"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/chsc/index.htm",
+      "maps": "https://www.nps.gov/chsc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chsc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chsc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "chyo",
+    "title": "Charles Young Buffalo Soldiers National Monument",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/chyo/index.htm",
+      "maps": "https://www.nps.gov/chyo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/chyo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/chyo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cibs",
+    "title": "Carlisle Federal Indian Boarding School National Monument",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/cibs/index.htm",
+      "maps": "https://www.nps.gov/cibs/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cibs/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cibs/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ciro",
+    "title": "City of Rocks National Reserve",
+    "states": [
+      "ID"
+    ],
+    "designation": "National Reserve",
+    "resources": {
+      "website": "https://www.nps.gov/ciro/index.htm",
+      "maps": "https://www.nps.gov/ciro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ciro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ciro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "clba",
+    "title": "Clara Barton National Historic Site",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/clba/index.htm",
+      "maps": "https://www.nps.gov/clba/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/clba/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/clba/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "coga",
+    "title": "Constitution Gardens",
+    "states": [
+      "DC"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/coga/index.htm",
+      "maps": "https://www.nps.gov/coga/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/coga/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/coga/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "colm",
+    "title": "Colorado National Monument",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/colm/index.htm",
+      "maps": "https://www.nps.gov/colm/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/colm/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/colm/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "colo",
+    "title": "Colonial National Historical Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/colo/index.htm"
+    },
+    "source": "https://www.nps.gov/colo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cong",
+    "title": "Congaree National Park",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/cong/index.htm",
+      "maps": "https://www.nps.gov/cong/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cong/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cong/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "coro",
+    "title": "Coronado National Memorial",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/coro/index.htm",
+      "maps": "https://www.nps.gov/coro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/coro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/coro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cowp",
+    "title": "Cowpens National Battlefield",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/cowp/index.htm",
+      "maps": "https://www.nps.gov/cowp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cowp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cowp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "crla",
+    "title": "Crater Lake National Park",
+    "states": [
+      "OR"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/crla/index.htm",
+      "maps": "https://www.nps.gov/crla/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/crla/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/crla/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "crmo",
+    "title": "Craters of the Moon National Monument",
+    "states": [
+      "ID"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/crmo/index.htm",
+      "maps": "https://www.nps.gov/crmo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/crmo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/crmo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "crmp",
+    "title": "Craters of the Moon National Preserve",
+    "states": [
+      "ID"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/crmo/index.htm",
+      "maps": "https://www.nps.gov/crmo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/crmo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/crmo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cuga",
+    "title": "Cumberland Gap National Historical Park",
+    "states": [
+      "KY",
+      "TN",
+      "VA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/cuga/index.htm",
+      "maps": "https://www.nps.gov/cuga/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cuga/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cuga/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cuis",
+    "title": "Cumberland Island National Seashore",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/cuis/index.htm",
+      "maps": "https://www.nps.gov/cuis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cuis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cuis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cure",
+    "title": "Curecanti National Recreation Area",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/cure/index.htm",
+      "maps": "https://www.nps.gov/cure/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cure/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cure/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "cuva",
+    "title": "Cuyahoga Valley National Park",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/cuva/index.htm",
+      "maps": "https://www.nps.gov/cuva/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/cuva/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/cuva/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "daav",
+    "title": "Dayton Aviation Heritage National Historical Park",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/daav/index.htm",
+      "maps": "https://www.nps.gov/daav/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/daav/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/daav/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ddem",
+    "title": "Dwight D. Eisenhower Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/ddem/index.htm",
+      "maps": "https://www.nps.gov/ddem/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ddem/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ddem/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "dela",
+    "title": "Middle Delaware National Scenic River",
+    "states": [
+      "NJ"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/dewa/index.htm",
+      "maps": "https://www.nps.gov/dewa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/dewa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/dewa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "dena",
+    "title": "Denali National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/dena/index.htm",
+      "maps": "https://www.nps.gov/dena/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/dena/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/dena/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "depo",
+    "title": "Devils Postpile National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/depo/index.htm",
+      "maps": "https://www.nps.gov/depo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/depo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/depo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "deso",
+    "title": "De Soto National Memorial",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/deso/index.htm",
+      "maps": "https://www.nps.gov/deso/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/deso/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/deso/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "deto",
+    "title": "Devils Tower National Monument",
+    "states": [
+      "WY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/deto/index.htm",
+      "maps": "https://www.nps.gov/deto/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/deto/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/deto/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "deva",
+    "title": "Death Valley National Park",
+    "states": [
+      "CA",
+      "NV"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/deva/index.htm",
+      "maps": "https://www.nps.gov/deva/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/deva/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/deva/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "dewa",
+    "title": "Delaware Water Gap National Recreation Area",
+    "states": [
+      "NJ",
+      "PA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/dewa/index.htm",
+      "maps": "https://www.nps.gov/dewa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/dewa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/dewa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "dino",
+    "title": "Dinosaur National Monument",
+    "states": [
+      "CO",
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/dino/index.htm",
+      "maps": "https://www.nps.gov/dino/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/dino/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/dino/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "drto",
+    "title": "Dry Tortugas National Park",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/drto/index.htm",
+      "maps": "https://www.nps.gov/drto/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/drto/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/drto/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ebla",
+    "title": "Ebey's Landing National Historical Reserve",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Reserve",
+    "resources": {
+      "website": "https://www.nps.gov/ebla/index.htm",
+      "maps": "https://www.nps.gov/ebla/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ebla/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ebla/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "edal",
+    "title": "Edgar Allan Poe National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/edal/index.htm",
+      "maps": "https://www.nps.gov/edal/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/edal/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/edal/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "edis",
+    "title": "Thomas Edison National Historical Park",
+    "states": [
+      "NJ"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/edis/index.htm",
+      "maps": "https://www.nps.gov/edis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/edis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/edis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "efmo",
+    "title": "Effigy Mounds National Monument",
+    "states": [
+      "IA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/efmo/index.htm",
+      "maps": "https://www.nps.gov/efmo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/efmo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/efmo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "eise",
+    "title": "Eisenhower National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/eise/index.htm",
+      "maps": "https://www.nps.gov/eise/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/eise/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/eise/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "elma",
+    "title": "El Malpais National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/elma/index.htm",
+      "maps": "https://www.nps.gov/elma/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/elma/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/elma/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "elmo",
+    "title": "El Morro National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/elmo/index.htm",
+      "maps": "https://www.nps.gov/elmo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/elmo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/elmo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "elro",
+    "title": "Eleanor Roosevelt National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/elro/index.htm",
+      "maps": "https://www.nps.gov/elro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/elro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/elro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "euon",
+    "title": "Eugene O'Neill National Historic Site",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/euon/index.htm",
+      "maps": "https://www.nps.gov/euon/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/euon/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/euon/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ever",
+    "title": "Everglades National Park",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/ever/index.htm",
+      "maps": "https://www.nps.gov/ever/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ever/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ever/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "feha",
+    "title": "Federal Hall National Memorial",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/feha/index.htm",
+      "maps": "https://www.nps.gov/feha/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/feha/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/feha/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fiis",
+    "title": "Fire Island National Seashore",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/fiis/index.htm",
+      "maps": "https://www.nps.gov/fiis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fiis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fiis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fila",
+    "title": "First Ladies National Historic Site",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fila/index.htm",
+      "maps": "https://www.nps.gov/fila/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fila/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fila/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "flfo",
+    "title": "Florissant Fossil Beds National Monument",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/flfo/index.htm",
+      "maps": "https://www.nps.gov/flfo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/flfo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/flfo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "flni",
+    "title": "Flight 93 National Memorial",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/flni/index.htm",
+      "maps": "https://www.nps.gov/flni/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/flni/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/flni/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fobo",
+    "title": "Fort Bowie National Historic Site",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fobo/index.htm",
+      "maps": "https://www.nps.gov/fobo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fobo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fobo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fobu",
+    "title": "Fossil Butte National Monument",
+    "states": [
+      "WY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fobu/index.htm",
+      "maps": "https://www.nps.gov/fobu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fobu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fobu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "foca",
+    "title": "Fort Caroline National Memorial",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/timu/index.htm"
+    },
+    "source": "https://www.nps.gov/foca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "foda",
+    "title": "Fort Davis National Historic Site",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/foda/index.htm",
+      "maps": "https://www.nps.gov/foda/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/foda/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/foda/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fodo",
+    "title": "Fort Donelson National Battlefield",
+    "states": [
+      "KY",
+      "TN"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/fodo/index.htm",
+      "maps": "https://www.nps.gov/fodo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fodo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fodo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fofr",
+    "title": "Fort Frederica National Monument",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fofr/index.htm",
+      "maps": "https://www.nps.gov/fofr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fofr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fofr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fola",
+    "title": "Fort Laramie National Historic Site",
+    "states": [
+      "WY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fola/index.htm",
+      "maps": "https://www.nps.gov/fola/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fola/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fola/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fols",
+    "title": "Fort Larned National Historic Site",
+    "states": [
+      "KS"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fols/index.htm",
+      "maps": "https://www.nps.gov/fols/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fols/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fols/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "foma",
+    "title": "Fort Matanzas National Monument",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/foma/index.htm",
+      "maps": "https://www.nps.gov/foma/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/foma/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/foma/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fomc",
+    "title": "Fort McHenry National Monument and Historic Shrine",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fomc/index.htm",
+      "maps": "https://www.nps.gov/fomc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fomc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fomc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fomr",
+    "title": "Fort Monroe National Monument",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fomr/index.htm",
+      "maps": "https://www.nps.gov/fomr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fomr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fomr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fone",
+    "title": "Fort Necessity National Battlefield",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/fone/index.htm",
+      "maps": "https://www.nps.gov/fone/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fone/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fone/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fopo",
+    "title": "Fort Point National Historic Site",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fopo/index.htm",
+      "maps": "https://www.nps.gov/fopo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fopo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fopo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fopu",
+    "title": "Fort Pulaski National Monument",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fopu/index.htm",
+      "maps": "https://www.nps.gov/fopu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fopu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fopu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fora",
+    "title": "Fort Raleigh National Historic Site",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fora/index.htm",
+      "maps": "https://www.nps.gov/fora/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fora/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fora/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fosc",
+    "title": "Fort Scott National Historic Site",
+    "states": [
+      "KS"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fosc/index.htm",
+      "maps": "https://www.nps.gov/fosc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fosc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fosc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fosm",
+    "title": "Fort Smith National Historic Site",
+    "states": [
+      "AR",
+      "OK"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fosm/index.htm",
+      "maps": "https://www.nps.gov/fosm/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fosm/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fosm/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fost",
+    "title": "Fort Stanwix National Monument",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/fost/index.htm",
+      "maps": "https://www.nps.gov/fost/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fost/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fost/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fosu",
+    "title": "Fort Sumter and Fort Moultrie National Historical Park",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/fosu/index.htm",
+      "maps": "https://www.nps.gov/fosu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fosu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fosu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "foth",
+    "title": "Ford's Theatre National Historic Site",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/foth/index.htm",
+      "maps": "https://www.nps.gov/foth/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/foth/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/foth/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "foun",
+    "title": "Fort Union National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/foun/index.htm",
+      "maps": "https://www.nps.gov/foun/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/foun/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/foun/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fous",
+    "title": "Fort Union Trading Post National Historic Site",
+    "states": [
+      "MT",
+      "ND"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fous/index.htm",
+      "maps": "https://www.nps.gov/fous/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fous/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fous/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fova",
+    "title": "Fort Vancouver National Historic Site",
+    "states": [
+      "OR",
+      "WA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/fova/index.htm",
+      "maps": "https://www.nps.gov/fova/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/fova/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/fova/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "fowa",
+    "title": "Fort Washington Park",
+    "states": [
+      "MD"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/fowa/index.htm"
+    },
+    "source": "https://www.nps.gov/fowa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frde",
+    "title": "Franklin Delano Roosevelt Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/frde/index.htm",
+      "maps": "https://www.nps.gov/frde/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frde/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frde/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frdo",
+    "title": "Frederick Douglass National Historic Site",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/frdo/index.htm",
+      "maps": "https://www.nps.gov/frdo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frdo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frdo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frhi",
+    "title": "Friendship Hill National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/frhi/index.htm",
+      "maps": "https://www.nps.gov/frhi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frhi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frhi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frla",
+    "title": "Frederick Law Olmsted National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/frla/index.htm",
+      "maps": "https://www.nps.gov/frla/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frla/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frla/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frpe",
+    "title": "Frances Perkins National Monument",
+    "states": [
+      "ME"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/frpe/index.htm",
+      "maps": "https://www.nps.gov/frpe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frpe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frpe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frri",
+    "title": "Freedom Riders National Monument",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/frri/index.htm",
+      "maps": "https://www.nps.gov/frri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frsp",
+    "title": "Fredericksburg and Spotsylvania County Battlefields Memorial National Military Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/frsp/index.htm",
+      "maps": "https://www.nps.gov/frsp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frsp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frsp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "frst",
+    "title": "First State National Historical Park",
+    "states": [
+      "DE",
+      "PA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/frst/index.htm",
+      "maps": "https://www.nps.gov/frst/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/frst/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/frst/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gaar",
+    "title": "Gates of the Arctic National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/gaar/index.htm",
+      "maps": "https://www.nps.gov/gaar/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gaar/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gaar/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gari",
+    "title": "Gauley River National Recreation Area",
+    "states": [
+      "WV"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/gari/index.htm",
+      "maps": "https://www.nps.gov/gari/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gari/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gari/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gate",
+    "title": "Gateway National Recreation Area",
+    "states": [
+      "NJ",
+      "NY"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/gate/index.htm",
+      "maps": "https://www.nps.gov/gate/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gate/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gate/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gegr",
+    "title": "General Grant National Memorial",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/gegr/index.htm",
+      "maps": "https://www.nps.gov/gegr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gegr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gegr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gero",
+    "title": "George Rogers Clark National Historical Park",
+    "states": [
+      "IN"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/gero/index.htm",
+      "maps": "https://www.nps.gov/gero/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gero/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gero/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gett",
+    "title": "Gettysburg National Military Park",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/gett/index.htm",
+      "maps": "https://www.nps.gov/gett/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gett/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gett/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gewa",
+    "title": "George Washington Birthplace National Monument",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/gewa/index.htm",
+      "maps": "https://www.nps.gov/gewa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gewa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gewa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gicl",
+    "title": "Gila Cliff Dwellings National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/gicl/index.htm",
+      "maps": "https://www.nps.gov/gicl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gicl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gicl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "glac",
+    "title": "Glacier National Park",
+    "states": [
+      "MT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/glac/index.htm",
+      "maps": "https://www.nps.gov/glac/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/glac/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/glac/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "glba",
+    "title": "Glacier Bay National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/glba/index.htm",
+      "maps": "https://www.nps.gov/glba/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/glba/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/glba/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "glca",
+    "title": "Glen Canyon National Recreation Area",
+    "states": [
+      "AZ",
+      "UT"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/glca/index.htm",
+      "maps": "https://www.nps.gov/glca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/glca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/glca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "goga",
+    "title": "Golden Gate National Recreation Area",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/goga/index.htm",
+      "maps": "https://www.nps.gov/goga/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/goga/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/goga/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gois",
+    "title": "Governors Island National Monument",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/gois/index.htm",
+      "maps": "https://www.nps.gov/gois/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gois/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gois/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gosp",
+    "title": "Golden Spike National Historical Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/gosp/index.htm",
+      "maps": "https://www.nps.gov/gosp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gosp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gosp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grba",
+    "title": "Great Basin National Park",
+    "states": [
+      "NV"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/grba/index.htm",
+      "maps": "https://www.nps.gov/grba/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grba/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grba/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grca",
+    "title": "Grand Canyon National Park",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/grca/index.htm",
+      "maps": "https://www.nps.gov/grca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gree",
+    "title": "Greenbelt Park",
+    "states": [
+      "MD"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/gree/index.htm"
+    },
+    "source": "https://www.nps.gov/gree/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grko",
+    "title": "Grant-Kohrs Ranch National Historic Site",
+    "states": [
+      "MT"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/grko/index.htm",
+      "maps": "https://www.nps.gov/grko/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grko/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grko/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grpo",
+    "title": "Grand Portage National Monument",
+    "states": [
+      "MN"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/grpo/index.htm",
+      "maps": "https://www.nps.gov/grpo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grpo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grpo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grsa",
+    "title": "Great Sand Dunes National Park",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/grsa/index.htm",
+      "maps": "https://www.nps.gov/grsa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grsa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grsa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grsm",
+    "title": "Great Smoky Mountains National Park",
+    "states": [
+      "NC",
+      "TN"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/grsm/index.htm",
+      "maps": "https://www.nps.gov/grsm/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grsm/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grsm/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "grte",
+    "title": "Grand Teton National Park",
+    "states": [
+      "WY"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/grte/index.htm",
+      "maps": "https://www.nps.gov/grte/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/grte/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/grte/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "guco",
+    "title": "Guilford Courthouse National Military Park",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/guco/index.htm",
+      "maps": "https://www.nps.gov/guco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/guco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/guco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "guis",
+    "title": "Gulf Islands National Seashore",
+    "states": [
+      "FL",
+      "MS"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/guis/index.htm",
+      "maps": "https://www.nps.gov/guis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/guis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/guis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gumo",
+    "title": "Guadalupe Mountains National Park",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/gumo/index.htm",
+      "maps": "https://www.nps.gov/gumo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gumo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gumo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gwca",
+    "title": "George Washington Carver National Monument",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/gwca/index.htm",
+      "maps": "https://www.nps.gov/gwca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gwca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gwca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "gwmp",
+    "title": "George Washington Memorial Parkway",
+    "states": [
+      "DC",
+      "MD",
+      "VA"
+    ],
+    "designation": "Parkway",
+    "resources": {
+      "website": "https://www.nps.gov/gwmp/index.htm",
+      "maps": "https://www.nps.gov/gwmp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/gwmp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/gwmp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hafe",
+    "title": "Harpers Ferry National Historical Park",
+    "states": [
+      "MD",
+      "VA",
+      "WV"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/hafe/index.htm",
+      "maps": "https://www.nps.gov/hafe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hafe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hafe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hafo",
+    "title": "Hagerman Fossil Beds National Monument",
+    "states": [
+      "ID"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/hafo/index.htm",
+      "maps": "https://www.nps.gov/hafo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hafo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hafo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hagr",
+    "title": "Hamilton Grange National Memorial",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/hagr/index.htm",
+      "maps": "https://www.nps.gov/hagr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hagr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hagr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hale",
+    "title": "Haleakala National Park",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/hale/index.htm",
+      "maps": "https://www.nps.gov/hale/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hale/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hale/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hamp",
+    "title": "Hampton National Historic Site",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hamp/index.htm",
+      "maps": "https://www.nps.gov/hamp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hamp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hamp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hart",
+    "title": "Harriet Tubman National Historical Park",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/hart/index.htm",
+      "maps": "https://www.nps.gov/hart/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hart/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hart/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hatu",
+    "title": "Harriet Tubman Underground Railroad National Historical Park",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/hatu/index.htm",
+      "maps": "https://www.nps.gov/hatu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hatu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hatu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "havo",
+    "title": "Hawai'i Volcanoes National Park",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/havo/index.htm",
+      "maps": "https://www.nps.gov/havo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/havo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/havo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "heho",
+    "title": "Herbert Hoover National Historic Site",
+    "states": [
+      "IA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/heho/index.htm",
+      "maps": "https://www.nps.gov/heho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/heho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/heho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hobe",
+    "title": "Horseshoe Bend National Military Park",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/hobe/index.htm",
+      "maps": "https://www.nps.gov/hobe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hobe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hobe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hocu",
+    "title": "Hopewell Culture National Historical Park",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/hocu/index.htm",
+      "maps": "https://www.nps.gov/hocu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hocu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hocu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hofr",
+    "title": "Home of Franklin D. Roosevelt National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hofr/index.htm",
+      "maps": "https://www.nps.gov/hofr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hofr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hofr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hofu",
+    "title": "Hopewell Furnace National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hofu/index.htm",
+      "maps": "https://www.nps.gov/hofu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hofu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hofu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "home",
+    "title": "Homestead National Historical Park",
+    "states": [
+      "NE"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/home/index.htm",
+      "maps": "https://www.nps.gov/home/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/home/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/home/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hono",
+    "title": "Honouliuli National Historic Site",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hono/index.htm",
+      "maps": "https://www.nps.gov/hono/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hono/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hono/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hosp",
+    "title": "Hot Springs National Park",
+    "states": [
+      "AR"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/hosp/index.htm",
+      "maps": "https://www.nps.gov/hosp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hosp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hosp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hove",
+    "title": "Hovenweep National Monument",
+    "states": [
+      "CO",
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/hove/index.htm",
+      "maps": "https://www.nps.gov/hove/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hove/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hove/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hstr",
+    "title": "Harry S Truman National Historic Site",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hstr/index.htm",
+      "maps": "https://www.nps.gov/hstr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hstr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hstr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "hutr",
+    "title": "Hubbell Trading Post National Historic Site",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/hutr/index.htm",
+      "maps": "https://www.nps.gov/hutr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/hutr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/hutr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "iatr",
+    "title": "Ice Age National Scenic Trail",
+    "states": [
+      "WI"
+    ],
+    "designation": "National Scenic Trail",
+    "resources": {
+      "website": "https://www.nps.gov/iatr/index.htm",
+      "maps": "https://www.nps.gov/iatr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/iatr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/iatr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "inde",
+    "title": "Independence National Historical Park",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/inde/index.htm",
+      "maps": "https://www.nps.gov/inde/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/inde/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/inde/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "indu",
+    "title": "Indiana Dunes National Park",
+    "states": [
+      "IN"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/indu/index.htm",
+      "maps": "https://www.nps.gov/indu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/indu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/indu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "isro",
+    "title": "Isle Royale National Park",
+    "states": [
+      "MI"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/isro/index.htm",
+      "maps": "https://www.nps.gov/isro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/isro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/isro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jaga",
+    "title": "James A. Garfield National Historic Site",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/jaga/index.htm",
+      "maps": "https://www.nps.gov/jaga/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jaga/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jaga/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jazz",
+    "title": "New Orleans Jazz National Historical Park",
+    "states": [
+      "LA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/jazz/index.htm",
+      "maps": "https://www.nps.gov/jazz/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jazz/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jazz/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jeca",
+    "title": "Jewel Cave National Monument",
+    "states": [
+      "SD"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/jeca/index.htm",
+      "maps": "https://www.nps.gov/jeca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jeca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jeca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jeff",
+    "title": "Gateway Arch National Park",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/jeff/index.htm",
+      "maps": "https://www.nps.gov/jeff/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jeff/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jeff/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jefm",
+    "title": "Thomas Jefferson Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/thje/index.htm",
+      "maps": "https://www.nps.gov/thje/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thje/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thje/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jela",
+    "title": "Jean Lafitte National Historical Park and Preserve",
+    "states": [
+      "LA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/jela/index.htm",
+      "maps": "https://www.nps.gov/jela/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jela/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jela/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jica",
+    "title": "Jimmy Carter National Historical Park",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/jica/index.htm",
+      "maps": "https://www.nps.gov/jica/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jica/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jica/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "joda",
+    "title": "John Day Fossil Beds National Monument",
+    "states": [
+      "OR"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/joda/index.htm",
+      "maps": "https://www.nps.gov/joda/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/joda/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/joda/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jodr",
+    "title": "John D. Rockefeller, Jr., Memorial Parkway",
+    "states": [
+      "WY"
+    ],
+    "designation": "Parkway",
+    "resources": {
+      "website": "https://www.nps.gov/grte/index.htm"
+    },
+    "source": "https://www.nps.gov/jodr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jofi",
+    "title": "John Fitzgerald Kennedy National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/jofi/index.htm",
+      "maps": "https://www.nps.gov/jofi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jofi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jofi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jofl",
+    "title": "Johnstown Flood National Memorial",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/jofl/index.htm",
+      "maps": "https://www.nps.gov/jofl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jofl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jofl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jomu",
+    "title": "John Muir National Historic Site",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/jomu/index.htm",
+      "maps": "https://www.nps.gov/jomu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jomu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jomu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "jotr",
+    "title": "Joshua Tree National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/jotr/index.htm",
+      "maps": "https://www.nps.gov/jotr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/jotr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/jotr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kaho",
+    "title": "Kaloko-Honokohau National Historical Park",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/kaho/index.htm",
+      "maps": "https://www.nps.gov/kaho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kaho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kaho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kala",
+    "title": "Kalaupapa National Historical Park",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/kala/index.htm",
+      "maps": "https://www.nps.gov/kala/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kala/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kala/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "katm",
+    "title": "Katmai National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/katm/index.htm",
+      "maps": "https://www.nps.gov/katm/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/katm/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/katm/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kaww",
+    "title": "Katahdin Woods and Waters National Monument",
+    "states": [
+      "ME"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/kaww/index.htm",
+      "maps": "https://www.nps.gov/kaww/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kaww/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kaww/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kefj",
+    "title": "Kenai Fjords National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/kefj/index.htm",
+      "maps": "https://www.nps.gov/kefj/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kefj/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kefj/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kemo",
+    "title": "Kennesaw Mountain National Battlefield Park",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Battlefield Park",
+    "resources": {
+      "website": "https://www.nps.gov/kemo/index.htm",
+      "maps": "https://www.nps.gov/kemo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kemo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kemo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kewe",
+    "title": "Keweenaw National Historical Park",
+    "states": [
+      "MI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/kewe/index.htm",
+      "maps": "https://www.nps.gov/kewe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kewe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kewe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kica",
+    "title": "Kings Canyon National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/seki/index.htm",
+      "maps": "https://www.nps.gov/seki/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/seki/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/seki/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kimo",
+    "title": "Kings Mountain National Military Park",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/kimo/index.htm",
+      "maps": "https://www.nps.gov/kimo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kimo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kimo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "klgo",
+    "title": "Klondike Gold Rush National Historical Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/klgo/index.htm",
+      "maps": "https://www.nps.gov/klgo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/klgo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/klgo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "knri",
+    "title": "Knife River Indian Villages National Historic Site",
+    "states": [
+      "ND"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/knri/index.htm",
+      "maps": "https://www.nps.gov/knri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/knri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/knri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kova",
+    "title": "Kobuk Valley National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/kova/index.htm",
+      "maps": "https://www.nps.gov/kova/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kova/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kova/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "kowa",
+    "title": "Korean War Veterans Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/kowa/index.htm",
+      "maps": "https://www.nps.gov/kowa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/kowa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/kowa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "labe",
+    "title": "Lava Beds National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/labe/index.htm",
+      "maps": "https://www.nps.gov/labe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/labe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/labe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lach",
+    "title": "Lake Chelan National Recreation Area",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/noca/index.htm"
+    },
+    "source": "https://www.nps.gov/lach/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lacl",
+    "title": "Lake Clark National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/lacl/index.htm",
+      "maps": "https://www.nps.gov/lacl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lacl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lacl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lake",
+    "title": "Lake Mead National Recreation Area",
+    "states": [
+      "AZ",
+      "NV"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/lake/index.htm",
+      "maps": "https://www.nps.gov/lake/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lake/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lake/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lamr",
+    "title": "Lake Meredith National Recreation Area",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/lamr/index.htm",
+      "maps": "https://www.nps.gov/lamr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lamr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lamr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "laro",
+    "title": "Lake Roosevelt National Recreation Area",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/laro/index.htm",
+      "maps": "https://www.nps.gov/laro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/laro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/laro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lavo",
+    "title": "Lassen Volcanic National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/lavo/index.htm",
+      "maps": "https://www.nps.gov/lavo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lavo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lavo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lecl",
+    "title": "Lewis and Clark National Historic Trail",
+    "states": [
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "MO",
+      "MT",
+      "ND",
+      "NE",
+      "OH",
+      "OR",
+      "PA",
+      "SD",
+      "WA",
+      "WV"
+    ],
+    "designation": "National Trails System",
+    "resources": {
+      "website": "https://www.nps.gov/lecl/index.htm",
+      "maps": "https://www.nps.gov/lecl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lecl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lecl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lewi",
+    "title": "Lewis and Clark National Historical Park",
+    "states": [
+      "OR",
+      "WA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/lewi/index.htm",
+      "maps": "https://www.nps.gov/lewi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lewi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lewi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "libi",
+    "title": "Little Bighorn Battlefield National Monument",
+    "states": [
+      "MT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/libi/index.htm",
+      "maps": "https://www.nps.gov/libi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/libi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/libi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "libo",
+    "title": "Lincoln Boyhood National Memorial",
+    "states": [
+      "IN"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/libo/index.htm",
+      "maps": "https://www.nps.gov/libo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/libo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/libo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "liho",
+    "title": "Lincoln Home National Historic Site",
+    "states": [
+      "IL"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/liho/index.htm",
+      "maps": "https://www.nps.gov/liho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/liho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/liho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "linc",
+    "title": "Lincoln Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/linc/index.htm",
+      "maps": "https://www.nps.gov/linc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/linc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/linc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "liri",
+    "title": "Little River Canyon National Preserve",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/liri/index.htm",
+      "maps": "https://www.nps.gov/liri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/liri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/liri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "long",
+    "title": "Longfellow House-Washington's Headquarters National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/long/index.htm",
+      "maps": "https://www.nps.gov/long/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/long/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/long/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "losa",
+    "title": "Lower Saint Croix National Scenic Riverway",
+    "states": [
+      "MN"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/sacn/index.htm",
+      "maps": "https://www.nps.gov/sacn/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sacn/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sacn/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lowe",
+    "title": "Lowell National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/lowe/index.htm",
+      "maps": "https://www.nps.gov/lowe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lowe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lowe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lyba",
+    "title": "Lyndon Baines Johnson Memorial Grove on the Potomac",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/lyba/index.htm",
+      "maps": "https://www.nps.gov/lyba/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lyba/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lyba/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "lyjo",
+    "title": "Lyndon B. Johnson National Historical Park",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/lyjo/index.htm",
+      "maps": "https://www.nps.gov/lyjo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/lyjo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/lyjo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mabe",
+    "title": "Mary McLeod Bethune Council House National Historic Site",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/mamc/index.htm",
+      "maps": "https://www.nps.gov/mamc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mamc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mamc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mabi",
+    "title": "Marsh-Billings-Rockefeller National Historical Park",
+    "states": [
+      "VT"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/mabi/index.htm",
+      "maps": "https://www.nps.gov/mabi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mabi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mabi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "maca",
+    "title": "Mammoth Cave National Park",
+    "states": [
+      "KY"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/maca/index.htm",
+      "maps": "https://www.nps.gov/maca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/maca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/maca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mall",
+    "title": "National Mall",
+    "states": [
+      "DC"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/nama/index.htm"
+    },
+    "source": "https://www.nps.gov/mall/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "malu",
+    "title": "Martin Luther King, Jr., National Historical Park",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/malu/index.htm",
+      "maps": "https://www.nps.gov/malu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/malu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/malu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mana",
+    "title": "Manassas National Battlefield Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Battlefield Park",
+    "resources": {
+      "website": "https://www.nps.gov/mana/index.htm",
+      "maps": "https://www.nps.gov/mana/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mana/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mana/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "manz",
+    "title": "Manzanar National Historic Site",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/manz/index.htm",
+      "maps": "https://www.nps.gov/manz/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/manz/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/manz/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mapr",
+    "title": "Manhattan Project National Historical Park",
+    "states": [
+      "NM",
+      "TN",
+      "WA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/mapr/index.htm",
+      "maps": "https://www.nps.gov/mapr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mapr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mapr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mava",
+    "title": "Martin Van Buren National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/mava/index.htm",
+      "maps": "https://www.nps.gov/mava/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mava/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mava/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mawa",
+    "title": "Maggie L. Walker National Historic Site",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/mawa/index.htm",
+      "maps": "https://www.nps.gov/mawa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mawa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mawa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "memy",
+    "title": "Medgar and Myrlie Evers Home National Monument",
+    "states": [
+      "MS"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/memy/index.htm",
+      "maps": "https://www.nps.gov/memy/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/memy/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/memy/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "meve",
+    "title": "Mesa Verde National Park",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/meve/index.htm",
+      "maps": "https://www.nps.gov/meve/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/meve/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/meve/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "miin",
+    "title": "Minidoka National Historic Site",
+    "states": [
+      "ID",
+      "WA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/miin/index.htm",
+      "maps": "https://www.nps.gov/miin/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/miin/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/miin/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mima",
+    "title": "Minute Man National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/mima/index.htm",
+      "maps": "https://www.nps.gov/mima/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mima/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mima/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mimi",
+    "title": "Minuteman Missile National Historic Site",
+    "states": [
+      "SD"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/mimi/index.htm",
+      "maps": "https://www.nps.gov/mimi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mimi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mimi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "misp",
+    "title": "Mill Springs Battlefield National Monument",
+    "states": [
+      "KY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/misp/index.htm",
+      "maps": "https://www.nps.gov/misp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/misp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/misp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "miss",
+    "title": "Mississippi National River and Recreation Area",
+    "states": [
+      "MN"
+    ],
+    "designation": "National River",
+    "resources": {
+      "website": "https://www.nps.gov/miss/index.htm",
+      "maps": "https://www.nps.gov/miss/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/miss/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/miss/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mlkm",
+    "title": "Martin Luther King, Jr., Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/mlkm/index.htm",
+      "maps": "https://www.nps.gov/mlkm/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mlkm/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mlkm/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mnrr",
+    "title": "Missouri National Recreational River",
+    "states": [
+      "NE",
+      "SD"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/mnrr/index.htm",
+      "maps": "https://www.nps.gov/mnrr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mnrr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mnrr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "moca",
+    "title": "Montezuma Castle National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/moca/index.htm",
+      "maps": "https://www.nps.gov/moca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/moca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/moca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mocr",
+    "title": "Moores Creek National Battlefield",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/mocr/index.htm",
+      "maps": "https://www.nps.gov/mocr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mocr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mocr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "moja",
+    "title": "Mojave National Preserve",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/moja/index.htm",
+      "maps": "https://www.nps.gov/moja/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/moja/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/moja/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mono",
+    "title": "Monocacy National Battlefield",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/mono/index.htm",
+      "maps": "https://www.nps.gov/mono/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mono/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mono/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "mora",
+    "title": "Mount Rainier National Park",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/mora/index.htm",
+      "maps": "https://www.nps.gov/mora/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/mora/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/mora/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "morr",
+    "title": "Morristown National Historical Park",
+    "states": [
+      "NJ"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/morr/index.htm",
+      "maps": "https://www.nps.gov/morr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/morr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/morr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "moru",
+    "title": "Mount Rushmore National Memorial",
+    "states": [
+      "SD"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/moru/index.htm",
+      "maps": "https://www.nps.gov/moru/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/moru/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/moru/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "muwo",
+    "title": "Muir Woods National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/muwo/index.htm",
+      "maps": "https://www.nps.gov/muwo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/muwo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/muwo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nabr",
+    "title": "Natural Bridges National Monument",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/nabr/index.htm",
+      "maps": "https://www.nps.gov/nabr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nabr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nabr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "naca",
+    "title": "National Capital Parks",
+    "states": [
+      "DC"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/nace/index.htm",
+      "visit": "https://www.nps.gov/nace/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nace/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "natc",
+    "title": "Natchez National Historical Park",
+    "states": [
+      "MS"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/natc/index.htm",
+      "maps": "https://www.nps.gov/natc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/natc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/natc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "natr",
+    "title": "Natchez Trace Parkway",
+    "states": [
+      "AL",
+      "MS",
+      "TN"
+    ],
+    "designation": "Parkway",
+    "resources": {
+      "website": "https://www.nps.gov/natr/index.htm",
+      "maps": "https://www.nps.gov/natr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/natr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/natr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nava",
+    "title": "Navajo National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/nava/index.htm",
+      "maps": "https://www.nps.gov/nava/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nava/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nava/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nebe",
+    "title": "New Bedford Whaling National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/nebe/index.htm",
+      "maps": "https://www.nps.gov/nebe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nebe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nebe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "neen",
+    "title": "New England National Scenic Trail",
+    "states": [
+      "CT",
+      "MA"
+    ],
+    "designation": "National Scenic Trail",
+    "resources": {
+      "website": "https://www.nps.gov/neen/index.htm",
+      "maps": "https://www.nps.gov/neen/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/neen/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/neen/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nepe",
+    "title": "Nez Perce National Historical Park",
+    "states": [
+      "ID",
+      "MT",
+      "OR",
+      "WA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/nepe/index.htm",
+      "maps": "https://www.nps.gov/nepe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nepe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nepe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "neph",
+    "title": "New Philadelphia National Historic Site",
+    "states": [
+      "IL"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/neph/index.htm",
+      "maps": "https://www.nps.gov/neph/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/neph/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/neph/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "neri",
+    "title": "New River Gorge National Park and Preserve",
+    "states": [
+      "WV"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/neri/index.htm",
+      "maps": "https://www.nps.gov/neri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/neri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/neri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nico",
+    "title": "Nicodemus National Historic Site",
+    "states": [
+      "KS"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/nico/index.htm",
+      "maps": "https://www.nps.gov/nico/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nico/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nico/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "niob",
+    "title": "Niobrara National Scenic River",
+    "states": [
+      "NE"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/niob/index.htm",
+      "maps": "https://www.nps.gov/niob/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/niob/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/niob/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "nisi",
+    "title": "Ninety Six National Historic Site",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/nisi/index.htm",
+      "maps": "https://www.nps.gov/nisi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/nisi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/nisi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "noat",
+    "title": "Noatak National Preserve",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/noat/index.htm",
+      "maps": "https://www.nps.gov/noat/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/noat/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/noat/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "noca",
+    "title": "North Cascades National Park",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/noca/index.htm",
+      "maps": "https://www.nps.gov/noca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/noca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/noca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "noco",
+    "title": "North Country National Scenic Trail",
+    "states": [
+      "MI",
+      "MN",
+      "ND",
+      "NY",
+      "OH",
+      "PA",
+      "VT",
+      "WI"
+    ],
+    "designation": "National Scenic Trail",
+    "resources": {
+      "website": "https://www.nps.gov/noco/index.htm",
+      "maps": "https://www.nps.gov/noco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/noco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/noco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "npsa",
+    "title": "National Park of American Samoa",
+    "states": [
+      "AS"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/npsa/index.htm",
+      "maps": "https://www.nps.gov/npsa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/npsa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/npsa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "obri",
+    "title": "Obed Wild and Scenic River",
+    "states": [
+      "TN"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/obed/index.htm",
+      "maps": "https://www.nps.gov/obed/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/obed/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/obed/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ocmu",
+    "title": "Ocmulgee Mounds National Historical Park",
+    "states": [
+      "GA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/ocmu/index.htm",
+      "maps": "https://www.nps.gov/ocmu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ocmu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ocmu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "olym",
+    "title": "Olympic National Park",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/olym/index.htm",
+      "maps": "https://www.nps.gov/olym/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/olym/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/olym/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "orca",
+    "title": "Oregon Caves National Monument and Preserve",
+    "states": [
+      "OR"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/orca/index.htm",
+      "maps": "https://www.nps.gov/orca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/orca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/orca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "orpi",
+    "title": "Organ Pipe Cactus National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/orpi/index.htm",
+      "maps": "https://www.nps.gov/orpi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/orpi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/orpi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ozar",
+    "title": "Ozark National Scenic Riverways",
+    "states": [
+      "MO"
+    ],
+    "designation": "National River",
+    "resources": {
+      "website": "https://www.nps.gov/ozar/index.htm",
+      "maps": "https://www.nps.gov/ozar/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ozar/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ozar/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "paal",
+    "title": "Palo Alto Battlefield National Historical Park",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/paal/index.htm",
+      "maps": "https://www.nps.gov/paal/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/paal/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/paal/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "paav",
+    "title": "Pennsylvania Avenue National Historic Site",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/paav/index.htm",
+      "maps": "https://www.nps.gov/paav/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/paav/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/paav/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pagr",
+    "title": "Paterson Great Falls National Historical Park",
+    "states": [
+      "NJ"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/pagr/index.htm",
+      "maps": "https://www.nps.gov/pagr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pagr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pagr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pais",
+    "title": "Padre Island National Seashore",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/pais/index.htm",
+      "maps": "https://www.nps.gov/pais/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pais/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pais/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "peco",
+    "title": "Pecos National Historical Park",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/peco/index.htm",
+      "maps": "https://www.nps.gov/peco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/peco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/peco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pefo",
+    "title": "Petrified Forest National Park",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/pefo/index.htm",
+      "maps": "https://www.nps.gov/pefo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pefo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pefo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "peri",
+    "title": "Pea Ridge National Military Park",
+    "states": [
+      "AR"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/peri/index.htm",
+      "maps": "https://www.nps.gov/peri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/peri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/peri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "perl",
+    "title": "Pearl Harbor National Memorial",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/perl/index.htm"
+    },
+    "source": "https://www.nps.gov/perl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pete",
+    "title": "Petersburg National Battlefield",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/pete/index.htm",
+      "maps": "https://www.nps.gov/pete/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pete/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pete/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "petr",
+    "title": "Petroglyph National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/petr/index.htm",
+      "maps": "https://www.nps.gov/petr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/petr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/petr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pevi",
+    "title": "Perry's Victory and International Peace Memorial",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/pevi/index.htm",
+      "maps": "https://www.nps.gov/pevi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pevi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pevi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pima",
+    "title": "Hohokam Pima National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/pima/index.htm"
+    },
+    "source": "https://www.nps.gov/pima/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pinn",
+    "title": "Pinnacles National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/pinn/index.htm",
+      "maps": "https://www.nps.gov/pinn/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pinn/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pinn/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pipe",
+    "title": "Pipestone National Monument",
+    "states": [
+      "MN"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/pipe/index.htm",
+      "maps": "https://www.nps.gov/pipe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pipe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pipe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "piro",
+    "title": "Pictured Rocks National Lakeshore",
+    "states": [
+      "MI"
+    ],
+    "designation": "National Lakeshore",
+    "resources": {
+      "website": "https://www.nps.gov/piro/index.htm",
+      "maps": "https://www.nps.gov/piro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/piro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/piro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pisc",
+    "title": "Piscataway Park",
+    "states": [
+      "MD"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/pisc/index.htm",
+      "maps": "https://www.nps.gov/pisc/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pisc/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pisc/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pisp",
+    "title": "Pipe Spring National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/pisp/index.htm",
+      "maps": "https://www.nps.gov/pisp/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pisp/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pisp/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "poch",
+    "title": "Port Chicago Naval Magazine National Memorial",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/poch/index.htm",
+      "maps": "https://www.nps.gov/poch/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/poch/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/poch/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "popo",
+    "title": "Poverty Point National Monument",
+    "states": [
+      "LA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/popo/index.htm",
+      "maps": "https://www.nps.gov/popo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/popo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/popo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pore",
+    "title": "Point Reyes National Seashore",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Seashore",
+    "resources": {
+      "website": "https://www.nps.gov/pore/index.htm",
+      "maps": "https://www.nps.gov/pore/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pore/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pore/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "prwi",
+    "title": "Prince William Forest Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/prwi/index.htm",
+      "maps": "https://www.nps.gov/prwi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/prwi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/prwi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "puhe",
+    "title": "Pu'ukohola Heiau National Historic Site",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/puhe/index.htm",
+      "maps": "https://www.nps.gov/puhe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/puhe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/puhe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "puho",
+    "title": "Pu'uhonua o Honaunau National Historical Park",
+    "states": [
+      "HI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/puho/index.htm",
+      "maps": "https://www.nps.gov/puho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/puho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/puho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "pull",
+    "title": "Pullman National Historical Park",
+    "states": [
+      "IL"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/pull/index.htm",
+      "maps": "https://www.nps.gov/pull/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/pull/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/pull/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rabr",
+    "title": "Rainbow Bridge National Monument",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/rabr/index.htm",
+      "maps": "https://www.nps.gov/rabr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rabr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rabr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "redw",
+    "title": "Redwood National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/redw/index.htm",
+      "maps": "https://www.nps.gov/redw/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/redw/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/redw/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "reer",
+    "title": "Reconstruction Era National Historical Park",
+    "states": [
+      "SC"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/reer/index.htm",
+      "maps": "https://www.nps.gov/reer/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/reer/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/reer/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rich",
+    "title": "Richmond National Battlefield Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Battlefield Park",
+    "resources": {
+      "website": "https://www.nps.gov/rich/index.htm",
+      "maps": "https://www.nps.gov/rich/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rich/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rich/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rigr",
+    "title": "Rio Grande Wild and Scenic River",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/rigr/index.htm",
+      "maps": "https://www.nps.gov/rigr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rigr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rigr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rira",
+    "title": "River Raisin National Battlefield Park",
+    "states": [
+      "MI"
+    ],
+    "designation": "National Battlefield Park",
+    "resources": {
+      "website": "https://www.nps.gov/rira/index.htm",
+      "maps": "https://www.nps.gov/rira/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rira/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rira/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rocr",
+    "title": "Rock Creek Park",
+    "states": [
+      "DC"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/rocr/index.htm",
+      "maps": "https://www.nps.gov/rocr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rocr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rocr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rola",
+    "title": "Ross Lake National Recreation Area",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/noca/index.htm"
+    },
+    "source": "https://www.nps.gov/rola/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "romo",
+    "title": "Rocky Mountain National Park",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/romo/index.htm",
+      "maps": "https://www.nps.gov/romo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/romo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/romo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rori",
+    "title": "Rosie the Riveter/World War II Home Front National Historical Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/rori/index.htm",
+      "maps": "https://www.nps.gov/rori/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rori/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rori/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rowi",
+    "title": "Roger Williams National Memorial",
+    "states": [
+      "RI"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/rowi/index.htm",
+      "maps": "https://www.nps.gov/rowi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/rowi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/rowi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "rrbh",
+    "title": "Ronald Reagan Boyhood Home National Historic Site",
+    "states": [
+      "IL"
+    ],
+    "designation": "National Historic Site",
+    "resources": {},
+    "source": "https://www.nps.gov/rrbh/index.htm",
+    "import_note": "HTTP Error 404: Not Found"
+  },
+  {
+    "code": "ruca",
+    "title": "Russell Cave National Monument",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/ruca/index.htm",
+      "maps": "https://www.nps.gov/ruca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ruca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ruca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "saan",
+    "title": "San Antonio Missions National Historical Park",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/saan/index.htm",
+      "maps": "https://www.nps.gov/saan/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/saan/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/saan/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sacn",
+    "title": "Saint Croix National Scenic Riverway",
+    "states": [
+      "MN",
+      "WI"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/sacn/index.htm",
+      "maps": "https://www.nps.gov/sacn/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sacn/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sacn/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sacr",
+    "title": "Saint Croix Island International Historic Site",
+    "states": [
+      "ME"
+    ],
+    "designation": "International Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/sacr/index.htm",
+      "maps": "https://www.nps.gov/sacr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sacr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sacr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "safr",
+    "title": "San Francisco Maritime National Historical Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/safr/index.htm",
+      "maps": "https://www.nps.gov/safr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/safr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/safr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "saga",
+    "title": "Saint-Gaudens National Historical Park",
+    "states": [
+      "NH"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/saga/index.htm",
+      "maps": "https://www.nps.gov/saga/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/saga/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/saga/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sagu",
+    "title": "Saguaro National Park",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/sagu/index.htm",
+      "maps": "https://www.nps.gov/sagu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sagu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sagu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sahi",
+    "title": "Sagamore Hill National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/sahi/index.htm",
+      "maps": "https://www.nps.gov/sahi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sahi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sahi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sair",
+    "title": "Saugus Iron Works National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/sair/index.htm",
+      "maps": "https://www.nps.gov/sair/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sair/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sair/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sajh",
+    "title": "San Juan Island National Historical Park",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/sajh/index.htm",
+      "maps": "https://www.nps.gov/sajh/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sajh/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sajh/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "saju",
+    "title": "San Juan National Historic Site",
+    "states": [
+      "PR"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/saju/index.htm",
+      "maps": "https://www.nps.gov/saju/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/saju/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/saju/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sama",
+    "title": "Salem Maritime National Historical Park",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/sama/index.htm",
+      "maps": "https://www.nps.gov/sama/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sama/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sama/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "samo",
+    "title": "Santa Monica Mountains National Recreation Area",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/samo/index.htm",
+      "maps": "https://www.nps.gov/samo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/samo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/samo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sand",
+    "title": "Sand Creek Massacre National Historic Site",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/sand/index.htm",
+      "maps": "https://www.nps.gov/sand/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sand/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sand/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sapa",
+    "title": "Saint Paul's Church National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/sapa/index.htm",
+      "maps": "https://www.nps.gov/sapa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sapa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sapa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sapu",
+    "title": "Salinas Pueblo Missions National Monument",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/sapu/index.htm",
+      "maps": "https://www.nps.gov/sapu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sapu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sapu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sara",
+    "title": "Saratoga National Historical Park",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/sara/index.htm",
+      "maps": "https://www.nps.gov/sara/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sara/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sara/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sari",
+    "title": "Salt River Bay National Historical Park and Ecological Preserve",
+    "states": [
+      "VI"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/sari/index.htm",
+      "maps": "https://www.nps.gov/sari/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sari/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sari/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "scbl",
+    "title": "Scotts Bluff National Monument",
+    "states": [
+      "NE"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/scbl/index.htm",
+      "maps": "https://www.nps.gov/scbl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/scbl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/scbl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "semo",
+    "title": "Selma to Montgomery National Historic Trail",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Trails System",
+    "resources": {
+      "website": "https://www.nps.gov/semo/index.htm",
+      "maps": "https://www.nps.gov/semo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/semo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/semo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sequ",
+    "title": "Sequoia National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/seki/index.htm",
+      "maps": "https://www.nps.gov/seki/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/seki/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/seki/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "shen",
+    "title": "Shenandoah National Park",
+    "states": [
+      "VA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/shen/index.htm",
+      "maps": "https://www.nps.gov/shen/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/shen/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/shen/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "shil",
+    "title": "Shiloh National Military Park",
+    "states": [
+      "MS",
+      "TN"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/shil/index.htm",
+      "maps": "https://www.nps.gov/shil/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/shil/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/shil/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sitk",
+    "title": "Sitka National Historical Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/sitk/index.htm",
+      "maps": "https://www.nps.gov/sitk/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sitk/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sitk/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "slbe",
+    "title": "Sleeping Bear Dunes National Lakeshore",
+    "states": [
+      "MI"
+    ],
+    "designation": "National Lakeshore",
+    "resources": {
+      "website": "https://www.nps.gov/slbe/index.htm",
+      "maps": "https://www.nps.gov/slbe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/slbe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/slbe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "spar",
+    "title": "Springfield Armory National Historic Site",
+    "states": [
+      "MA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/spar/index.htm",
+      "maps": "https://www.nps.gov/spar/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/spar/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/spar/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "spra",
+    "title": "Springfield 1908 Race Riot National Monument",
+    "states": [
+      "IL"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/spra/index.htm",
+      "maps": "https://www.nps.gov/spra/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/spra/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/spra/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "stea",
+    "title": "Steamtown National Historic Site",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/stea/index.htm",
+      "maps": "https://www.nps.gov/stea/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/stea/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/stea/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "stge",
+    "title": "Ste. Genevieve National Historical Park",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/stge/index.htm",
+      "maps": "https://www.nps.gov/stge/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/stge/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/stge/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "stli",
+    "title": "Statue of Liberty National Monument",
+    "states": [
+      "NJ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/stli/index.htm",
+      "maps": "https://www.nps.gov/stli/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/stli/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/stli/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ston",
+    "title": "Stonewall National Monument",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/ston/index.htm",
+      "maps": "https://www.nps.gov/ston/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ston/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ston/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "stri",
+    "title": "Stones River National Battlefield",
+    "states": [
+      "TN"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/stri/index.htm",
+      "maps": "https://www.nps.gov/stri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/stri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/stri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "sucr",
+    "title": "Sunset Crater Volcano National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/sucr/index.htm",
+      "maps": "https://www.nps.gov/sucr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/sucr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/sucr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tapr",
+    "title": "Tallgrass Prairie National Preserve",
+    "states": [
+      "KS"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/tapr/index.htm",
+      "maps": "https://www.nps.gov/tapr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tapr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tapr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "this",
+    "title": "Theodore Roosevelt Island",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/this/index.htm",
+      "maps": "https://www.nps.gov/this/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/this/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/this/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "thko",
+    "title": "Thaddeus Kosciuszko National Memorial",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/thko/index.htm",
+      "maps": "https://www.nps.gov/thko/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thko/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thko/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "thrb",
+    "title": "Theodore Roosevelt Birthplace National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/thrb/index.htm",
+      "maps": "https://www.nps.gov/thrb/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thrb/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thrb/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "thri",
+    "title": "Theodore Roosevelt Inaugural National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/thri/index.htm",
+      "maps": "https://www.nps.gov/thri/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thri/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thri/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "thro",
+    "title": "Theodore Roosevelt National Park",
+    "states": [
+      "ND"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/thro/index.htm",
+      "maps": "https://www.nps.gov/thro/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thro/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thro/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "thst",
+    "title": "Thomas Stone National Historic Site",
+    "states": [
+      "MD"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/thst/index.htm",
+      "maps": "https://www.nps.gov/thst/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/thst/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/thst/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tica",
+    "title": "Timpanogos Cave National Monument",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/tica/index.htm",
+      "maps": "https://www.nps.gov/tica/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tica/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tica/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "till",
+    "title": "Emmett Till and Mamie Till-Mobley National Monument",
+    "states": [
+      "IL",
+      "MS"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/till/index.htm",
+      "maps": "https://www.nps.gov/till/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/till/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/till/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "timu",
+    "title": "Timucuan Ecological and Historic Preserve",
+    "states": [
+      "FL"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/timu/index.htm",
+      "maps": "https://www.nps.gov/timu/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/timu/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/timu/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tont",
+    "title": "Tonto National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/tont/index.htm",
+      "maps": "https://www.nps.gov/tont/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tont/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tont/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tuai",
+    "title": "Tuskegee Airmen National Historic Site",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/tuai/index.htm",
+      "maps": "https://www.nps.gov/tuai/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tuai/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tuai/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tuin",
+    "title": "Tuskegee Institute National Historic Site",
+    "states": [
+      "AL"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/tuin/index.htm",
+      "maps": "https://www.nps.gov/tuin/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tuin/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tuin/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tule",
+    "title": "Tule Lake National Monument",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/tule/index.htm",
+      "maps": "https://www.nps.gov/tule/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tule/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tule/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tuma",
+    "title": "Tumacacori National Historical Park",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/tuma/index.htm",
+      "maps": "https://www.nps.gov/tuma/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tuma/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tuma/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tupe",
+    "title": "Tupelo National Battlefield",
+    "states": [
+      "MS"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/tupe/index.htm",
+      "maps": "https://www.nps.gov/tupe/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tupe/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tupe/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tusk",
+    "title": "Tule Springs Fossil Beds National Monument",
+    "states": [
+      "NV"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/tusk/index.htm",
+      "maps": "https://www.nps.gov/tusk/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tusk/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tusk/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "tuzi",
+    "title": "Tuzigoot National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/tuzi/index.htm",
+      "maps": "https://www.nps.gov/tuzi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/tuzi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/tuzi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "ulsg",
+    "title": "Ulysses S. Grant National Historic Site",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/ulsg/index.htm",
+      "maps": "https://www.nps.gov/ulsg/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/ulsg/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/ulsg/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "upde",
+    "title": "Upper Delaware Scenic and Recreational River",
+    "states": [
+      "NY",
+      "PA"
+    ],
+    "designation": "National Wild & Scenic River",
+    "resources": {
+      "website": "https://www.nps.gov/upde/index.htm",
+      "maps": "https://www.nps.gov/upde/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/upde/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/upde/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vafo",
+    "title": "Valley Forge National Historical Park",
+    "states": [
+      "PA"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/vafo/index.htm",
+      "maps": "https://www.nps.gov/vafo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vafo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vafo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vall",
+    "title": "Valles Caldera National Preserve",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/vall/index.htm",
+      "maps": "https://www.nps.gov/vall/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vall/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vall/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vama",
+    "title": "Vanderbilt Mansion National Historic Site",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/vama/index.htm",
+      "maps": "https://www.nps.gov/vama/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vama/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vama/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vick",
+    "title": "Vicksburg National Military Park",
+    "states": [
+      "LA",
+      "MS"
+    ],
+    "designation": "National Military Park",
+    "resources": {
+      "website": "https://www.nps.gov/vick/index.htm",
+      "maps": "https://www.nps.gov/vick/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vick/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vick/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vicr",
+    "title": "Virgin Islands Coral Reef National Monument",
+    "states": [
+      "VI"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/vicr/index.htm",
+      "maps": "https://www.nps.gov/vicr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vicr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vicr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "viis",
+    "title": "Virgin Islands National Park",
+    "states": [
+      "VI"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/viis/index.htm",
+      "maps": "https://www.nps.gov/viis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/viis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/viis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "vive",
+    "title": "Vietnam Veterans Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/vive/index.htm",
+      "maps": "https://www.nps.gov/vive/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/vive/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/vive/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "voya",
+    "title": "Voyageurs National Park",
+    "states": [
+      "MN"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/voya/index.htm",
+      "maps": "https://www.nps.gov/voya/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/voya/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/voya/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "waba",
+    "title": "Washita Battlefield National Historic Site",
+    "states": [
+      "OK"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/waba/index.htm",
+      "maps": "https://www.nps.gov/waba/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/waba/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/waba/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "waca",
+    "title": "Walnut Canyon National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/waca/index.htm",
+      "maps": "https://www.nps.gov/waca/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/waca/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/waca/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "waco",
+    "title": "Waco Mammoth National Monument",
+    "states": [
+      "TX"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/waco/index.htm",
+      "maps": "https://www.nps.gov/waco/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/waco/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/waco/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wamo",
+    "title": "Washington Monument",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/wamo/index.htm",
+      "maps": "https://www.nps.gov/wamo/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wamo/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wamo/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wapa",
+    "title": "War in the Pacific National Historical Park",
+    "states": [
+      "GU"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/wapa/index.htm",
+      "maps": "https://www.nps.gov/wapa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wapa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wapa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wefa",
+    "title": "Weir Farm National Historical Park",
+    "states": [
+      "CT"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/wefa/index.htm",
+      "maps": "https://www.nps.gov/wefa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wefa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wefa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "whho",
+    "title": "White House",
+    "states": [
+      "DC"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/whho/index.htm",
+      "maps": "https://www.nps.gov/whho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/whho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/whho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "whis",
+    "title": "Whiskeytown-Shasta-Trinity National Recreation Area",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Recreation Area",
+    "resources": {
+      "website": "https://www.nps.gov/whis/index.htm",
+      "maps": "https://www.nps.gov/whis/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/whis/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/whis/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "whmi",
+    "title": "Whitman Mission National Historic Site",
+    "states": [
+      "WA"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/whmi/index.htm",
+      "maps": "https://www.nps.gov/whmi/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/whmi/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/whmi/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "whsa",
+    "title": "White Sands National Park",
+    "states": [
+      "NM"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/whsa/index.htm",
+      "maps": "https://www.nps.gov/whsa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/whsa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/whsa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wica",
+    "title": "Wind Cave National Park",
+    "states": [
+      "SD"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/wica/index.htm",
+      "maps": "https://www.nps.gov/wica/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wica/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wica/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wicl",
+    "title": "President William Jefferson Clinton Birthplace Home National Historic Site",
+    "states": [
+      "AR"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/wicl/index.htm",
+      "maps": "https://www.nps.gov/wicl/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wicl/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wicl/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wicr",
+    "title": "Wilson's Creek National Battlefield",
+    "states": [
+      "MO"
+    ],
+    "designation": "National Battlefield",
+    "resources": {
+      "website": "https://www.nps.gov/wicr/index.htm",
+      "maps": "https://www.nps.gov/wicr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wicr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wicr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wiho",
+    "title": "William Howard Taft National Historic Site",
+    "states": [
+      "OH"
+    ],
+    "designation": "National Historic Site",
+    "resources": {
+      "website": "https://www.nps.gov/wiho/index.htm",
+      "maps": "https://www.nps.gov/wiho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wiho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wiho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wori",
+    "title": "Women's Rights National Historical Park",
+    "states": [
+      "NY"
+    ],
+    "designation": "National Historical Park",
+    "resources": {
+      "website": "https://www.nps.gov/wori/index.htm",
+      "maps": "https://www.nps.gov/wori/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wori/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wori/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wotr",
+    "title": "Wolf Trap National Park for the Performing Arts",
+    "states": [
+      "VA"
+    ],
+    "designation": "Other Designation",
+    "resources": {
+      "website": "https://www.nps.gov/wotr/index.htm",
+      "maps": "https://www.nps.gov/wotr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wotr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wotr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wrbr",
+    "title": "Wright Brothers National Memorial",
+    "states": [
+      "NC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/wrbr/index.htm",
+      "maps": "https://www.nps.gov/wrbr/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wrbr/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wrbr/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wrst",
+    "title": "Wrangell-St. Elias National Park",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/wrst/index.htm",
+      "maps": "https://www.nps.gov/wrst/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wrst/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wrst/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wupa",
+    "title": "Wupatki National Monument",
+    "states": [
+      "AZ"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/wupa/index.htm",
+      "maps": "https://www.nps.gov/wupa/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wupa/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wupa/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wwii",
+    "title": "World War II Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/wwii/index.htm",
+      "maps": "https://www.nps.gov/wwii/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wwii/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wwii/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "wwim",
+    "title": "World War I Memorial",
+    "states": [
+      "DC"
+    ],
+    "designation": "National Memorial",
+    "resources": {
+      "website": "https://www.nps.gov/wwim/index.htm",
+      "maps": "https://www.nps.gov/wwim/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/wwim/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/wwim/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "yell",
+    "title": "Yellowstone National Park",
+    "states": [
+      "ID",
+      "MT",
+      "WY"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/yell/index.htm",
+      "maps": "https://www.nps.gov/yell/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/yell/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/yell/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "yose",
+    "title": "Yosemite National Park",
+    "states": [
+      "CA"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/yose/index.htm",
+      "maps": "https://www.nps.gov/yose/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/yose/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/yose/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "yuch",
+    "title": "Yukon-Charley Rivers National Preserve",
+    "states": [
+      "AK"
+    ],
+    "designation": "National Preserve",
+    "resources": {
+      "website": "https://www.nps.gov/yuch/index.htm",
+      "maps": "https://www.nps.gov/yuch/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/yuch/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/yuch/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "yuho",
+    "title": "Yucca House National Monument",
+    "states": [
+      "CO"
+    ],
+    "designation": "National Monument",
+    "resources": {
+      "website": "https://www.nps.gov/yuho/index.htm",
+      "maps": "https://www.nps.gov/yuho/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/yuho/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/yuho/index.htm",
+    "verified": "2026-09-26"
+  },
+  {
+    "code": "zion",
+    "title": "Zion National Park",
+    "states": [
+      "UT"
+    ],
+    "designation": "National Park",
+    "resources": {
+      "website": "https://www.nps.gov/zion/index.htm",
+      "maps": "https://www.nps.gov/zion/planyourvisit/maps.htm",
+      "visit": "https://www.nps.gov/zion/planyourvisit/index.htm"
+    },
+    "source": "https://www.nps.gov/zion/index.htm",
+    "verified": "2026-09-26"
+  }
+]

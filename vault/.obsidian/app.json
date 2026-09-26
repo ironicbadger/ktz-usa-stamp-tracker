@@ -1,0 +1,9 @@
+{
+  "attachmentFolderPath": "Attachments",
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false,
+  "propertiesInDocument": "source",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Trips"
+}
