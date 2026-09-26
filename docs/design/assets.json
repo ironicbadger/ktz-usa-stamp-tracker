@@ -1,0 +1,73 @@
+[
+  {
+    "file": "mockups/layout-01-encyclopedia.png",
+    "original_filename": "exec-49427d1e-1715-40e6-8048-ea60756f7c56.png",
+    "sha256": "ee4102ef72c6812e665e0b3b58135a8e89b9fa4c427b65ed1ca3135e83b6ad1d"
+  },
+  {
+    "file": "mockups/layout-02-stamps-first-selected.png",
+    "original_filename": "exec-3fd7ec93-63a2-43fc-8525-9f134466b093.png",
+    "sha256": "6b3d4289f0a97be961c5571bbd35be733e96a11694d571ee9b3034ba9df134ab"
+  },
+  {
+    "file": "mockups/layout-03-combined-sidebar.png",
+    "original_filename": "exec-6440e7e7-0789-47a9-bbf8-fcaf8c6b9283.png",
+    "sha256": "3b1f8d1f279f594f85193a6bfbd33573c71c74486b5956690d9daded303d35d3"
+  },
+  {
+    "file": "mockups/style-01-traditional-wiki.png",
+    "original_filename": "exec-233bb438-3525-47d9-bee0-a24b2fc867a5.png",
+    "sha256": "52972d41fe7f8559bf98c459aa1539340719936a509c6cc6ee5ce963b4cdf32b"
+  },
+  {
+    "file": "mockups/style-02-modern-docs-selected.png",
+    "original_filename": "exec-d9f4a492-37b1-4a3a-ad59-9f76549f3704.png",
+    "sha256": "86e78dac4df95a5052085cc5a12972aa22073a9cdec723c4db045c7d8ae2c7df"
+  },
+  {
+    "file": "mockups/style-03-field-guide.png",
+    "original_filename": "exec-c6ce66e7-c07b-4836-97be-49e50136ebe1.png",
+    "sha256": "f663b08f8ba6885b53e945de60621f68e012751aeeb86cddcf6440fa15720c06"
+  },
+  {
+    "file": "mockups/style-04-graphic-catalogue.png",
+    "original_filename": "exec-e62ce8e2-4659-4ebe-95f4-aaf9928ba651.png",
+    "sha256": "bba52dfa27c14f19a60a0101a395cfcfef30624741659a2f22dc501802ae13c0"
+  },
+  {
+    "file": "mockups/style-05-collection-gallery.png",
+    "original_filename": "exec-2ad028df-932d-4582-9249-43cad36131d6.png",
+    "sha256": "f6f668343fc6e372e71753bcda3cca85439f166eebad8deaeb43404799c386ff"
+  },
+  {
+    "file": "mockups/refinement-01-narrow-main-stamp-sidebar.png",
+    "original_filename": "exec-aa33e92e-72d8-427c-9493-4a42b6cc7ca6.png",
+    "sha256": "1810f77a3e72e99868a174c793dc610ac3ffc57fa29f29be7d66d8be3d527357"
+  },
+  {
+    "file": "mockups/refinement-02-full-stamp-collection.png",
+    "original_filename": "exec-eb619d5e-79c0-40fa-9f8a-d2c1f242410b.png",
+    "sha256": "2e9b5ad925acaea55d6e4bf3a020cc8ddd9926aa5829962813b63a0a1244c362"
+  },
+  {
+    "file": "mockups/refinement-03-stamping-locations.png",
+    "original_filename": "exec-ec009fa9-f195-4df1-9017-a51ca8d1cae0.png",
+    "sha256": "abed1df086e09f823c0a6df2e56c2c6f791b4257cec75621d32d9dbfc0ae0d2a"
+  },
+  {
+    "file": "references/layout-before-desktop.png",
+    "sha256": "241ee86584b684d1d8fdaac3fa66e5496056c7336766f1fb70d3879de14aad19"
+  },
+  {
+    "file": "references/layout-before-mobile.png",
+    "sha256": "537b0a2c125ec290512c1e5059135b428d97b55f0d8f8493874947047be7f8ab"
+  },
+  {
+    "file": "references/layout-before-region.png",
+    "sha256": "1cb0ad4e838f6ef11748a359754e6f15a13bd423980eabb350aec889cf162d3f"
+  },
+  {
+    "file": "references/tailscale-docs-reference.png",
+    "sha256": "a9f1a05fe2d32818bf55ad636fcd37dfead51605c23d11d2ee26727229c974b9"
+  }
+]

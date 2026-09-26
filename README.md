@@ -28,3 +28,5 @@ GitHub Actions tests and builds every push to `main` and every pull request, che
 3. Push to `main` or rerun the workflow. It deploys the verified build automatically.
 
 `just cloudflare` runs Cloudflare's local Pages preview. `just deploy` validates and deploys locally when credentials are set. No Cloudflare credentials are stored in this repository.
+
+Design decisions, mockups and remote continuation notes: [design handoff](docs/design/README.md).
