@@ -72,3 +72,15 @@ See `docs/design/verification/browser-results.json` and `scripts/verify-browser.
 The user requested a less busy, traditional-width page after reviewing the implementation. The page, header and footer now share a centered 1200px maximum width (previously the layout allowed 1680px and the header was unbounded). Secondary desktop grids use two columns for regions/trips/substamps and three for regional album slots. The directory collapses at 1000px, while the stamp rail still collapses at 1150px. These refinements supersede the earlier directory breakpoint above.
 
 Reviewed `docs/design/verification/desktop-traditional-width.png` at 1435 × 1096. The full existing browser verification passed again at 320, 390, 768, 1024 and 1435px, including overflow, interaction and scoped accessibility checks. The user's width preference overrides the wider reference compositions. Final result remains passed for this scoped refinement.
+
+## Wikipedia reference refinement — 2026-09-26
+
+Visual target: user's supplied Simple English Wikipedia Yellowstone screenshot, excluding Appearance. Preserve the approved 1200px page cap. Compared the supplied reference with the final desktop and mobile captures in `docs/design/verification/*-wikipedia-layout.png`.
+
+Implemented Georgia/Linux Libertine serif headings with Arial body, blue links, thin gray rules, a compact header with a Places drawer, collapsible article contents, and one gray bordered park infobox. Stamp collection begins the desktop article; smaller stamp images retain original aspect ratios. Removed the repeated locations overview, expanded visit stamp lists, and redundant trip backlinks. Collected-at-location links remain available in a disclosure. Mobile section order remains approved.
+
+Yellowstone now has a sourced NPS regional locator map (see map-sources.md). Other parks retain authored map support; this does not claim map coverage for all parks.
+
+Verification: 29 unit tests pass; real and fixture builds and internal link checks pass. Playwright checks 320, 390, 768, 1024, 1435px and zoom reflow, image proportions, drawer filtering, Escape/focus return, outside-click close, contents collapse and anchor navigation, report history and trip navigation. Zero browser errors and zero tested axe WCAG A/AA violations. Captures visually checked against the user reference, with deliberate adaptation for stamp records rather than encyclopedia prose. Real vault collection remains untouched.
+
+Final result: passed.

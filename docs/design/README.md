@@ -91,3 +91,7 @@ All 15 original PNGs are copied without modification. `assets.json` records SHA-
 ## Subsequent width refinement
 
 After reviewing the implementation, the user requested a calmer traditional web width. Use a **centered 1200px maximum width** for the page, header and footer. Collapse the directory at 1000px, keep the right-rail collapse at 1150px, and use fewer columns for secondary card grids. See [the updated capture](verification/desktop-traditional-width.png).
+
+### Latest direction: Wikipedia article layout
+
+The user's supplied Wikipedia screenshot supersedes the earlier modern documentation styling. Use serif article/section headings (Linux Libertine/Georgia/Times fallback), Arial body text, blue links, thin rules, collapsible Contents, a header Places drawer, and a simple park infobox. Omit Appearance controls. Keep the 1200px maximum width and approved mobile section order. Latest screenshots are in `verification/desktop-wikipedia-layout.png` and `verification/mobile-wikipedia-layout.png`.

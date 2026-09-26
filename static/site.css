@@ -4,20 +4,98 @@ header{max-width:1200px;margin-inline:auto;min-height:76px;border-bottom:1px sol
 .place-page{display:grid;grid-template-columns:minmax(0,1fr) 280px;column-gap:28px;align-items:start}.place-heading{grid-column:1;grid-row:1}.place-states{font-size:20px;color:var(--muted);margin:8px 0 24px}.section-nav{display:flex;gap:24px;flex-wrap:wrap;border-block:1px solid var(--line);padding:18px 0;margin-bottom:0;font-size:15px}.section-nav a{text-decoration:none}.place-rail{grid-column:2;grid-row:1 / span 2;border-left:1px solid var(--line);padding-left:16px;min-width:0}.place-rail section{border:1px solid var(--line);border-radius:3px;padding:16px;margin:0 0 16px}.place-rail h2{font-size:20px;border:0;padding:0;margin-bottom:16px}.main-summary figure{margin:0 0 16px;padding-bottom:16px;border-bottom:1px solid var(--line)}.main-summary img{width:auto;max-width:200px;max-height:240px;object-fit:contain;margin:0 auto 12px}.main-summary figcaption{line-height:1.45;font-size:14px}.main-summary figcaption>a{color:var(--ink);text-decoration:none}.main-summary figcaption span{display:block;margin-top:5px}.park-facts dl{font-size:14px;margin:16px 0}.park-facts dl>div{display:grid;grid-template-columns:78px minmax(0,1fr);gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}dt{color:var(--muted)}dd{margin:0}.locator-map{width:100%;max-height:160px;object-fit:contain}.resource-links{list-style:none;padding:0;margin:0;display:flex;gap:10px 16px;flex-wrap:wrap;font-size:14px}.place-body{grid-column:1;grid-row:2;min-width:0}.place-body>section:first-child{margin-top:28px}.collection-group{margin-top:24px}.collection-group>h3{margin-bottom:16px}.main-collection,.sub-collection{display:grid;gap:16px}.sub-collection{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp{border:1px solid var(--line);border-radius:3px;display:grid;grid-template-columns:minmax(120px,200px) minmax(0,1fr);padding:18px;gap:18px;min-width:0;align-items:start}.stamp-description{min-width:0}.stamp-description p{margin:6px 0}.stamp-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-width:0}.stamp-images>a:first-child{grid-column:1 / -1}.stamp-images img{width:auto;max-height:200px;object-fit:contain;margin:auto}.stamp-images>a:not(:first-child) img{max-height:72px}.sub-collection .stamp{display:block}.sub-collection .stamp-images{max-width:140px;margin-bottom:16px}.sub-collection .stamp-images img{max-height:140px}.photo-pending{color:var(--muted);font-size:14px;margin:0;padding:12px;background:var(--soft);grid-column:1 / -1}.location{border-bottom:1px solid var(--line);padding:24px 0}.location:first-of-type{padding-top:12px}.location-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}.location h3{margin-bottom:6px}.location h4{margin-top:12px}.availability{margin-top:0}.available-stamps{list-style:none;padding:0;margin:8px 0}.available-stamps li{margin-bottom:12px}.available-stamps span{display:block}.report-history{margin-top:18px}.report-history summary{color:var(--link);font-size:14px}.previous-report{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}.visit{border-bottom:1px solid var(--line);padding:20px 0}.visit h3{font-size:20px}.trip-link{font-size:14px}
 .region-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.region-grid>a{border:1px solid var(--line);padding:24px;color:var(--ink);text-decoration:none;border-radius:3px}.region-grid>a:hover{background:var(--soft)}.region-grid h2{font-size:22px}.region-grid p{font-size:14px;color:var(--muted)}.album-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.album-slot,.trip-stamp{border:1px solid var(--line);border-radius:3px;padding:14px;display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--ink);text-decoration:none;gap:10px;min-width:0}.album-slot:hover,.trip-stamp:hover{background:var(--soft)}.album-slot img,.trip-stamp img{height:150px;width:100%;object-fit:contain}.album-slot strong,.trip-stamp strong{font-size:16px;line-height:1.45}.album-slot>span,.trip-stamp>span{font-size:14px;color:var(--muted)}.empty-stamp{min-height:130px;display:flex;align-items:center;justify-content:center;width:100%;border:1px dashed var(--line);padding:12px;background:#fafbfd}.collection-controls{margin:20px 0;font-size:15px}.collection-controls select{margin-left:8px}.state-list{columns:2;column-gap:32px}.state-list section{break-inside:avoid;margin:0 0 28px}.regional-map{margin:24px 0}.regional-map img{max-height:650px;width:100%;object-fit:contain}.stamp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.all-places{list-style:none;padding:0}.all-places li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}.all-places span{font-size:14px;color:var(--muted);text-align:right}.trip-list li{margin:12px 0}#search-form{display:flex;flex-wrap:wrap;gap:8px}#search-form label{flex:0 0 100%;font-size:14px}#search-input{flex:1}#search-results{list-style:none;padding:0}#search-results li{border-bottom:1px solid var(--line);padding:16px 0}#search-results a{font-size:20px}#search-results small{display:block;color:var(--muted);font-size:14px;margin-top:5px}footer{max-width:1200px;margin-inline:auto;border-top:1px solid var(--line);padding:18px 30px;font-size:14px;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.skip-link{position:absolute;top:-100px;background:#fff;padding:12px;z-index:10}.skip-link:focus{top:5px}
 @media(min-width:1450px){.sub-collection{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:1150px){header{gap:22px;flex-wrap:wrap}.top-nav{gap:20px}header form{flex:1;justify-content:flex-end}header input{width:210px}.place-page{display:flex;flex-direction:column}.place-heading,.place-body{width:100%}.place-rail{display:contents}.main-summary{order:1;width:100%;margin-top:24px!important}.place-body{order:2}.park-facts{order:3;width:100%;margin-top:32px!important}.place-heading{order:0}.main-summary figure{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;align-items:center}.main-summary img{max-width:140px;max-height:140px;margin:0 auto}.album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.region-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){header{gap:22px;flex-wrap:wrap}.top-nav{gap:20px}header form{flex:1;justify-content:flex-end}header input{width:210px}.place-page{display:flex;flex-direction:column}.place-heading,.place-body{width:100%}.place-rail{display:contents}.main-summary{order:1;width:100%;margin-top:24px!important}.place-body{order:2}.park-facts{order:3;width:100%;margin-top:32px!important}.place-heading{order:0}.main-summary figure{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;align-items:center}.main-summary img{max-width:140px;max-height:140px;margin:0 auto}.album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.region-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:1000px){header{padding:18px 20px;gap:16px}.brand{font-size:24px}.top-nav{order:2;width:100%;gap:24px;flex-wrap:wrap}header form{width:100%;flex:auto;order:3}header input{flex:1;width:auto}.layout{display:block}.directory{position:static;max-height:none;border-right:0;border-bottom:1px solid var(--line);padding:12px 20px}.directory-heading{margin:0}.directory-toggle{display:block;color:var(--link);border:0;padding:8px;background:#fff;font-size:14px}.directory:not(.expanded) #directory-content{display:none}.directory.expanded #directory-content{margin-top:16px}.place-tree{max-height:400px;overflow:auto}.place-tree summary,.tree-site{padding-block:10px}main{padding:24px 20px 40px}h1{font-size:32px}h2{font-size:25px}.place-states{font-size:18px}.breadcrumb{margin-bottom:20px}.section-nav{gap:12px 22px}.section-nav a{padding-block:4px}.album-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.state-list{columns:1}.stamp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.location-columns{gap:16px}.stamp{grid-template-columns:140px minmax(0,1fr);padding:16px}.stamp-images img{max-height:160px}.region-grid{grid-template-columns:1fr}footer{padding-inline:20px}}
 @media(max-width:480px){.stamp{display:block}.stamp-images{max-width:200px;margin-bottom:18px}.sub-collection{grid-template-columns:1fr}.sub-collection .stamp{display:grid;grid-template-columns:90px minmax(0,1fr);gap:14px}.sub-collection .stamp-images{margin:0}.location-columns{grid-template-columns:1fr;gap:0}.main-summary figure{grid-template-columns:100px minmax(0,1fr);gap:14px}.main-summary img{max-width:100px;max-height:120px}.album-grid{gap:12px}.album-slot{padding:10px}.album-slot img{height:120px}.stamp-grid{grid-template-columns:1fr}.top-nav{justify-content:space-between;gap:10px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 @media print{header,.directory,footer,.section-nav{display:none}.layout{display:block}main{padding:0}.place-page{display:block}.place-rail{display:block;border:0;padding:0}.stamp,.album-slot,.visit,.location{break-inside:avoid}.album-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:1150px){.place-page>.park-facts{border:1px solid var(--line);border-radius:3px;padding:16px}.place-page>.park-facts h2{font-size:20px;border:0;padding:0}}
+@media(max-width:900px){.place-page>.park-facts{border:1px solid var(--line);border-radius:3px;padding:16px}.place-page>.park-facts h2{font-size:20px;border:0;padding:0}}
 .anchor-alias{position:absolute}
 .brand{display:flex;align-items:center;gap:12px}.brand img{flex:none}.tree-row{display:flex;align-items:flex-start;gap:2px;color:var(--muted);padding:3px 0}.tree-row>a{color:inherit;text-decoration:none;padding:5px 0;flex:1;min-width:0;line-height:1.5}.tree-toggle{padding:8px 3px;flex:none;border:0;background:transparent;border-radius:2px}.tree-toggle[aria-expanded="true"] img{transform:rotate(90deg)}.tree-region>.tree-row:has([aria-expanded="true"]){color:var(--link)}.tree-row:hover{background:var(--soft)}.stamp-photos{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.stamp-photos img{height:72px;width:auto;max-width:140px;object-fit:contain;border:1px solid var(--line)}.small[href]{color:var(--link)}
 @media(max-width:1000px){.tree-toggle{padding:14px 5px}.tree-row>a{padding:10px 0}}
 /* The lower collection and location details span the full article width. */
 .place-page{display:block}.place-top{display:grid;grid-template-columns:minmax(0,1fr) 280px;column-gap:28px;align-items:start}.place-overview{grid-column:1;grid-row:2;min-width:0}.place-body{margin-top:36px}.place-overview>section:first-child{margin-top:28px}.location-summary>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(80px,.7fr) auto;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding:16px 0;font-size:14px}.location-summary strong{font-size:16px}.main-collection .stamp{grid-template-columns:200px minmax(0,1fr)}.sub-collection{grid-template-columns:repeat(3,minmax(0,1fr))}.sub-collection .stamp{display:grid;grid-template-columns:100px minmax(0,1fr);gap:14px}.sub-collection .stamp-images{margin:0}.stamp-photos img{height:72px;max-width:140px}
-@media(max-width:1150px){.place-page{display:flex;flex-direction:column}.place-top,.place-overview,.place-body,.place-rail{display:contents}.location-summary{display:none}.place-heading{order:0}.main-summary{order:1}.place-page>#stamps{order:2;width:100%}.place-page>#stamping-locations{order:3;width:100%}.place-page>#visits{order:4;width:100%}.place-page>#notes{order:5;width:100%}.place-page>section:not([id]):not(.park-facts){order:6;width:100%}.place-page>.park-facts{order:7}.place-page>.main-summary{border:1px solid var(--line);padding:16px;border-radius:3px}.place-page>.main-summary h2{font-size:20px;border:0;padding:0}.sub-collection{grid-template-columns:repeat(2,minmax(0,1fr))}.sub-collection .stamp{display:block}.sub-collection .stamp-images{margin-bottom:16px}}
+@media(max-width:900px){.place-page{display:flex;flex-direction:column}.place-top,.place-overview,.place-body,.place-rail{display:contents}.location-summary{display:none}.place-heading{order:0}.main-summary{order:1}.place-page>#stamps{order:2;width:100%}.place-page>#stamping-locations{order:3;width:100%}.place-page>#visits{order:4;width:100%}.place-page>#notes{order:5;width:100%}.place-page>section:not([id]):not(.park-facts){order:6;width:100%}.place-page>.park-facts{order:7}.place-page>.main-summary{border:1px solid var(--line);padding:16px;border-radius:3px}.place-page>.main-summary h2{font-size:20px;border:0;padding:0}.sub-collection{grid-template-columns:repeat(2,minmax(0,1fr))}.sub-collection .stamp{display:block}.sub-collection .stamp-images{margin-bottom:16px}}
 @media(max-width:1000px){.main-collection .stamp{grid-template-columns:140px minmax(0,1fr)}}
 @media(max-width:480px){.sub-collection{grid-template-columns:1fr}.sub-collection .stamp{display:grid;grid-template-columns:90px minmax(0,1fr)}.sub-collection .stamp-images{margin:0}.main-collection .stamp{display:block}}
 
 /* Keep secondary grids calm within the traditional-width page. */
 @media(min-width:1001px){.region-grid,.stamp-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.album-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.sub-collection{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* A drawer gives the article the full fixed-width canvas. */
+.layout{display:block}
+.directory{position:relative;top:auto;max-height:none;overflow:visible;border:0;padding:14px 30px 0;z-index:5}
+.directory-heading{margin:0}
+.directory-toggle{display:block;color:var(--link);font-size:14px}
+.directory:not(.expanded) #directory-content{display:none}
+.directory.expanded #directory-content{position:absolute;top:100%;left:30px;width:300px;max-width:calc(100vw - 40px);max-height:70vh;overflow:auto;margin-top:8px;padding:18px;background:white;border:1px solid var(--line);border-radius:4px;box-shadow:0 12px 32px #11182720}
+.place-top{grid-template-columns:minmax(0,1fr) 250px}
+.place-rail{padding-left:0;border-left:0}
+.main-summary figure{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;align-items:center}
+.main-summary img{max-width:64px;max-height:80px;margin:0 auto}
+.main-summary figcaption{font-size:13px}
+.main-summary figcaption span{font-size:12px}
+.main-collection .stamp{grid-template-columns:120px minmax(0,1fr)}
+.stamp-images{max-width:120px}
+.stamp-images img{max-width:120px;max-height:120px}
+.sub-collection .stamp{grid-template-columns:80px minmax(0,1fr)}
+.sub-collection .stamp-images img{max-width:80px;max-height:80px}
+.collected-here{font-size:14px;margin-top:12px;color:var(--muted)}
+.map-credit{font-size:12px;margin:6px 0}
+.locator-map{max-height:170px}
+@media(max-width:1000px){.directory{padding:14px 20px 0}.directory.expanded #directory-content{left:20px}}
+@media(max-width:900px){.place-top{display:contents}.main-summary figure{grid-template-columns:64px minmax(0,1fr)}.main-summary{max-width:100%}}
+@media(max-width:480px){.main-collection .stamp{display:grid;grid-template-columns:80px minmax(0,1fr);gap:12px}.stamp-images{margin:0}.main-collection .stamp-images img{max-width:80px;max-height:80px}}
+@media print{.directory{display:none}}
+
+/* Encyclopedia typography and article layout, following the supplied Wikipedia reference. */
+:root{font-family:Arial,Helvetica,sans-serif;--ink:#202122;--muted:#54595d;--line:#a2a9b1;--link:#36c;--soft:#f8f9fa;line-height:1.6}
+h1,h2{font-family:"Linux Libertine",Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:0;line-height:1.3}
+h1{font-size:32px;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px}
+h2{font-size:25px}h3{font-size:19px}h4{font-size:16px}
+section>h2{padding-bottom:4px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:27px;letter-spacing:0}
+header{gap:24px;border-bottom:0}.top-nav{gap:18px;font-size:14px}
+header input{width:230px}header input,header button,button{border-radius:2px}
+.place-page{display:grid;grid-template-columns:150px minmax(0,1fr);gap:28px}
+.page-contents{grid-column:1;grid-row:1 / span 2;position:sticky;top:24px;align-self:start;font-size:14px;margin-top:52px}
+.page-contents summary{font-weight:bold;border-bottom:1px solid #eaecf0;padding-bottom:10px;margin-bottom:10px}
+.page-contents nav{display:flex;flex-direction:column;gap:10px}
+.page-contents a{text-decoration:none}
+.place-top{grid-column:2;display:block;min-width:0}
+.place-heading{margin-bottom:24px}
+.place-states{font-size:14px;margin:8px 0;color:var(--ink)}
+.breadcrumb{font-size:13px;margin-bottom:12px}
+.section-nav{display:none}
+.place-rail{float:right;width:250px;margin:0 0 24px 24px;padding:10px;border:1px solid var(--line);background:#f8f9fa}
+.place-rail section{border:0;padding:0;margin:0 0 20px;border-radius:0}
+.place-rail section:last-child{margin-bottom:0}
+.place-rail h2{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;text-align:center;margin-bottom:12px}
+.place-overview>section:first-child{margin-top:0}
+.place-overview section{margin-top:28px}
+.place-overview>section>h2{overflow:hidden}
+.place-overview{display:block}
+.place-body{display:none}
+.main-summary figure{border-color:#eaecf0;margin-bottom:12px;padding-bottom:12px}
+.park-facts dl>div{border:0;padding:4px 0;grid-template-columns:65px minmax(0,1fr)}
+.park-facts dt{font-weight:bold;color:var(--ink)}
+.main-collection,.sub-collection{display:block}
+.stamp,.sub-collection .stamp{border:0;border-bottom:1px solid #eaecf0;border-radius:0;padding:14px 0;grid-template-columns:100px minmax(0,1fr);gap:16px}
+.stamp-images img{max-width:100px;max-height:100px}
+.sub-collection .stamp{display:grid}
+.collection-group{margin-top:20px}.collection-group>h3{margin-bottom:8px}
+.location-columns{display:block}
+.visit,.location{border-color:#eaecf0}
+@media(min-width:901px){.place-overview .stamp{display:flex}.stamp-images{flex:0 0 100px}.stamp-description{flex:1}.page-contents:not([open]){width:100%}}
+@media(max-width:900px){.place-page{display:flex;gap:0}.page-contents{display:none}.place-top,.place-overview,.place-body{display:contents}.place-rail{display:contents;float:none;width:auto;margin:0;padding:0;border:0}.section-nav{display:flex;border-top:0;margin-top:12px;padding:10px 0;font-size:14px}.place-heading{margin-bottom:0}.place-page>.main-summary,.place-page>.park-facts{border-radius:0;background:#f8f9fa}.place-page>.main-summary h2,.place-page>.park-facts h2{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold}.main-collection .stamp{grid-template-columns:100px minmax(0,1fr)}}
+@media(max-width:480px){.main-collection .stamp{grid-template-columns:80px minmax(0,1fr)}.brand{font-size:25px}}
+@media print{.page-contents{display:none}.place-page{display:block}}
+
+header .directory{padding:0;flex:none;order:0}
+header .directory-toggle{border:0;padding:8px}
+header .directory.expanded #directory-content{left:0}
+header .brand{order:1}
+header form{order:2;margin-left:0;flex:1;max-width:430px}
+header input{flex:1;width:120px}
+header .top-nav{order:3;margin-left:auto}
+@media(max-width:1000px){header{gap:12px}header form{order:4;max-width:none}.top-nav{margin-left:0!important}}

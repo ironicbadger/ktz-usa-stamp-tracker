@@ -6433,7 +6433,11 @@
       "visit": "https://www.nps.gov/yell/planyourvisit/index.htm"
     },
     "source": "https://www.nps.gov/yell/index.htm",
-    "verified": "2026-09-26"
+    "verified": "2026-09-26",
+    "map": {
+      "image": "/maps/yellowstone-regional.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:NPS_yellowstone-regional-map.jpg"
+    }
   },
   {
     "code": "yose",

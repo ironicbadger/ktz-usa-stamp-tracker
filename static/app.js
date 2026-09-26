@@ -1,5 +1,9 @@
 const directory=document.querySelector('.directory');
-document.querySelector('.directory-toggle')?.addEventListener('click',e=>{const expanded=directory.classList.toggle('expanded');e.currentTarget.setAttribute('aria-expanded',String(expanded))});
+const directoryButton=document.querySelector('.directory-toggle');
+const setDirectoryOpen=expanded=>{directory.classList.toggle('expanded',expanded);directoryButton.setAttribute('aria-expanded',String(expanded))};
+directoryButton?.addEventListener('click',()=>setDirectoryOpen(!directory.classList.contains('expanded')));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&directory.classList.contains('expanded')){setDirectoryOpen(false);directoryButton.focus()}});
+document.addEventListener('click',event=>{if(!directory.contains(event.target))setDirectoryOpen(false)});
 const toggles=[...document.querySelectorAll('.tree-toggle')];
 const initialOpen=new Map(toggles.map(button=>[button,button.getAttribute('aria-expanded')==='true']));
 const setExpanded=(button,expanded)=>{button.setAttribute('aria-expanded',String(expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=!expanded};
@@ -29,13 +33,13 @@ if(form){
 // Move existing sections, not copies, so mobile reading and keyboard order match the layout.
 const placePage=document.querySelector('.place-page');
 if(placePage){
- const narrow=matchMedia('(max-width: 1150px)');
+ const narrow=matchMedia('(max-width: 900px)');
  const heading=placePage.querySelector('.place-heading'),overview=placePage.querySelector('.place-overview'),top=placePage.querySelector('.place-top'),rail=placePage.querySelector('.place-rail'),body=placePage.querySelector('.place-body');
  const summary=placePage.querySelector('.main-summary'),facts=placePage.querySelector('.park-facts'),collection=placePage.querySelector('#stamps'),locations=placePage.querySelector('#stamping-locations'),visits=placePage.querySelector('#visits'),notes=placePage.querySelector('#notes');
  const extra=[...overview.children].filter(e=>e!==visits&&e!==notes&&!e.classList.contains('location-summary'));
  const reflow=()=>{
   if(narrow.matches){for(const node of [heading,summary,collection,locations,visits,notes,...extra,facts])if(node)placePage.append(node)}
-  else{top.prepend(heading);for(const node of [notes,visits,...extra])overview.append(node);if(summary)rail.append(summary);rail.append(facts);body.append(collection,locations)}
+  else{top.prepend(heading);heading.after(rail);if(summary)rail.append(summary);rail.append(facts);for(const node of [collection,locations,visits,notes,...extra])if(node)overview.append(node)}
  };
  narrow.addEventListener('change',reflow);reflow();
 }

@@ -1,0 +1,1 @@
+Yellowstone regional locator map: U.S. National Park Service, cleanup by National Park Maps. Public domain. Retrieved 2026-09-26 from https://commons.wikimedia.org/wiki/File:NPS_yellowstone-regional-map.jpg . Used for geographic orientation; current official park maps remain linked separately.
