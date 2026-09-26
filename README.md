@@ -30,3 +30,19 @@ GitHub Actions tests and builds every push to `main` and every pull request, che
 `just cloudflare` runs Cloudflare's local Pages preview. `just deploy` validates and deploys locally when credentials are set. No Cloudflare credentials are stored in this repository.
 
 Design decisions, mockups and remote continuation notes: [design handoff](docs/design/README.md).
+
+## Design and location authoring
+
+The modern documentation layout uses a readable directory, a narrow main-stamp sidebar, and a full collection on each place page. Stamping locations are authored in the same Obsidian note through **Add or update stamping location**. See [Start here](vault/Start%20here.md) for the workflow and [location model](docs/design/location-model.md) for provenance, history, imports, and optional park facts.
+
+For an isolated populated preview (fictional QA records only):
+
+```sh
+npm run qa:fixture
+node scripts/serve.mjs --out .qa/dist --host 0.0.0.0 --port 8767
+npm run qa:check
+```
+
+This creates `.qa/vault` and `.qa/dist`; it never populates the real `vault/` or normal `dist/`. The fixture stamp is visibly marked “DESIGN TEST ONLY”. Re-run `qa:fixture` after code changes to refresh that preview.
+
+With the normal and isolated preview servers running, `QA_CHROME=1 npm run qa:browser` tests the layouts and core interactions using installed Google Chrome. Alternatively, run `npx playwright install chromium` once and then `npm run qa:browser`. Browser captures and raw results go to `.qa/`; the reviewed captures and validation report are retained in [docs/design/verification](docs/design/verification/validation.md).

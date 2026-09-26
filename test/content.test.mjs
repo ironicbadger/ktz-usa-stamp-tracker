@@ -46,3 +46,21 @@ test('trip grouping excludes visits assigned to other trips',t=>{
  const f=fixture(t);f.data.visits.push({date:'2026-01-01',trip:'[[Trips/Winter]]',stamps:[{name:'Winter stamp',type:'sub',photos:[]}]});f.write('Places/Yellowstone.md',f.data);
  const site=createSite(loadContent(f.vault),[],'test');assert.match(site.pages.get('/trips/winter/'),/Winter stamp/);assert.doesNotMatch(site.pages.get('/trips/summer/'),/Winter stamp/);
 });
+test('location rendering inherits dates, preserves history, links impressions and indexes location names',t=>{
+ const f=fixture(t);f.data.visits[0].id='observation';f.data.visits[0].stamps[0].location='Original desk';f.data.visits[0].stamps[0].location_id='desk';
+ f.data.stamping_locations=[{id:'desk',name:'Renamed desk',aliases:['Original desk'],reports:[{id:'published',origin:'imported',availability:'available',access:'Downstairs',stamps:[],source:{url:'https://www.nps.gov/test/',checked:'2020-01-01'}},{id:'onsite',origin:'authored',availability:'moved',access:'Upstairs',stamps:[{name:'Seasonal cancellation',type:'sub',availability:'seasonal'}],visit_id:'observation'}]}];
+ f.write('Places/Yellowstone.md',f.data);let model=loadContent(f.vault),site=createSite(model,[],'test'),html=site.pages.get('/places/yellowstone/');
+ assert.match(html,/Renamed desk/);assert.match(html,/Original desk/);assert.match(html,/Other reports \(1\)/);assert.match(html,/Observed on a visit/);assert.match(html,/August 10, 2025/);assert.match(html,/id="visit-observation"/);assert.match(html,/id="visit-2025-08-10-1"/);assert.match(html,/href="#location-desk"/);assert.ok(site.search.some(e=>e.kind==='Stamping location'&&e.text.includes('Seasonal cancellation')));
+ f.data.visits[0].date='2026-09-26';f.write('Places/Yellowstone.md',f.data);model=loadContent(f.vault);assert.equal(model.places[0].locations[0].current.visit.date,'2026-09-26');
+});
+test('only main stamps appear in a bounded sidebar while every impression remains in the collection',t=>{
+ const f=fixture(t);for(let i=0;i<5;i++)f.data.visits.push({date:`2026-09-${20+i}`,stamps:[{name:`Repeat ${i}`,type:'main',photos:[]}]});f.write('Places/Yellowstone.md',f.data);
+ const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');const rail=html.split('<aside class="place-rail">')[1].split('</aside>')[0];assert.doesNotMatch(rail,/Junior Ranger/);assert.equal((rail.match(/<figure>/g)||[]).length,3);assert.match(rail,/View all main stamps \(7\)/);assert.equal((html.match(/<article class="stamp"/g)||[]).length,8);
+});
+test('blank places have a single collection empty state and omit unsupported facts',t=>{
+ const f=fixture(t,{visits:[]});f.write('Places/Yellowstone.md',f.data);const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');assert.match(html,/No stamps collected yet/);assert.doesNotMatch(html,/No visits recorded|No place notes|No stamping locations|Established|<dt>Area/);
+});
+test('managed stamp anchors and preserved legacy aliases survive visit date changes',t=>{
+ const f=fixture(t);const v=f.data.visits[0];v.id='stable-visit';v.anchor_aliases=['visit-2020-01-01-1'];v.stamps[0].id='stable-stamp';v.stamps[0].anchor_aliases=['visit-2020-01-01-1-stamp-1'];f.write('Places/Yellowstone.md',f.data);
+ const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');for(const id of ['visit-stable-visit','stamp-stable-stamp','visit-2020-01-01-1','visit-2020-01-01-1-stamp-1'])assert.ok(html.includes(`id="${id}"`));
+});

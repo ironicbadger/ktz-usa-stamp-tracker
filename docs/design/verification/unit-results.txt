@@ -1,0 +1,188 @@
+
+> ktz-usa-stamp-tracker@1.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: Templater stores date only on visit and creates an editable trip after prompts finish
+ok 1 - Templater stores date only on visit and creates an editable trip after prompts finish
+  ---
+  duration_ms: 5.130041
+  type: 'test'
+  ...
+# Subtest: Templater cancellation does not mutate notes or create trips
+ok 2 - Templater cancellation does not mutate notes or create trips
+  ---
+  duration_ms: 1.097791
+  type: 'test'
+  ...
+# Subtest: Templater attaches multiple photos and a main stamp to the chosen visit without repeating date
+ok 3 - Templater attaches multiple photos and a main stamp to the chosen visit without repeating date
+  ---
+  duration_ms: 1.261917
+  type: 'test'
+  ...
+# Subtest: Templater refuses to overwrite a concurrently edited visit
+ok 4 - Templater refuses to overwrite a concurrently edited visit
+  ---
+  duration_ms: 0.772583
+  type: 'test'
+  ...
+# Subtest: location authoring works without visits for published sources
+ok 5 - location authoring works without visits for published sources
+  ---
+  duration_ms: 0.945042
+  type: 'test'
+  ...
+# Subtest: on-site report references a generated visit ID and does not prompt for a second date
+ok 6 - on-site report references a generated visit ID and does not prompt for a second date
+  ---
+  duration_ms: 0.581333
+  type: 'test'
+  ...
+# Subtest: renaming retains aliases, reports and the original collected location text
+ok 7 - renaming retains aliases, reports and the original collected location text
+  ---
+  duration_ms: 1.328459
+  type: 'test'
+  ...
+# Subtest: cancelled or invalid location prompts never change visits or locations
+ok 8 - cancelled or invalid location prompts never change visits or locations
+  ---
+  duration_ms: 1.141166
+  type: 'test'
+  ...
+# Subtest: concurrent location or visit edits prevent the entire location draft from saving
+ok 9 - concurrent location or visit edits prevent the entire location draft from saving
+  ---
+  duration_ms: 2.002542
+  type: 'test'
+  ...
+# Subtest: Add stamp chooses a known location by name and keeps its snapshot
+ok 10 - Add stamp chooses a known location by name and keeps its snapshot
+  ---
+  duration_ms: 0.849667
+  type: 'test'
+  ...
+# Subtest: new discovery and stamp save together, and photo cancellation saves neither
+ok 11 - new discovery and stamp save together, and photo cancellation saves neither
+  ---
+  duration_ms: 0.850333
+  type: 'test'
+  ...
+# Subtest: editing a legacy visit assigns stable identities and retains its old visit and stamp links
+ok 12 - editing a legacy visit assigns stable identities and retains its old visit and stamp links
+  ---
+  duration_ms: 0.448041
+  type: 'test'
+  ...
+# Subtest: location updates edit the available-stamp list without removing stamps from prior reports
+ok 13 - location updates edit the available-stamp list without removing stamps from prior reports
+  ---
+  duration_ms: 0.85625
+  type: 'test'
+  ...
+# Subtest: multiple states and main stamps share one page and one album slot; trips auto-populate
+ok 14 - multiple states and main stamps share one page and one album slot; trips auto-populate
+  ---
+  duration_ms: 25.603167
+  type: 'test'
+  ...
+# Subtest: repeat dates and repeated main stamps retain separate visits and generated anchors
+ok 15 - repeat dates and repeated main stamps retain separate visits and generated anchors
+  ---
+  duration_ms: 3.80325
+  type: 'test'
+  ...
+# Subtest: authored trip body, wiki backlinks and nested photo paths render
+ok 16 - authored trip body, wiki backlinks and nested photo paths render
+  ---
+  duration_ms: 4.126125
+  type: 'test'
+  ...
+# Subtest: invalid dates, missing photos, malformed stamps and duplicate YAML keys fail clearly
+ok 17 - invalid dates, missing photos, malformed stamps and duplicate YAML keys fail clearly
+  ---
+  duration_ms: 3.150542
+  type: 'test'
+  ...
+# Subtest: broken wikilinks fail and script HTML is not published
+ok 18 - broken wikilinks fail and script HTML is not published
+  ---
+  duration_ms: 4.093333
+  type: 'test'
+  ...
+# Subtest: trip grouping excludes visits assigned to other trips
+ok 19 - trip grouping excludes visits assigned to other trips
+  ---
+  duration_ms: 3.96925
+  type: 'test'
+  ...
+# Subtest: location rendering inherits dates, preserves history, links impressions and indexes location names
+ok 20 - location rendering inherits dates, preserves history, links impressions and indexes location names
+  ---
+  duration_ms: 5.530125
+  type: 'test'
+  ...
+# Subtest: only main stamps appear in a bounded sidebar while every impression remains in the collection
+ok 21 - only main stamps appear in a bounded sidebar while every impression remains in the collection
+  ---
+  duration_ms: 3.921125
+  type: 'test'
+  ...
+# Subtest: blank places have a single collection empty state and omit unsupported facts
+ok 22 - blank places have a single collection empty state and omit unsupported facts
+  ---
+  duration_ms: 2.439333
+  type: 'test'
+  ...
+# Subtest: managed stamp anchors and preserved legacy aliases survive visit date changes
+ok 23 - managed stamp anchors and preserved legacy aliases survive visit date changes
+  ---
+  duration_ms: 2.982709
+  type: 'test'
+  ...
+# Subtest: legacy notes work without locations, facts or managed IDs
+ok 24 - legacy notes work without locations, facts or managed IDs
+  ---
+  duration_ms: 1.041458
+  type: 'test'
+  ...
+# Subtest: source validation rejects malformed reports, dates, references and duplicate identities
+ok 25 - source validation rejects malformed reports, dates, references and duplicate identities
+  ---
+  duration_ms: 0.424834
+  type: 'test'
+  ...
+# Subtest: observations inherit visit dates and cannot carry a duplicate date or dangling visit
+ok 26 - observations inherit visit dates and cannot carry a duplicate date or dangling visit
+  ---
+  duration_ms: 0.316666
+  type: 'test'
+  ...
+# Subtest: imports append without replacing names, authored corrections or historical snapshots
+ok 27 - imports append without replacing names, authored corrections or historical snapshots
+  ---
+  duration_ms: 4.333083
+  type: 'test'
+  ...
+# Subtest: renames and aliases resolve old names without rewriting them; ambiguous names stay plain
+ok 28 - renames and aliases resolve old names without rewriting them; ambiguous names stay plain
+  ---
+  duration_ms: 0.107292
+  type: 'test'
+  ...
+# Subtest: file import preserves body, unrelated properties and records; invalid import leaves file unchanged
+ok 29 - file import preserves body, unrelated properties and records; invalid import leaves file unchanged
+  ---
+  duration_ms: 8.733959
+  type: 'test'
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 29
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 187.628791

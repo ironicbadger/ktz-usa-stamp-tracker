@@ -3,6 +3,7 @@ import path from 'node:path';
 import YAML from 'yaml';
 import { marked } from 'marked';
 import sanitizeHtml from 'sanitize-html';
+import {availability,safeURL,currentReport,resolveLocation} from './locations.mjs';
 
 export const regions = ['North Atlantic','Mid-Atlantic','National Capital','Southeast','Midwest','Southwest','Rocky Mountain','Western','Pacific Northwest & Alaska'];
 export const stateNames = Object.fromEntries('AL:Alabama|AK:Alaska|AZ:Arizona|AR:Arkansas|CA:California|CO:Colorado|CT:Connecticut|DE:Delaware|DC:District of Columbia|FL:Florida|GA:Georgia|HI:Hawaii|ID:Idaho|IL:Illinois|IN:Indiana|IA:Iowa|KS:Kansas|KY:Kentucky|LA:Louisiana|ME:Maine|MD:Maryland|MA:Massachusetts|MI:Michigan|MN:Minnesota|MS:Mississippi|MO:Missouri|MT:Montana|NE:Nebraska|NV:Nevada|NH:New Hampshire|NJ:New Jersey|NM:New Mexico|NY:New York|NC:North Carolina|ND:North Dakota|OH:Ohio|OK:Oklahoma|OR:Oregon|PA:Pennsylvania|RI:Rhode Island|SC:South Carolina|SD:South Dakota|TN:Tennessee|TX:Texas|UT:Utah|VT:Vermont|VA:Virginia|WA:Washington|WV:West Virginia|WI:Wisconsin|WY:Wyoming|AS:American Samoa|GU:Guam|MP:Northern Mariana Islands|PR:Puerto Rico|VI:U.S. Virgin Islands|UM:U.S. Minor Outlying Islands'.split('|').map(s=>s.split(':')));
@@ -21,6 +22,39 @@ export function parseNote(text,file='note') {
 }
 function assert(ok,file,message){if(!ok)throw Error(`${file}: ${message}`)}
 function text(value){return typeof value==='string' && value.trim().length>0}
+function validateLocations(p,file) {
+ const id=value=>typeof value==='string'&&/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,99}$/.test(value);
+ const unique=(items,label)=>{const values=items.filter(Boolean);assert(new Set(values).size===values.length,file,`duplicate ${label} ID`)};
+ assert(p.stamping_locations===undefined||Array.isArray(p.stamping_locations),file,'stamping_locations must be a list');
+ const locations=p.stamping_locations||[];
+ unique(p.visits.map(v=>v.id),'visit');
+ unique(p.visits.flatMap(v=>v.stamps.map(s=>s.id)),'stamp');
+ for(const v of p.visits)for(const s of v.stamps)assert(s.id===undefined||id(s.id),file,'invalid stamp ID');
+ for(const v of p.visits)assert(v.id===undefined||id(v.id),file,'invalid visit ID');
+ for(const record of p.visits.flatMap(v=>[v,...v.stamps]))assert(record.anchor_aliases===undefined||(Array.isArray(record.anchor_aliases)&&record.anchor_aliases.every(id)),file,'anchor aliases must be a list of safe identifiers');
+ unique(locations.map(l=>l?.id),'location');
+ const reportIDs=[];
+ for(const l of locations){
+  assert(l&&id(l.id)&&text(l.name),file,'location requires an ID and name');
+  assert(l.aliases===undefined||(Array.isArray(l.aliases)&&l.aliases.every(text)),file,'location aliases must be a list of names');
+  assert(!l.maps_url||safeURL(l.maps_url),file,'location maps_url must be an HTTP(S) URL');
+  assert(Array.isArray(l.reports)&&l.reports.length,file,'location requires at least one report');
+  for(const r of l.reports){
+   assert(r&&id(r.id)&&['authored','imported'].includes(r.origin),file,'report requires an ID and origin');reportIDs.push(r.id);
+   assert(availability.includes(r.availability),file,'invalid location availability');
+   for(const key of ['access','notes'])assert(r[key]===undefined||typeof r[key]==='string',file,`report ${key} must be text`);
+   assert(Array.isArray(r.stamps)&&r.stamps.every(s=>s&&text(s.name)&&['main','sub'].includes(s.type)&&availability.includes(s.availability)),file,'reported stamps need a name, type and availability');
+   assert(Boolean(r.source)!==Boolean(r.visit_id),file,'report requires exactly one source or visit reference');
+   if(r.visit_id){assert(r.origin==='authored'&&p.visits.some(v=>v.id===r.visit_id),file,'observation must reference an existing visit ID');assert(r.date===undefined&&r.checked===undefined,file,'observation inherits its visit date')}
+   if(r.source)assert(safeURL(r.source.url)&&validDate(r.source.checked),file,'published source requires an HTTP(S) URL and real checked date');
+  }
+ }
+ unique(reportIDs,'report');
+ for(const v of p.visits)for(const stamp of v.stamps)assert(stamp.location_id===undefined||locations.some(l=>l.id===stamp.location_id),file,'stamp refers to an unknown location ID');
+ assert(p.area===undefined||text(p.area),file,'area must be text with units');
+ assert(p.established===undefined||validDate(p.established),file,'established must be a real ISO date');
+ assert(p.map===undefined||text(p.map),file,'map must be an attachment reference');
+}
 export function validatePlace(p,file) {
  assert(text(p.title),file,'title is required');
  assert(Array.isArray(p.states)&&p.states.length&&p.states.every(s=>stateNames[s]),file,'states must contain valid state abbreviations');
@@ -39,6 +73,7 @@ export function validatePlace(p,file) {
    assert(Array.isArray(s.photos)&&s.photos.every(text),context,'stamp photos must be a list (use [] when empty)');
   }
  }
+ validateLocations(p,file);
 }
 export function loadContent(vault) {
  const nodes=[];
@@ -52,8 +87,9 @@ export function loadContent(vault) {
  }
  const places=nodes.filter(n=>n.kind==='Places').sort((a,b)=>a.title.localeCompare(b.title));
  for(const p of places)for(const [i,v] of p.data.visits.entries()) {
-  v.anchor=`visit-${v.date}-${i+1}`;
-  v.stamps.forEach((s,j)=>{s.anchor=`${v.anchor}-stamp-${j+1}`;s.date=v.date;s.visit=v;s.place=p});
+  v.legacyAnchor=`visit-${v.date}-${i+1}`;
+  v.anchor=v.id?`visit-${v.id}`:v.legacyAnchor;
+  v.stamps.forEach((s,j)=>{s.legacyAnchor=`${v.legacyAnchor}-stamp-${j+1}`;s.anchor=s.id?`stamp-${s.id}`:s.legacyAnchor;s.date=v.date;s.visit=v;s.place=p});
   if(v.trip) {
    const key=v.trip.slice(2,-2);
    if(!nodes.some(n=>n.key===key))nodes.push({kind:'Trips',key,title:key.slice(6),data:{title:key.slice(6)},body:'',url:`/trips/${slug(key.slice(6))}/`,outgoing:new Set()});
@@ -104,6 +140,12 @@ export function loadContent(vault) {
   });
  }
  for(const n of nodes){n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
+ for(const p of places){
+  if(p.data.map)p.map=photo(p.data.map,p);
+  p.locations=(p.data.stamping_locations||[]).map(l=>({...l,anchor:`location-${l.id}`,reports:l.reports.map(r=>({...r,visit:r.visit_id?p.data.visits.find(v=>v.id===r.visit_id):undefined})),collected:[]}));
+  for(const l of p.locations)l.current=currentReport(l);
+  for(const v of p.data.visits)for(const stamp of v.stamps){stamp.locationRecord=resolveLocation(p.locations,stamp);stamp.locationRecord?.collected.push(stamp)}
+ }
  for(const n of nodes)n.backlinks=nodes.filter(other=>other.key!==n.key&&other.outgoing.has(n.key));
  return {nodes,places,trips:nodes.filter(n=>n.kind==='Trips').sort((a,b)=>a.title.localeCompare(b.title)),regionPages:nodes.filter(n=>n.kind==='Regions').sort((a,b)=>regions.indexOf(a.title)-regions.indexOf(b.title)),assets:[...usedAssets],vault};
 }

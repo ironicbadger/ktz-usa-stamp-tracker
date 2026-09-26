@@ -2,11 +2,15 @@
 
 Start here when continuing this project on another Codex host. All image links are relative and travel with the repository. These are design references, not deployed site assets.
 
-## Status and authority
+## Current implementation
 
-The working site was published at `c30f54360175153e96ef4a909b0cff14af06bf5d`. The following exploration has **not been implemented**. The user selected layout 2, then style 2 (modern documentation). They subsequently requested a narrower main-stamp sidebar, full collection mockups, and support for author-maintained stamping locations. The latest three images are complementary views of one place page, not competing alternatives.
+The selected design and stamping-location workflow are implemented on the local `design/modern-stamp-book` branch. See [implementation goal](implementation-goal.md), [location model and resolved decisions](location-model.md), [validation](verification/validation.md), and [design QA](../../design-qa.md). Production deployment remains deferred. The notes below preserve the design handoff and reference-image authority.
 
-The current request only authorizes packaging this work for transfer. Do not interpret the handoff or earlier choices as a new instruction to implement, deploy, or invent collection data. Textual requirements below override generated-image mistakes.
+## Original handoff status and authority
+
+The working site was published at `c30f54360175153e96ef4a909b0cff14af06bf5d`. At handoff, the following exploration had **not been implemented**. The user selected layout 2, then style 2 (modern documentation). They subsequently requested a narrower main-stamp sidebar, full collection mockups, and support for author-maintained stamping locations. The latest three images are complementary views of one place page, not competing alternatives.
+
+The original request authorized packaging for transfer. The subsequent implementation goal authorized the redesign and location workflow; it does not authorize deployment or invented collection data. Textual requirements below override generated-image mistakes.
 
 ## Selected direction
 
@@ -19,7 +23,7 @@ The current request only authorizes packaging this work for transfer. Do not int
 - Use readable baselines: approximately 16px body, 15px navigation, 14px supporting text, 34–36px page title. Avoid returning to the current 10–12px UI labels. Treat these as proposed tokens, not validated accessibility guarantees.
 - Retain one canonical page per place and the region → state → place tree. Multi-state places appear under applicable states but link to one page. Region headings lead to region overview pages.
 - Preserve white surfaces; no paper textures, simulated scrapbook, marketing hero or statistics dashboard. No custom web editor. Content belongs on real pages or in-page sections, not overlay modals.
-- Mobile should preserve readable text, contained stamp images and useful reading order. A refined mobile mockup has not yet been produced.
+- Mobile should preserve readable text, contained stamp images and useful reading order. The approved mobile order is title/section links → main stamps and collection → locations → visits/notes → facts. Rendered mobile screenshots are in `verification/`.
 
 ## Latest complementary mockups
 
@@ -39,7 +43,7 @@ Image caveats: generated stamps, visitor centres, dates and map artwork are illu
 
 ## Stamping locations and Obsidian authorship
 
-This is a proposed extension; its exact YAML schema and import reconciliation rules are **not finalized or implemented**.
+This extension is now implemented; its YAML schema and import reconciliation rules are documented in [location-model.md](location-model.md).
 
 Separate availability information (where a stamp may be found) from collected impressions (what was collected during a visit). Keep place-related authorship in the existing place note.
 
@@ -49,7 +53,7 @@ Published information needs a source URL and checked date. An on-site observatio
 
 Website location sections should show available stamps, practical access notes, source/observation provenance, and links to collected stamps and the relevant visit. Optional Google Maps links are useful. The user explicitly does not want an in-app road-trip constructor.
 
-Implementation decisions still to resolve: safe matching/renaming of locations without author-visible IDs; how multiple source claims and conflicts are retained; how repeat impressions of the same main stamp populate the sidebar; ordering/overflow for many main stamps; missing photos; mobile section order; stamp-specific vs location-wide availability. Do not silently overwrite historical collection snapshots when changing current availability.
+Original planning decisions, now resolved in `location-model.md`: safe matching/renaming of locations without author-visible IDs; how multiple source claims and conflicts are retained; how repeat impressions of the same main stamp populate the sidebar; ordering/overflow for many main stamps; missing photos; mobile section order; stamp-specific vs location-wide availability. Do not silently overwrite historical collection snapshots when changing current availability.
 
 ## Exploration archive and exact option order
 

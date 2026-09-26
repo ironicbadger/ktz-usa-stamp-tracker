@@ -19,4 +19,7 @@ export function build({vault=path.join(root,'vault'),out=path.join(root,'dist')}
  console.log(`Built ${pages.size} pages from ${model.places.length} places and ${model.trips.length} trips.`);
  return {model,pages,out};
 }
-if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url))build();
+if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
+ const args=process.argv.slice(2),value=key=>args.includes(key)?path.resolve(args[args.indexOf(key)+1]):undefined;
+ build({vault:value('--vault'),out:value('--out')});
+}

@@ -12,3 +12,5 @@ vault/.obsidian/plugins/*/styles.css
 vault/.obsidian/plugins/*/manifest.json
 vault/.obsidian/plugins/obsidian-git/data.json
 vault/.obsidian/appearance.json
+
+.qa/

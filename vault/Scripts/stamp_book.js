@@ -27,6 +27,62 @@ module.exports = async function(tp, action) {
   const selectVisit=()=>choose(visits.map((v,i)=>`${v.date}${v.trip?' · '+v.trip.slice(8,-2):''} · ${i+1}`),visits.map((_,i)=>i),'Choose the visit');
   const commit=(callback)=>tp.hooks.on_all_templates_executed(async()=>{try{await app.fileManager.processFrontMatter(file,callback);notice('Saved.')}catch(error){notice(error.message)}});
   const checked=(fm,index)=>{if(JSON.stringify(fm.visits?.[index])!==JSON.stringify(visits[index]))throw Error('This visit changed while the prompts were open. Please try again.');return fm.visits[index]};
+  const locations=current.stamping_locations||[];
+  const copy=value=>JSON.parse(JSON.stringify(value));
+  const draftVisits=copy(visits),draftLocations=copy(locations);
+  const identity=()=>crypto.randomUUID();
+  const realDate=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&!isNaN(Date.parse(value))&&new Date(value+'T12:00:00Z').toISOString().slice(0,10)===value;
+  const httpURL=value=>{try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password}catch{return false}};
+  const statuses=['available','seasonal','unavailable','moved','unknown'];
+  const statusLabels=['Available','Seasonal','No longer available','Moved','Unknown'];
+  const saveDraft=()=>commit(fm=>{
+   if(JSON.stringify(fm.visits||[])!==JSON.stringify(visits)||JSON.stringify(fm.stamping_locations||[])!==JSON.stringify(locations))throw Error('Visits or locations changed while the prompts were open. Please try again.');
+   fm.visits=draftVisits;
+   if(draftLocations.length)fm.stamping_locations=draftLocations;
+  });
+  const editLocation=async(existing,observationIndex)=>{
+   const old=existing?(existing.reports.filter(r=>r.origin==='authored').at(-1)||existing.reports.at(-1)):{};
+   const name=(await prompt('Stamping location name',existing?.name||'')).trim();
+   if(!name)throw Error('Enter a location name.');
+   if(draftLocations.some(l=>l!==existing&&[l.name,...(l.aliases||[])].some(n=>n.toLowerCase()===name.toLowerCase())))throw Error('That location name already exists. Choose it from the list.');
+   const maps=(await prompt('Google Maps link (optional)',existing?.maps_url||'')).trim();
+   if(maps&&!httpURL(maps))throw Error('Enter an HTTP(S) maps link.');
+   const availability=await choose(statusLabels,statuses,'Location availability — currently '+(old.availability||'unknown'));
+   const access=await prompt('Where to find the stamps / access notes',old.access||'',true);
+   const available=copy(old.stamps||[]);
+   while(true){
+    const choice=await choose(['Finish stamp list','Add an available stamp',...available.map(s=>s.name)],[':done',':add',...available.map((_,i)=>i)],'Stamps available here');
+    if(choice===':done')break;
+    const previous=choice===':add'?{}:available[choice];
+    if(choice!==':add'&&await choose(['Edit this stamp','Remove from current listing'],['edit','remove'],'Update '+previous.name)==='remove'){available.splice(choice,1);continue}
+    const stampName=(await prompt('Available stamp name',previous.name||'')).trim();if(!stampName)throw Error('Enter a stamp name.');
+    const type=await choose(['Main stamp','Substamp'],['main','sub'],'Available stamp type');
+    const state=await choose(statusLabels,statuses,'Stamp availability — currently '+(previous.availability||availability));
+    const stamp={name:stampName,type,availability:state};
+    if(choice===':add')available.push(stamp);else available[choice]=stamp;
+   }
+   const kind=await choose(['Observed on a visit','Published website'],['visit','source'],'How do you know?');
+   const report={id:identity(),origin:'authored',availability,access,stamps:available};
+   if(kind==='visit'){
+    if(!draftVisits.length)throw Error('Record a visit first, or use a published website source.');
+    const visitIndex=observationIndex??await selectVisit();
+    draftVisits[visitIndex].id??=identity();report.visit_id=draftVisits[visitIndex].id;
+   }else{
+    const url=(await prompt('Source URL',old.source?.url||'')).trim();if(!httpURL(url))throw Error('Enter an HTTP(S) source URL.');
+    const checked=await prompt('Date checked (YYYY-MM-DD)',tp.date.now('YYYY-MM-DD'));if(!realDate(checked))throw Error('Enter a real checked date.');
+    report.source={url,checked};
+   }
+   report.notes=await prompt('Availability changes / additional notes',old.notes||'',true);
+   const location=existing||{id:identity(),name,reports:[]};
+   if(existing&&name!==existing.name)location.aliases=[...new Set([...(existing.aliases||[]),existing.name])];
+   location.name=name;if(maps)location.maps_url=maps;else delete location.maps_url;
+   location.reports.push(report);if(!existing)draftLocations.push(location);
+   return location;
+  };
+  if(action==='location'){
+   const selected=await choose(['Add a location',...locations.map(l=>l.name)],[':new',...locations.map((_,i)=>i)],'Add or update a stamping location');
+   await editLocation(selected===':new'?null:draftLocations[selected]);saveDraft();return;
+  }
   if(action==='visit'||action==='edit-visit'){
    if(action==='edit-visit'&&!visits.length){notice('No visits to edit.');return}
    const index=action==='edit-visit'?await selectVisit():null,old=index===null?{}:visits[index];
@@ -36,7 +92,13 @@ module.exports = async function(tp, action) {
    // Wait until Templater finishes writing its empty insertion before updating YAML.
    tp.hooks.on_all_templates_executed(async()=>{
     try {if(trip.name)await createTrip(trip.name);await app.fileManager.processFrontMatter(file,fm=>{
-     fm.visits??=[];const visit=index===null?{stamps:[]}:checked(fm,index);
+     fm.visits??=[];const visit=index===null?{id:identity(),stamps:[]}:checked(fm,index);
+     if(index!==null){
+      visit.id??=identity();
+      const legacy=`visit-${visit.date}-${index+1}`;
+      visit.anchor_aliases=[...new Set([...(visit.anchor_aliases||[]),legacy])];
+      for(const [j,stamp] of visit.stamps.entries()){stamp.id??=identity();stamp.anchor_aliases=[...new Set([...(stamp.anchor_aliases||[]),`${legacy}-stamp-${j+1}`])]}
+     }
      visit.date=date;visit.notes=notes;if(trip.link)visit.trip=trip.link;else delete visit.trip;
      if(index===null)fm.visits.push(visit);
     });notice('Visit saved. Use Add stamp to record its stamps.')}catch(error){notice(error.message)}
@@ -47,12 +109,18 @@ module.exports = async function(tp, action) {
   if(action==='stamp'){
    const type=await choose(['Main stamp','Substamp'],['main','sub'],'Stamp type');
    const name=(await prompt('Stamp name',type==='main'?current.title:'')).trim();if(!name){notice('Enter a stamp name.');return}
-   const location=await prompt('Stamp location (optional)'),notes=await prompt('Stamp notes (optional)','',true);
+   const selection=await choose(['No location','Enter a location name only','Add a newly discovered location',...locations.map(l=>l.name)],[':none',':text',':new',...locations.map((_,i)=>i)],'Stamping location');
+   let known,location='';
+   if(selection===':text')location=await prompt('Stamp location (optional)');
+   else if(selection===':new'){known=await editLocation(null,index);location=known.name}
+   else if(selection!==':none'){known=draftLocations[selection];location=known.name}
+   const notes=await prompt('Stamp notes (optional)','',true);
    const photos=app.vault.getFiles().filter(f=>f.path.startsWith('Attachments/')&&/\.(png|jpe?g|webp|gif|avif)$/i.test(f.path));
    const selected=photos.length?await tp.system.multi_suggester(f=>f.path.slice(12),photos,false,'Select photos, or confirm with none'):[];
-   if(selected===null)return;
-   const stamp={name,type,location,photos:selected.map(f=>`[[${f.path}]]`),notes};
-   commit(fm=>{checked(fm,index).stamps.push(stamp)});return;
+   if(selected===null||selected===undefined)return;
+   const stamp={id:identity(),name,type,location,photos:selected.map(f=>`[[${f.path}]]`),notes};
+   if(known)stamp.location_id=known.id;
+   draftVisits[index].stamps.push(stamp);saveDraft();return;
   }
   if(action==='photos'){
    const records=visits[index].stamps;if(!records.length){notice('No stamps on this visit.');return}

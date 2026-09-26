@@ -13,7 +13,10 @@
     "check": "node scripts/check.mjs",
     "test": "node --test",
     "cf:preview": "wrangler pages dev dist",
-    "deploy": "wrangler pages deploy dist --project-name ktz-usa-stamp-tracker --branch main"
+    "deploy": "wrangler pages deploy dist --project-name ktz-usa-stamp-tracker --branch main",
+    "qa:fixture": "node scripts/qa-fixture.mjs",
+    "qa:check": "node scripts/check.mjs .qa/dist",
+    "qa:browser": "node scripts/verify-browser.mjs"
   },
   "dependencies": {
     "marked": "18.0.14",
@@ -21,7 +24,10 @@
     "yaml": "2.9.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@phosphor-icons/core": "^2.1.1",
     "htmlparser2": "12.0.0",
+    "playwright": "^1.63.0",
     "wrangler": "4.141.0"
   }
 }
