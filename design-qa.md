@@ -84,3 +84,11 @@ Yellowstone now has a sourced NPS regional locator map (see map-sources.md). Oth
 Verification: 29 unit tests pass; real and fixture builds and internal link checks pass. Playwright checks 320, 390, 768, 1024, 1435px and zoom reflow, image proportions, drawer filtering, Escape/focus return, outside-click close, contents collapse and anchor navigation, report history and trip navigation. Zero browser errors and zero tested axe WCAG A/AA violations. Captures visually checked against the user reference, with deliberate adaptation for stamp records rather than encyclopedia prose. Real vault collection remains untouched.
 
 Final result: passed.
+
+## Places browser and horizontal stamp grid — 2026-09-26
+
+User refinement: replace the left Contents with the location browser and arrange stamps horizontally. The left column now contains the existing filterable region/state/park tree, expanded on desktop and collapsible using Hide or the header menu button. On mobile it is a menu drawer. There is only one directory DOM tree and no Contents navigation. Main stamps and substamps use responsive gallery grids with small, aspect-preserving images and aligned image areas. Wikipedia typography, maximum page width, park infobox, record links, and mobile section order remain.
+
+Visually reviewed desktop-places-grid.png and mobile-stamp-grid.png in docs/design/verification. Browser checks pass at 320–1435px, with directory collapse restoring article width, search filtering, Escape/focus return, and no overflow. Tested axe checks have no violations; browser reports no errors. All 29 unit tests and both builds/link checks pass.
+
+Final result: passed.

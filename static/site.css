@@ -99,3 +99,30 @@ header form{order:2;margin-left:0;flex:1;max-width:430px}
 header input{flex:1;width:120px}
 header .top-nav{order:3;margin-left:auto}
 @media(max-width:1000px){header{gap:12px}header form{order:4;max-width:none}.top-nav{margin-left:0!important}}
+
+/* Places replaces the article TOC; stamps read across in compact gallery rows. */
+.layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px}
+.layout:not(:has(.directory.expanded)){grid-template-columns:minmax(0,1fr)}
+.layout>.directory{position:sticky;top:20px;padding:30px 0 24px 30px;max-height:calc(100vh - 20px);overflow:auto;align-self:start;z-index:4}
+.layout>.directory:not(.expanded){display:none}
+.directory-heading{margin-bottom:14px;color:var(--ink);border-bottom:1px solid #eaecf0;padding-bottom:10px}
+.directory-close{padding:2px 7px;border:0;background:#eaecf0;font-size:12px}
+.layout>.directory.expanded #directory-content{display:block;position:static;width:auto;max-width:none;max-height:none;overflow:visible;margin:0;padding:0;border:0;box-shadow:none}
+.place-tree{font-size:14px}.tree-state{margin-left:2px;padding-left:7px}.tree-sites{padding-left:4px}
+.layout main{padding-left:0}
+.layout:not(:has(.directory.expanded)) main{padding-left:30px}
+.place-page{display:block}
+.main-collection,.sub-collection{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:22px 18px;overflow:hidden}
+.place-overview .stamp,.main-collection .stamp,.sub-collection .stamp{display:flex;flex-direction:column;gap:12px;padding:12px 0;min-width:0}
+.stamp-images{flex:none;width:100%;max-width:none;display:block;margin:0}
+.stamp-images img,.sub-collection .stamp-images img{width:auto;max-width:100px;max-height:100px;margin:0}
+.sub-collection .stamp-images{max-width:none;margin:0}
+.stamp-description{font-size:14px}.stamp-description h4{font-size:15px}.stamp-description .small{font-size:13px}
+.stamp-photos img{height:48px;max-width:72px}.stamp-photos{margin-top:10px}
+header>.directory-toggle{order:0;flex:none;border:0;padding:8px}
+@media(max-width:900px){.layout{display:block;position:relative}.layout main,.layout:not(:has(.directory.expanded)) main{padding-left:20px}.layout>.directory{position:absolute;left:20px;top:0;width:280px;max-width:calc(100vw - 40px);max-height:70vh;overflow:auto;padding:18px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 32px #11182720;z-index:6}.place-page{display:flex}.main-collection,.sub-collection{grid-template-columns:repeat(auto-fit,minmax(145px,1fr))}}
+@media(max-width:360px){.main-collection,.sub-collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}}
+@media print{.layout{display:block}.layout>.directory{display:none}}
+
+.section-nav{display:flex;border-top:0;padding:8px 0;margin-top:10px;font-size:14px;gap:16px}
+.main-collection .stamp-images,.sub-collection .stamp-images{min-height:100px}

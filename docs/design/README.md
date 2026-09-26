@@ -95,3 +95,5 @@ After reviewing the implementation, the user requested a calmer traditional web 
 ### Latest direction: Wikipedia article layout
 
 The user's supplied Wikipedia screenshot supersedes the earlier modern documentation styling. Use serif article/section headings (Linux Libertine/Georgia/Times fallback), Arial body text, blue links, thin rules, collapsible Contents, a header Places drawer, and a simple park infobox. Omit Appearance controls. Keep the 1200px maximum width and approved mobile section order. Latest screenshots are in `verification/desktop-wikipedia-layout.png` and `verification/mobile-wikipedia-layout.png`.
+
+Latest refinement: the left column is the collapsible Places browser, replacing Contents. Main stamps and substamps flow horizontally in responsive gallery grids. Updated captures: `verification/desktop-places-grid.png` and `verification/mobile-stamp-grid.png`.

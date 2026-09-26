@@ -1,9 +1,13 @@
 const directory=document.querySelector('.directory');
 const directoryButton=document.querySelector('.directory-toggle');
 const setDirectoryOpen=expanded=>{directory.classList.toggle('expanded',expanded);directoryButton.setAttribute('aria-expanded',String(expanded))};
+const directoryNarrow=matchMedia('(max-width: 900px)');
+setDirectoryOpen(!directoryNarrow.matches);
+directoryNarrow.addEventListener('change',()=>setDirectoryOpen(!directoryNarrow.matches));
+document.querySelector('.directory-close')?.addEventListener('click',()=>{setDirectoryOpen(false);directoryButton.focus()});
 directoryButton?.addEventListener('click',()=>setDirectoryOpen(!directory.classList.contains('expanded')));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&directory.classList.contains('expanded')){setDirectoryOpen(false);directoryButton.focus()}});
-document.addEventListener('click',event=>{if(!directory.contains(event.target))setDirectoryOpen(false)});
+document.addEventListener('click',event=>{if(directoryNarrow.matches&&!directory.contains(event.target)&&!directoryButton.contains(event.target))setDirectoryOpen(false)});
 const toggles=[...document.querySelectorAll('.tree-toggle')];
 const initialOpen=new Map(toggles.map(button=>[button,button.getAttribute('aria-expanded')==='true']));
 const setExpanded=(button,expanded)=>{button.setAttribute('aria-expanded',String(expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=!expanded};
