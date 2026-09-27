@@ -11,13 +11,19 @@ const anchorAliases=record=>[...new Set([record.legacyAnchor,...(record.anchor_a
 export function createSite(model,catalogue,assetVersion) {
  const {nodes,places,trips,regionPages}=model;
  const regionURL=name=>regionPages.find(r=>r.title===name).url;
+ const stateURL=code=>`/states/${slug(stateNames[code])}/`;
+ const statePages=[...new Set(places.flatMap(p=>p.data.states))].sort((a,b)=>stateNames[a].localeCompare(stateNames[b])).map(code=>{
+  const counts=regions.map(region=>places.filter(p=>p.data.states.includes(code)&&p.data.passport_region===region).length);
+  const primaryRegion=regions[counts.indexOf(Math.max(...counts))];
+  return {title:stateNames[code],url:stateURL(code),stateCode:code,primaryRegion,data:{states:[code]}};
+ });
  function tree(current) {
-  const branch=(kind,label,url,id,open,body)=>`<div class="tree-${kind}" data-label="${e(label)}"><div class="tree-row"><button class="tree-toggle" type="button" aria-label="Expand or collapse ${e(label)}" aria-expanded="${open}" aria-controls="${id}"><img src="/icons/caret-right.svg" width="14" height="14" alt=""></button><a href="${url}">${e(label)}</a></div><div class="tree-children" id="${id}" ${open?'':'hidden'}>${body}</div></div>`;
+  const branch=(kind,label,url,id,open,body)=>`<div class="tree-${kind}" data-label="${e(label)}"><div class="tree-row"><button class="tree-toggle" type="button" aria-label="Expand or collapse ${e(label)}" aria-expanded="${open}" aria-controls="${id}"><img src="/icons/caret-right.svg" width="14" height="14" alt=""></button><a href="${url}" ${url===current?.url?'aria-current="page"':''}>${e(label)}</a></div><div class="tree-children" id="${id}" ${open?'':'hidden'}>${body}</div></div>`;
   return regions.map(region=>{
    const members=places.filter(p=>p.data.passport_region===region);
    const states=[...new Set(members.flatMap(p=>p.data.states))].sort((a,b)=>stateNames[a].localeCompare(stateNames[b]));
-   const open=current?.data.passport_region===region||current?.title===region;
-   return branch('region',region,regionURL(region),'tree-'+slug(region),!!open,states.map(state=>branch('state',stateNames[state],regionURL(region)+'#state-'+state.toLowerCase(),'tree-'+slug(region)+'-'+state,!!(open&&current?.data.states?.[0]===state),`<div class="tree-sites">${members.filter(p=>p.data.states.includes(state)).map(p=>`<a class="tree-site" href="${p.url}" ${p===current?'aria-current="page"':''}>${e(p.title)}</a>`).join('')}</div>`)).join(''));
+   const open=current?.data.passport_region===region||current?.title===region||current?.primaryRegion===region;
+   return branch('region',region,regionURL(region),'tree-'+slug(region),!!open,states.map(state=>branch('state',stateNames[state],stateURL(state),'tree-'+slug(region)+'-'+state,!!(open&&current?.data.states?.[0]===state),`<div class="tree-sites">${members.filter(p=>p.data.states.includes(state)).map(p=>`<a class="tree-site" href="${p.url}" ${p===current?'aria-current="page"':''}>${e(p.title)}</a>`).join('')}</div>`)).join(''));
   }).join('');
  }
  function layout(title,body,current) {
@@ -41,10 +47,17 @@ export function createSite(model,catalogue,assetVersion) {
  function place(p) {
   return layout(p.title,placeContent(p,{regionURL,resources,locationCard,stampCard,backlinks,nodes,catalogue}),p);
  }
+ function collectionAlbum(members) {
+  return `<p class="summary"><strong>${members.filter(collected).length} / ${members.length}</strong> places with a main stamp</p><div class="collection-controls"><label>Show <select id="collection-filter"><option value="all">All places</option><option value="collected">Main stamp recorded</option><option value="missing">No main stamp recorded</option></select></label></div><div class="album-grid">${members.map(p=>{const main=mains(p),image=main.flatMap(s=>s.images)[0];return `<a href="${p.url}" class="album-slot" data-collected="${main.length>0}">${image?`<img src="${image}" alt="${e(p.title)} main stamp" loading="lazy">`:`<span class="empty-stamp">${main.length?'Collected · No photo':'Not collected'}</span>`}<strong>${e(p.title)}</strong><span>${p.data.states.map(e).join(' · ')}</span>${main.length?`<span>${main.length} main ${main.length===1?'impression':'impressions'}</span>`:''}</a>`}).join('')}</div><p id="collection-empty" class="muted" hidden>No places match this filter.</p>`;
+ }
+ function state(s) {
+  const members=places.filter(p=>p.data.states.includes(s.stateCode));
+  return layout(s.title,`${title(s.title,'STATE COLLECTION')}${collectionAlbum(members)}`,s);
+ }
  function region(r) {
   const members=places.filter(p=>p.data.passport_region===r.title);
   const states=[...new Set(members.flatMap(p=>p.data.states))].sort((a,b)=>stateNames[a].localeCompare(stateNames[b]));
-  return layout(r.title,`${title(r.title,'REGIONAL COLLECTION')}<div class="prose">${r.html}</div>${r.map?`<figure class="regional-map"><a href="${r.map}" target="_blank" rel="noopener"><img src="${r.map}" alt="${e(r.title)} regional book map"></a></figure>`:''}<p>${external('https://www.nps.gov/subjects/gisandmapping/nps-maps.htm','Official NPS map library')}</p><p class="summary"><strong>${members.filter(collected).length} / ${members.length}</strong> places with a main stamp</p><div class="collection-controls"><label>Show <select id="collection-filter"><option value="all">All places</option><option value="collected">Main stamp recorded</option><option value="missing">No main stamp recorded</option></select></label></div><div class="album-grid">${members.map(p=>{const main=mains(p),image=main.flatMap(s=>s.images)[0];return `<a href="${p.url}" class="album-slot" data-collected="${main.length>0}">${image?`<img src="${image}" alt="${e(p.title)} main stamp" loading="lazy">`:`<span class="empty-stamp">${main.length?'Collected · No photo':'Not collected'}</span>`}<strong>${e(p.title)}</strong><span>${p.data.states.map(e).join(' · ')}</span>${main.length?`<span>${main.length} main ${main.length===1?'impression':'impressions'}</span>`:''}</a>`}).join('')}</div><p id="collection-empty" class="muted" hidden>No places match this filter.</p>${section('Places by state',`<div class="state-list">${states.map(s=>`<section id="state-${s.toLowerCase()}"><h3>${e(stateNames[s])}</h3><ul>${members.filter(p=>p.data.states.includes(s)).map(p=>`<li><a href="${p.url}">${e(p.title)}</a></li>`).join('')}</ul></section>`).join('')}</div>`)}${backlinks(r)}`,r);
+  return layout(r.title,`${title(r.title,'REGIONAL COLLECTION')}<div class="prose">${r.html}</div>${r.map?`<figure class="regional-map"><a href="${r.map}" target="_blank" rel="noopener"><img src="${r.map}" alt="${e(r.title)} regional book map"></a></figure>`:''}<p>${external('https://www.nps.gov/subjects/gisandmapping/nps-maps.htm','Official NPS map library')}</p>${collectionAlbum(members)}${section('Places by state',`<div class="state-list">${states.map(s=>`<section id="state-${s.toLowerCase()}"><h3><a href="${stateURL(s)}">${e(stateNames[s])}</a></h3><ul>${members.filter(p=>p.data.states.includes(s)).map(p=>`<li><a href="${p.url}">${e(p.title)}</a></li>`).join('')}</ul></section>`).join('')}</div>`)}${backlinks(r)}`,r);
  }
  function trip(t) {
   const visits=places.flatMap(p=>p.data.visits.filter(v=>v.trip===`[[${t.key}]]`).map(v=>({p,v}))).sort((a,b)=>a.v.date.localeCompare(b.v.date)||a.p.title.localeCompare(b.p.title));
@@ -57,8 +70,11 @@ export function createSite(model,catalogue,assetVersion) {
  pages.set('/search/',layout('Search',`${title('Search')}<form id="search-form" action="/search/"><label for="search-input">Places, states, visits, stamps and trips</label><input id="search-input" type="search" name="q" autocomplete="off"><button>Search</button></form><p id="search-status" aria-live="polite"></p><ul id="search-results"></ul><noscript>Search requires JavaScript. <a href="/places/">Browse all places</a>.</noscript>`));
  pages.set('/about/',layout('About',`${title('About')}<p>A personal record of park visits and collected stamps.</p><p>Each place has one page, including places that span multiple states. Main stamps fill the regional collection; substamps stay with the place. A filled slot records a collection, not completion of every available stamp.</p>${section('Sources',`<p>The starting catalogue contains ${places.length} places imported from the original <a href="https://us-stamps.ktz.me/">US Stamps site</a>. It includes affiliated sites and separately listed park and preserve units.</p><ul><li>${external('https://www.nps.gov/','National Park Service')}</li><li>${external('https://www.nps.gov/subjects/gisandmapping/nps-maps.htm','Official NPS maps')}</li><li>${external('https://americasnationalparks.org/passport-to-your-national-parks/passport-cancellation-locations/','Passport cancellation locations')}</li></ul><p>Passport book regions are separate from NPS administrative regions. The initial state-based grouping can be adjusted in each place note.</p>`)}`));
  for(const n of nodes)pages.set(n.url,n.kind==='Places'?place(n):n.kind==='Regions'?region(n):trip(n));
+ for(const s of statePages)pages.set(s.url,state(s));
  pages.set('/404.html',layout('Page not found',`${title('Page not found')}<p><a href="/search/">Search the collection</a> or <a href="/">browse regions</a>.</p>`));
  const search=nodes.map(n=>({title:n.title,url:n.url,kind:n.kind,text:[n.title,n.body,...(n.data.states||[]).flatMap(s=>[s,stateNames[s]]),n.data.passport_region||''].join(' ')}));
+ for(const s of statePages)search.push({title:s.title,url:s.url,kind:'State',text:`${s.title} ${s.stateCode}`});
+ for(const p of places)if(p.associationsBody?.trim())search.push({title:`${p.title} — Associations`,kind:'Associations',url:p.url+'#associations',text:`${p.title} ${p.associationsBody}`});
  for(const p of places)for(const v of p.data.visits){search.push({title:`${p.title} — ${v.date}`,kind:'Visit',url:p.url+'#'+v.anchor,text:`${p.title} ${v.date} ${v.notes||''} ${v.trip||''}`});for(const s of v.stamps)search.push({title:s.name,kind:s.type==='main'?'Main stamp':'Substamp',url:p.url+'#'+s.anchor,text:`${s.name} ${s.location||''} ${s.notes||''} ${v.date} ${p.title}`})}
  for(const p of places)for(const l of p.locations||[])search.push({title:l.name,kind:'Stamping location',url:p.url+'#'+l.anchor,text:[p.title,l.name,...(l.aliases||[]),...l.reports.flatMap(r=>[r.access||'',r.notes||'',r.availability,...r.stamps.map(s=>s.name)])].join(' ')});
  return {pages,search};

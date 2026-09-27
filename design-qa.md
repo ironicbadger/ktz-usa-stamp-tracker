@@ -2,6 +2,8 @@
 
 final result: passed
 
+Latest extension: [state albums and Associations verification](docs/design/verification/state-associations-validation.md). The settled layout below remains the visual baseline.
+
 Final post-fix browser captures and comparison are complete. Earlier settled classic-layout review remains in [classic-design-qa.md](docs/design/verification/classic-design-qa.md).
 
 ## Current visual authority

@@ -155,14 +155,16 @@ footer {
   max-width: calc(100% - 28px);
 }
 
-.tree-site[aria-current] {
+.tree-site[aria-current],
+.tree-row > a[aria-current] {
   border: 0;
   background: #f5f5f4;
   color: #292524;
   font-weight: 400;
 }
 
-.tree-site[aria-current]:hover {
+.tree-site[aria-current]:hover,
+.tree-row > a[aria-current]:hover {
   background: #e7e5e4;
 }
 

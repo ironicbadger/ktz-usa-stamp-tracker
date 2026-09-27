@@ -1,5 +1,7 @@
 # Tailscale navigation and primary cancellation validation
 
+Latest additions: [state albums and Associations](state-associations-validation.md) (62 tests, 52 browser checkpoints, 9 accessibility scans). The report below records the preceding layout milestone.
+
 Date: 2026-09-26. Branch: `design/modern-stamp-book`. This supersedes [earlier validation](validation-history.md).
 
 ## Results

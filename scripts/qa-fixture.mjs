@@ -40,13 +40,28 @@ write('Places/Yellowstone National Park.md',{
  {id:'centre-a',name:'Old Faithful Visitor Education Center',maps_url:'https://www.google.com/maps/search/?api=1&query=Old+Faithful+Visitor+Education+Center',reports:[{id:'earlier-sample',origin:'imported',availability:'unknown',access:'An earlier sample listing, retained to demonstrate report history.',stamps:listing(firstStamps),source:{url:'https://www.nps.gov/yell/planyourvisit/visitorcenters.htm',checked:'2019-06-18'},notes:'Illustrative import only; this source is general visitor-center information.'},report('onsite-a','sample-visit',firstStamps,'Sample note: ask at the visitor information desk. Confirm current availability with staff.')]},
  {id:'centre-b',name:'Canyon Visitor Education Center',maps_url:'https://www.google.com/maps/search/?api=1&query=Canyon+Visitor+Education+Center',reports:[report('onsite-b','canyon-visit',secondStamps,'Sample note: ask at the Canyon Village information desk.')]}
  ]
-},'The geyser basins and the canyon reward a little extra time. Leave room in the day for wildlife stops and a change in the weather.');
+},`The geyser basins and the canyon reward a little extra time. Leave room in the day for wildlife stops and a change in the weather.
+
+## Associations
+
+For the quieter evenings, I would pair this visit with [*The Solace of Open Spaces*](https://example.com/book-review) by Gretel Ehrlich. It feels like a companion to the wide landscapes and changing weather.
+
+On the road, *Harvest Moon* by Neil Young was the record I kept returning to. It still brings back the long drives between the park's valleys.
+`);
 write('Places/Moores Creek National Battlefield.md',{
  title:'Moores Creek National Battlefield',park_code:'mocr',states:['NC'],passport_region:'Southeast',design_preview:true,
  stamps:[{id:'moores-creek',name:'Moores Creek National Battlefield',type:'main'}],
  visits:[{id:'bridge-walk',date:'2025-04-12',notes:'A quiet afternoon walking the short trail to the bridge. The wayside exhibits helped put the battle and the people who fought here into context.',stamps:[{id:'moores-impression',cancellation_id:'moores-creek',name:'Moores Creek National Battlefield',type:'main',photos:['[[Attachments/moores-creek-sample.png]]'],notes:'Fictional impression with generated sample artwork, not an authentic park cancellation.'}]}],
  stamping_locations:[{id:'visitor-centre',name:'Visitor center',reports:[{id:'sample-listing',origin:'authored',visit_id:'bridge-walk',availability:'unknown',access:'Sample listing only; confirm current availability with the park.',stamps:[{name:'Moores Creek National Battlefield',type:'main',availability:'unknown'}]}]}]
 },'An easy stop for a short walk. Allow time to read the exhibits along the trail.');
+for(const [title,code,date,notes] of [
+ ['Fort Pulaski National Monument','fopu','2025-04-14','A fictional afternoon walking the fort and looking out across the marsh.'],
+ ['Cumberland Island National Seashore','cuis','2025-04-15','A fictional island visit, with a beach walk and time under the live oaks.']
+])write(`Places/${title}.md`,{
+ title,park_code:code,states:['GA'],passport_region:'Southeast',design_preview:true,
+ stamps:[{id:'park',name:title,type:'main'}],
+ visits:[{id:'georgia-sample',date,notes:`${notes} This sample visit and its generic stamp artwork are only for the design preview.`,stamps:[{id:'georgia-sample-impression',cancellation_id:'park',name:title,type:'main',photos:[photo],notes:'Generic generated sample artwork, not an authentic cancellation from this park.'}]}]
+},'Fictional sample collection for the Georgia state page. No real collection records have been changed.');
 write('Trips/Design QA trip.md',{title:'USA road trip 2019 · sample'},'A fictional two-stop Yellowstone chapter for the design preview. [[Places/Yellowstone National Park]]');
 const qaPlace=(title,extra={})=>({title,states:['WY'],passport_region:'Western',design_preview:true,visits:[],...extra});
 for(let count=1;count<=10;count++){

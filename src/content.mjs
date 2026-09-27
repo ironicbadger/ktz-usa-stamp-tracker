@@ -119,7 +119,7 @@ export function loadContent(vault) {
   usedAssets.add(found[0]);
   return '/attachments/'+path.relative(path.join(vault,'Attachments'),found[0]).split(path.sep).map(encodeURIComponent).join('/');
  }
- function render(body,from) {
+ function render(body,from,splitAssociations=false) {
   const wikified=body.replace(/(!?)\[\[([^\]]+)\]\]/g,(_,embed,raw)=> {
    const [ref,alias]=raw.split('|');
    if(embed)return `<img src="${escape(photo(ref,from))}" alt="${escape(alias||path.basename(ref))}" loading="lazy">`;
@@ -127,10 +127,12 @@ export function loadContent(vault) {
    from.outgoing.add(target.key);
    return `<a href="${target.url}${heading?'#'+slug(heading):''}">${escape(alias||heading||target.title)}</a>`;
   });
+  const tokens=splitAssociations?marked.lexer(wikified):undefined;
+  const associationHeadings=new Set(tokens?.filter(token=>token.type==='heading'&&token.depth===2&&token.text.trim().toLowerCase()==='associations'));
   const renderer=new marked.Renderer();
   const headingIds=new Map();
-  renderer.heading=({tokens,depth})=>{const content=renderer.parser.parseInline(tokens);const base=slug(content.replace(/<[^>]+>/g,''));const count=headingIds.get(base)||0;headingIds.set(base,count+1);return `<h${depth} id="${base}${count?'-'+count:''}">${content}</h${depth}>`};
-  return sanitizeHtml(marked.parse(wikified,{renderer}),{
+  renderer.heading=token=>{const {tokens,depth}=token;const content=renderer.parser.parseInline(tokens);let base=slug(content.replace(/<[^>]+>/g,''));if(base==='associations'&&associationHeadings.size&&!associationHeadings.has(token))base='associations-heading';const count=headingIds.get(base)||0;headingIds.set(base,count+1);return `<h${depth} id="${base}${count?'-'+count:''}">${content}</h${depth}>`};
+  const sanitize=html=>sanitizeHtml(html,{
    allowedTags:sanitizeHtml.defaults.allowedTags.concat(['img']),
    allowedAttributes:{a:['href','title','target','rel'],img:['src','alt','title','loading'],h1:['id'],h2:['id'],h3:['id'],h4:['id'],h5:['id'],h6:['id']},
    allowedSchemes:['http','https','mailto'],
@@ -140,8 +142,26 @@ export function loadContent(vault) {
     return {tagName:tag,attribs:attrs};
    },img:(tag,attrs)=>({tagName:tag,attribs:{...attrs,src:attrs.src?.startsWith('/attachments/')?attrs.src:photo(attrs.src||'',from),loading:'lazy'}})}
   });
+  if(!splitAssociations)return sanitize(marked.parse(wikified,{renderer}));
+  // Parse in source order so Markdown references and repeated heading IDs keep
+  // their original meaning even though Associations moves below Visits.
+  const notes=[],associations=[],associationBody=[],associationAliases=[];
+  let inAssociations=false,hasAssociations=false;
+  for(const token of tokens){
+   const fragment=[token];fragment.links=tokens.links;
+   const html=marked.parser(fragment,{renderer});
+   if(associationHeadings.has(token)){
+    hasAssociations=true;inAssociations=true;
+    const id=html.match(/id="([^"]+)"/)?.[1];
+    if(id&&id!=='associations')associationAliases.push(id);
+    continue;
+   }
+   if(token.type==='heading'&&token.depth<=2)inAssociations=false;
+   if(inAssociations){associations.push(html);associationBody.push(token.raw)}else notes.push(html);
+  }
+  return {html:sanitize(notes.join('')),associationsHtml:sanitize(associations.join('')),associationsBody:associationBody.join(''),associationAliases,hasAssociations};
  }
- for(const n of nodes){n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
+ for(const n of nodes){if(n.kind==='Places')Object.assign(n,render(n.body,n,true));else n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
  for(const p of places){
   Object.assign(p,cancellationAlbum(p));
   if(p.data.map)p.map=photo(p.data.map,p);

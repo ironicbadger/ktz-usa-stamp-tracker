@@ -1,6 +1,6 @@
 # Stamp Book
 
-A static stamp collection website authored in an Obsidian vault. Includes 429 blank place notes, nine book regions, search, visit history, trip pages, photos, and backlinks. No database or server is required.
+A static stamp collection website authored in an Obsidian vault. Includes 429 blank place notes, nine book regions, 56 state and territory albums, search, visit history, associations, trip pages, photos, and backlinks. No database or server is required.
 
 ## Local use
 
@@ -34,6 +34,10 @@ Design decisions, mockups and remote continuation notes: [design handoff](docs/d
 ## Design and location authoring
 
 The classic article layout uses a collapsible Places browser, Tailscale-style navigation spacing, short inline visits, and a compact cancellation album above a sourced locator map. The first listed cancellation has its own large square and Last collected date panel; every additional box stays square in the grid below. The place’s optional top-level `stamps` list defines expected cancellations; repeat impressions share a slot, while all records remain accessible in closed details. Stamping locations are authored in the same Obsidian note through **Add or update stamping location**. See [Start here](vault/Start%20here.md) for the workflow and [location model](docs/design/location-model.md) for provenance, history, imports, and optional park facts.
+
+Each state has a visual album at `/states/state-name/`, reached from the Places browser and region headings. Multi-state places appear in every relevant state album while keeping one canonical place page. Region and state albums share square stamp spaces and collection filters.
+
+Write `## Associations` in a place note for free-form paragraphs about books, music, or other connections. It appears directly below Visits and accepts ordinary inline links to any site. The **Associations** template inserts the heading; an empty section stays hidden. See [state albums and Associations](docs/design/state-pages-and-associations.md).
 
 For an isolated populated preview (fictional QA records only):
 

@@ -23,6 +23,16 @@ Existing notes without an expected list still work: their collected impressions 
 
 Region notes can contain an introduction and an optional `map: "[[Attachments/map-photo.jpg]]"`. `[[Place links]]` become website links and backlinks. Content in Places, Trips, Regions, and referenced Attachments is public when deployed.
 
+## Associations
+
+In a place note, run **Templater: Insert template** → **Associations**, or type `## Associations` below the properties. Write a paragraph or two beneath it about books, music, or anything else you associate with the place or a trip there. Use ordinary inline Markdown links such as `[my review](https://example.com/book-review)` for a Perfect Prose review or any other page. Links are optional; no special book or music properties are needed.
+
+This text appears directly below Visits on the place page, once rather than repeated in the general notes. Subheadings such as `### Books` can belong to Associations; the next level-one or level-two heading ends the section. An empty section is not displayed. General notes outside this section still appear under About this place.
+
+## State albums
+
+Click a state name in the Places browser or on a region page to open its own visual stamp grid. It includes every place assigned to that state, with the same collected and not-collected filters as a region album. A place spanning several states appears in each relevant album and keeps one place page. State pages are generated from the existing `states` properties; no separate state notes are needed.
+
 ## Stamping locations
 
 Run **Add or update stamping location** in a place note to record where stamps can be found, even before you collect them. Choose an existing location to update or rename it. The prompts cover available stamps, availability, access notes, optional maps link, and your source. Each update is a complete report; the previous stamp list is offered for editing and earlier reports remain available.
