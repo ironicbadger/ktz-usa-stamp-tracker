@@ -34,3 +34,8 @@ All final images were visually reviewed for counts, maps, left Places browsing, 
 
 No direction in this set is selected yet. Earlier mobile ordering preferences, editable authorship, real data semantics and preservation of the real vault still apply.
 
+## Follow-up: preferred maps and visit links
+
+The user supplied [this exact reference](../references/locator-map-preference.png) and specifically liked its locator maps. Preserve the quiet regional context, state labels, park outline or location pin, and placement beneath the cancellations. This preference does not select every part of the attached layout; it includes the older duplicated Notes/Travel notes structure.
+
+The user asked where the linked visit titles lead and expressed interest in exploring that flow. The generated image has no functional destination. The current implementation renders visit notes on the place page and links to visit anchors; separate visit routes do not exist yet. A proposed next exploration is a short dated visit list on the place page linking to a full visit entry with notes, optional photos, impressions collected that day, and links back to the place and parent trip. Keep this a proposal until the flow is agreed; do not infer authorization to change the content model or build new routes from the question alone.
