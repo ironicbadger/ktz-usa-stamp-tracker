@@ -27,6 +27,7 @@ jobs:
       - run: npm run site:build && npm run site:check
       - run: npx playwright install --with-deps chromium
       - run: node scripts/verify-editor-ci.mjs
+      - run: OIDC_BROWSER_TEST=1 node --test test/web-oidc.test.mjs
       - run: docker build -t stamp-book:ci .
       - run: node scripts/verify-container.mjs
   publish:
@@ -79,12 +80,13 @@ jobs:
           DIGEST: ${{ steps.build.outputs.digest }}
         run: |
           mkdir deployment
-          cp compose.yaml .env.example deployment/
+          cp compose.yaml compose.oidc.yaml .env.example .env.oidc.example deployment/
+          cp docs/web-app/oidc.md deployment/oidc.md
           cp docs/web-app/deployment.md deployment/README.md
           printf 'STAMP_BOOK_IMAGE=%s@%s\n' "$IMAGE" "$DIGEST" > deployment/image.env
           printf '%s\n' "$GITHUB_SHA" > deployment/COMMIT
           cd deployment
-          sha256sum compose.yaml .env.example README.md image.env COMMIT > SHA256SUMS
+          sha256sum compose.yaml compose.oidc.yaml .env.example .env.oidc.example oidc.md README.md image.env COMMIT > SHA256SUMS
           echo "Published $IMAGE@$DIGEST" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:

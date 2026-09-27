@@ -8,6 +8,7 @@ import {Store,safeAssetPath} from './store.mjs';
 import {renderCollection,recordURL,editorRecord,renderedRecord,root,blankPage} from './render.mjs';
 import {normalizeRichRecord} from './rich-text.mjs';
 import {regions,stateNames} from '../src/content.mjs';
+import {createOIDC,oidcSettings} from './oidc.mjs';
 import {editorShell} from './editor-shell.mjs';
 
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.avif':'image/avif','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
@@ -21,10 +22,16 @@ function checkRecord(input){
  if(!input.data||typeof input.data.title!=='string'||!input.data.title.trim()||input.data.title.length>250)throw problem('A page title of up to 250 characters is required');
  return normalizeRichRecord({...input,body:input.body||''});
 }
-export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-data'),password=process.env.APP_PASSWORD,passwordFile=process.env.APP_PASSWORD_FILE,origin=process.env.ORIGIN}={}){
- if(passwordFile)password=fs.readFileSync(passwordFile,'utf8').trim();
- if(typeof password!=='string'||password.length<12)throw Error('Set APP_PASSWORD or APP_PASSWORD_FILE to an editor password of at least 12 characters.');
- const salt=crypto.randomBytes(16),passwordHash=crypto.scryptSync(password,salt,64);password=undefined;
+export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-data'),password=process.env.APP_PASSWORD,passwordFile=process.env.APP_PASSWORD_FILE,origin=process.env.ORIGIN,oidc=oidcSettings(),authMode=process.env.AUTH_MODE||(oidc.issuer?'oidc':'password')}={}){
+ if(!['password','oidc'].includes(authMode))throw Error('AUTH_MODE must be password or oidc');
+ const oidcAuth=authMode==='oidc'?createOIDC(oidc,origin):null;
+ let salt,passwordHash;
+ if(authMode==='password'){
+  if(passwordFile)password=fs.readFileSync(passwordFile,'utf8').trim();
+  if(typeof password!=='string'||password.length<12)throw Error('Set APP_PASSWORD or APP_PASSWORD_FILE to an editor password of at least 12 characters.');
+  salt=crypto.randomBytes(16);passwordHash=crypto.scryptSync(password,salt,64);
+ }
+ password=undefined;
  if(origin){const url=new URL(origin);if(!['http:','https:'].includes(url.protocol)||url.origin!==origin)throw Error('ORIGIN must be a full HTTP(S) origin without a path');}
  const store=new Store({dataDir}),sessions=new Map(),attempts=new Map();let cached;
  const getCollection=()=>cached||(cached=renderCollection(store));
@@ -36,6 +43,14 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
  function authenticated(req){const user=session(req);if(!user)throw problem('Sign in to edit the collection',401,'unauthorized');return user}
  function mutation(req){checkOrigin(req);const user=authenticated(req);if(!safeEqual(req.headers['x-csrf-token'],user.csrf))throw problem('Your editing session changed. Reload and try again.',403,'csrf_rejected');return user}
  function cookie(req,token,maxAge){return `stamp_session=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${maxAge}${expectedOrigin(req).startsWith('https:')?'; Secure':''}`}
+ function newSession(req,identity){
+  for(const [key,value]of sessions)if(value.expires<Date.now())sessions.delete(key);
+  if(sessions.size>=100)throw problem('Too many active editing sessions',429);
+  const previous=session(req);if(previous)sessions.delete(previous.token);
+  const token=crypto.randomBytes(32).toString('base64url'),csrf=crypto.randomBytes(32).toString('base64url');
+  sessions.set(token,{csrf,identity,expires:Date.now()+12*3600*1000});
+  return {cookie:cookie(req,token,12*3600),csrf};
+ }
  function sendFile(res,file,type,cache='public, max-age=3600'){
   const stat=fs.statSync(file);if(!stat.isFile())throw problem('Not found',404);
   res.writeHead(200,{'Content-Type':type||mime[path.extname(file)]||'application/octet-stream','Content-Length':stat.size,'Cache-Control':cache});fs.createReadStream(file).pipe(res);
@@ -46,19 +61,35 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
   try{
    const url=new URL(req.url,'http://localhost');const route=url.pathname;
    if(route==='/healthz'&&req.method==='GET')return json(res,200,{ok:true,storage:'sqlite'});
-   if(route==='/api/session'&&req.method==='GET'){const user=session(req);return json(res,200,{authenticated:!!user,...(user?{csrf:user.csrf}:{})})}
+   if(route==='/api/session'&&req.method==='GET'){const user=session(req);return json(res,200,{authenticated:!!user,authMode,...(oidcAuth?{loginLabel:oidcAuth.label}:{}),...(user?{csrf:user.csrf}:{})})}
+   if(route.startsWith('/auth/oidc/')){
+    if(!oidcAuth)throw problem('OIDC is not enabled',404);
+    if(req.method!=='GET')throw problem('Method not allowed',405);
+    res.setHeader('Cache-Control','no-store');res.setHeader('Referrer-Policy','no-referrer');
+    if(route==='/auth/oidc/login'){
+     const result=await oidcAuth.start(req);res.writeHead(302,{'Location':result.url,'Set-Cookie':result.cookie});return res.end();
+    }
+    if(route==='/auth/oidc/callback'){
+     res.setHeader('Set-Cookie',oidcAuth.clearCookie());
+     try{
+      const result=await oidcAuth.finish(req),user=newSession(req,result.identity);
+      res.writeHead(303,{'Location':result.destination,'Set-Cookie':[oidcAuth.clearCookie(),user.cookie]});return res.end();
+     }catch(error){res.writeHead(303,{'Location':'/edit/?authError='+((error.status===403)?'denied':'failed')});return res.end()}
+    }
+    throw problem('Not found',404);
+   }
    if(route==='/api/login'&&req.method==='POST'){
+    if(oidcAuth)throw problem('Password sign-in is disabled. Use your identity provider.',403,'password_disabled');
     checkOrigin(req);const ip=req.socket.remoteAddress||'unknown';const prior=attempts.get(ip);if(prior&&prior.until>Date.now()&&prior.count>=8)throw problem('Too many sign-in attempts. Try again in 15 minutes.',429,'rate_limited');
     const input=await jsonBody(req);if(typeof input.password!=='string'||input.password.length>1000)throw problem('Invalid password',401);
     const hash=crypto.scryptSync(input.password,salt,64);
     if(!crypto.timingSafeEqual(hash,passwordHash)){if(attempts.size>1000)attempts.clear();const active=prior&&prior.until>Date.now()?prior:{count:0,until:Date.now()+15*60*1000};attempts.set(ip,{...active,count:active.count+1});throw problem('Incorrect editor password',401,'unauthorized')}
-    attempts.delete(ip);for(const [key,value]of sessions)if(value.expires<Date.now())sessions.delete(key);
-    if(sessions.size>=100)throw problem('Too many active editing sessions',429);
-    const token=crypto.randomBytes(32).toString('base64url'),csrf=crypto.randomBytes(32).toString('base64url');sessions.set(token,{csrf,expires:Date.now()+12*3600*1000});res.setHeader('Set-Cookie',cookie(req,token,12*3600));return json(res,200,{authenticated:true,csrf});
+    attempts.delete(ip);const user=newSession(req);res.setHeader('Set-Cookie',user.cookie);return json(res,200,{authenticated:true,csrf:user.csrf});
    }
    if(route==='/api/logout'&&req.method==='POST'){const user=mutation(req);sessions.delete(user.token);res.setHeader('Set-Cookie',cookie(req,'',0));return json(res,200,{authenticated:false})}
    if(route.startsWith('/api/')){
-    if(req.method==='GET')authenticated(req);else mutation(req);
+    const user=req.method==='GET'?authenticated(req):mutation(req);
+    const actor=user.identity?`${user.identity.issuer}#${user.identity.subject}`:'editor';
     const key=url.searchParams.get('key');
     if(route==='/api/catalogue'&&req.method==='GET')return json(res,200,{records:store.list().map(r=>({key:r.key,kind:r.kind,title:r.data.title,url:recordURL(r),revision:r.revision})),regions,states:stateNames});
     if(route==='/api/records'&&req.method==='GET'){
@@ -71,7 +102,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
      const prior=store.get(candidate.key);if(req.method==='PUT'&&!prior)throw problem('Page not found',404);if(prior&&prior.kind!==candidate.kind)throw problem('Page type cannot change');
      renderCollection(store,candidate);
      const summary=String(input.summary||'Updated page').trim().slice(0,500);
-     const saved=req.method==='POST'?store.create(candidate,{summary}):store.save(key,candidate,{expectedRevision:input.expectedRevision,summary});invalidated();
+     const saved=req.method==='POST'?store.create(candidate,{summary,actor}):store.save(key,candidate,{expectedRevision:input.expectedRevision,summary,actor});invalidated();
      return json(res,req.method==='POST'?201:200,{record:editorRecord(saved),url:recordURL(saved),rendered:renderedRecord(getCollection(),saved.key)});
     }
     if(route==='/api/preview'&&req.method==='POST'){
@@ -85,7 +116,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
     }
     if(route==='/api/restore'&&req.method==='POST'){
      const input=await jsonBody(req),old=store.revision(key,input.revision);if(!old)throw problem('Revision not found',404);renderCollection(store,old);
-     const record=store.restore(key,input.revision,{expectedRevision:input.expectedRevision,summary:String(input.summary||`Restored revision ${input.revision}`).slice(0,500)});invalidated();
+     const record=store.restore(key,input.revision,{expectedRevision:input.expectedRevision,actor,summary:String(input.summary||`Restored revision ${input.revision}`).slice(0,500)});invalidated();
      return json(res,200,{record:editorRecord(record),url:recordURL(record),rendered:renderedRecord(getCollection(),key)});
     }
     if(route==='/api/uploads'&&req.method==='POST'){

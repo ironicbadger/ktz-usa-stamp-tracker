@@ -1,0 +1,30 @@
+# Standalone alternative to compose.yaml; no application password is required.
+services:
+  stamp-book:
+    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:main}
+    ports:
+      - "${STAMP_BOOK_BIND:-127.0.0.1}:${STAMP_BOOK_PORT:-8770}:8770"
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8770"
+      DATA_DIR: /data
+      AUTH_MODE: oidc
+      ORIGIN: ${ORIGIN:?Set the HTTPS public origin of The Stamp Book}
+      OIDC_PROVIDER: ${OIDC_PROVIDER:-oidc}
+      OIDC_ISSUER: ${OIDC_ISSUER:?Set the OIDC issuer URL}
+      OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:?Set the registered OIDC client ID}
+      OIDC_CLIENT_SECRET_FILE: /run/secrets/oidc_client_secret
+      OIDC_CLIENT_AUTH_METHOD: ${OIDC_CLIENT_AUTH_METHOD:-client_secret_post}
+      OIDC_ALLOWED_SUBJECTS: ${OIDC_ALLOWED_SUBJECTS:?Set the comma-separated editor subject IDs}
+    secrets:
+      - oidc_client_secret
+    volumes:
+      - stamp-book-data:/data
+    restart: unless-stopped
+    init: true
+secrets:
+  oidc_client_secret:
+    # Public clients may set auth method 'none' and use an empty file.
+    file: ${OIDC_CLIENT_SECRET_FILE:?Set the path to the OIDC client secret file}
+volumes:
+  stamp-book-data:

@@ -2,6 +2,10 @@
 
 The main branch contains the application. The server reads SQLite at runtime; it does not continually read or rewrite the Obsidian vault.
 
+## Authentication
+
+For password-free editor access, use [OIDC / Tailscale tsidp](oidc.md) and the standalone `compose.oidc.yaml`. It replaces the shared password; no application password file is required. The password setup below remains available for existing installations.
+
 ## Local run
 
 Use Node 24 for parity with the container. The initial local environment used Node 22.23.2, where the built-in SQLite API emits an experimental warning.

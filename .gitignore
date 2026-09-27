@@ -4,6 +4,7 @@ dist/
 .dev.vars*
 .env*
 !.env.example
+!.env.oidc.example
 .DS_Store
 vault/.obsidian/workspace*.json
 vault/.obsidian/cache/

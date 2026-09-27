@@ -22,7 +22,7 @@ Import never overwrites later browser edits. For a populated **fictional** demon
 - [Editor guide and limitations](docs/web-app/editor-guide.md)
 - [Verification and prototype acceptance](docs/web-app/verification.md)
 
-Public reading is unauthenticated; editing uses a shared owner password with session and CSRF protection. The app is designed for a single owner. A responsive editor, recovery drafts, manifest/icons and cached offline reading form the PWA foundation. **Phone installation requires HTTPS; saving and opening the editor require a connection.** There is no automatic offline synchronization or native companion app yet.
+Public reading is unauthenticated; editing supports password-free [OIDC and Tailscale tsidp](docs/web-app/oidc.md), or a shared owner password, with session and CSRF protection. The app is designed for a single owner. A responsive editor, recovery drafts, manifest/icons and cached offline reading form the PWA foundation. **Phone installation requires HTTPS; saving and opening the editor require a connection.** There is no automatic offline synchronization or native companion app yet.
 
 
 ## Container deployment
