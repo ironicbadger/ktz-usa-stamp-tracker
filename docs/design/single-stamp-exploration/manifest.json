@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-26",
+  "status": "Awaiting user selection",
+  "displayOrderAuthority": "Actual generated-image display order in the replacement ideation set",
+  "supersedes": "../exploration-2026-09-26",
+  "brief": "Single stamp default for 80\u201390% of sites; compact horizontal expansion for roughly six stamps; minimal collapsed stamping locations; traditional maximum page width.",
+  "options": [
+    {
+      "number": 1,
+      "slug": "travel-letter",
+      "name": "The Travel Letter",
+      "image": "01-travel-letter.png",
+      "prompt": "prompts/travel-letter.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-fab97977-d83e-44b6-8abe-a0bac489bf6c.png",
+      "width": 912,
+      "height": 1724,
+      "sha256": "b656502ed4e021382b28717036caa9cdb134c2339de8c7ca8749f707bc36429c"
+    },
+    {
+      "number": 2,
+      "slug": "park-profile",
+      "name": "The Park Profile",
+      "image": "02-park-profile.png",
+      "prompt": "prompts/park-profile.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-fc7ea322-9b46-4d7b-a71c-fd732030bb0f.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "cbfdd17660beb06e64e194cc7b92e19d98469ea89d168e996ef3c32a25738573"
+    },
+    {
+      "number": 3,
+      "slug": "visit-ledger",
+      "name": "The Visit Ledger",
+      "image": "03-visit-ledger.png",
+      "prompt": "prompts/visit-ledger.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-c78afaef-6e46-45bf-9b7d-f3fa5c33d413.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "2eba1355b181a18e92a8f80281af5de9188e3043cbdce1c1d51856300b24305e"
+    },
+    {
+      "number": 4,
+      "slug": "inline-specimen",
+      "name": "Inline Specimen",
+      "image": "04-inline-specimen.png",
+      "prompt": "prompts/inline-specimen.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-e3d0eb06-0f9d-44d7-ab77-8da49c3d8764.png",
+      "width": 981,
+      "height": 1602,
+      "sha256": "3eb22ac56587431d2a9f9b43c580e40998d7d27820c8bee34fa2d82bf188a6af"
+    },
+    {
+      "number": 5,
+      "slug": "classic-article",
+      "name": "Classic Article",
+      "image": "05-classic-article.png",
+      "prompt": "prompts/classic-article.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-a7ae30c9-58cb-4cba-8bf9-9defc14bcd58.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c68d5284ca9249273b9780a9d75d1c08125c43d7c6c9d392cb61f1c577144bac"
+    },
+    {
+      "number": 6,
+      "slug": "pocket-archive",
+      "name": "Pocket Archive",
+      "image": "06-pocket-archive.png",
+      "prompt": "prompts/pocket-archive.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-3ccf918f-2a27-4e9f-a173-bfa20d1159d9.png",
+      "width": 960,
+      "height": 1637,
+      "sha256": "83ee1defb62430f818f645b59f8461bb7b37be04ca1ff781d6a886594045fddc"
+    },
+    {
+      "number": 7,
+      "slug": "library-record",
+      "name": "Library Record",
+      "image": "07-library-record.png",
+      "prompt": "prompts/library-record.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-bbc715e7-81ec-4ad4-84a4-c8454d256208.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "b620f8c11c47402cdd571aa6fc2117c7b8170253769d8e21c879741628b3a3b4"
+    },
+    {
+      "number": 8,
+      "slug": "journal-record",
+      "name": "Journal and Record",
+      "image": "08-journal-record.png",
+      "prompt": "prompts/journal-record.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-6f87bd98-9db0-47fb-8d3a-b24a794c59cd.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "4bf41d6788f18add20cf1694ffc24b0d536cf2b8edbc83473eea8fae4e58493d"
+    },
+    {
+      "number": 9,
+      "slug": "book-page",
+      "name": "The Book Page",
+      "image": "09-book-page.png",
+      "prompt": "prompts/book-page.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-b0afc7d5-bb09-47f2-a49c-724eb718e85e.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "517c271698680cf2fe7615878d8db407fb0b9b0d20f336b265e3221ca0da7356"
+    },
+    {
+      "number": 10,
+      "slug": "place-remembered",
+      "name": "A Place Remembered",
+      "image": "10-place-remembered.png",
+      "prompt": "prompts/place-remembered.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-344c1a26-6405-4c77-b25c-4d343c1a4ba2.png",
+      "width": 930,
+      "height": 1692,
+      "sha256": "028a287ba3f511cdfe9451eb3a4eb9386a7f927adbc4563366df985ee33959df"
+    }
+  ]
+}

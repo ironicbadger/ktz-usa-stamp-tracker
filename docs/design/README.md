@@ -2,9 +2,13 @@
 
 Start here when continuing this project on another Codex host. All image links are relative and travel with the repository. These are design references, not deployed site assets.
 
-## Current implementation
+## Latest design exploration — awaiting selection
 
-**Current visual authority:** the user reselected `mockups/refinement-01-narrow-main-stamp-sidebar.png` after trying the Wikipedia variant. Restore its modern sans-serif typography, two separate sidebar cards, and locations → notes → visits → full collection desktop structure. Retain the later 1200px cap, collapsible Places browser and horizontal collection grids. Earlier Wikipedia iteration notes below are historical.
+The user rejected the current layout as too busy and clarified that 80–90% of places have one stamp; the minority commonly have about six. Start with the [replacement ten full-page renders](single-stamp-exploration/README.md), each showing one stamp by default plus a separately labeled six-stamp component study. Stamping locations must be a minimal collapsed row. No replacement direction has been selected or implemented yet. The display-order mapping in that folder governs the next selection.
+
+## Current implementation (under review)
+
+**Previous implementation reference:** the user reselected `mockups/refinement-01-narrow-main-stamp-sidebar.png` after trying the Wikipedia variant. Its modern sans-serif typography, two separate sidebar cards, and locations → notes → visits → full collection desktop structure informed the current build, alongside the later 1200px cap, collapsible Places browser and horizontal collection grids. This layout is now under review; do not treat it as approval for further redesign. Earlier Wikipedia iteration notes below are historical.
 
 The user explicitly requested a fully populated fictional Yellowstone page. `npm run qa:fixture` rebuilds the isolated preview at port 8767 with two June 2019 visits, two main stamps, four distinct substamps, an original diary inspired by the linked road-trip blog, and a credited NPS photograph of Lower Falls from Artist Point. This authorization applies to the demo only; the real `vault/` remains untouched. See [assets and sources](yellowstone-preview-assets.md) and `verification/yellowstone-filled-*.png`.
 
