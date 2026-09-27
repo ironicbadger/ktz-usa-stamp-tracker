@@ -7,13 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "dev": "node scripts/serve.mjs --watch",
-    "preview": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs",
+    "build": "node web/build.mjs",
+    "dev": "node --watch web/server.mjs",
     "test": "node --test",
-    "cf:preview": "wrangler pages dev dist",
-    "deploy": "wrangler pages deploy dist --project-name ktz-usa-stamp-tracker --branch main",
     "qa:fixture": "node scripts/qa-fixture.mjs",
     "qa:check": "node scripts/check.mjs .qa/dist",
     "qa:browser": "node scripts/verify-browser.mjs",
@@ -21,7 +17,10 @@
     "web:start": "node web/server.mjs",
     "web:import": "node web/import.mjs",
     "web:backup": "node web/backup.mjs",
-    "web:test": "node --test test/web-*.test.mjs"
+    "web:test": "node --test test/web-*.test.mjs",
+    "site:build": "node scripts/build.mjs",
+    "site:check": "node scripts/check.mjs",
+    "start": "node web/server.mjs"
   },
   "dependencies": {
     "@tiptap/core": "^3.31.3",
@@ -38,7 +37,6 @@
     "@phosphor-icons/core": "^2.1.1",
     "esbuild": "^0.28.2",
     "htmlparser2": "12.0.0",
-    "playwright": "^1.63.0",
-    "wrangler": "4.141.0"
+    "playwright": "^1.63.0"
   }
 }

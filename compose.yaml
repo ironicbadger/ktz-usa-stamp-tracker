@@ -1,8 +1,8 @@
 services:
   stamp-book:
-    build: .
+    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:main}
     ports:
-      - "${STAMP_BOOK_BIND:-127.0.0.1}:8770:8770"
+      - "${STAMP_BOOK_BIND:-127.0.0.1}:${STAMP_BOOK_PORT:-8770}:8770"
     environment:
       HOST: 0.0.0.0
       PORT: "8770"

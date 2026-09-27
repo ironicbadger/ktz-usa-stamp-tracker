@@ -1,0 +1,4 @@
+services:
+  stamp-book:
+    build: .
+    image: stamp-book:local

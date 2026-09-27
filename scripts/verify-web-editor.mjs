@@ -6,7 +6,7 @@ import AxeBuilder from '@axe-core/playwright';
 const base=process.env.QA_WEB_URL||'http://10.42.7.224:8770';
 const password=fs.readFileSync(process.env.APP_PASSWORD_FILE||'secrets/editor-password','utf8').trim();
 const out='.qa/web-screenshots';fs.mkdirSync(out,{recursive:true});
-const browser=await chromium.launch({channel:'chrome',headless:true});
+const browser=await chromium.launch({...(process.env.CI?{}:{channel:'chrome'}),headless:true});
 const context=await browser.newContext({viewport:{width:1440,height:1000}}),page=await context.newPage();
 const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());
 let checks=0;const check=(ok,message)=>{assert.ok(ok,message);checks++;console.log('PASS '+message)};

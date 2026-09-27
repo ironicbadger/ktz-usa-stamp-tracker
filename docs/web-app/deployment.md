@@ -1,6 +1,6 @@
-# Running the web app prototype
+# Deploying The Stamp Book
 
-The web app is a separate experiment. Existing static-site commands remain available. The server reads SQLite at runtime; it does not continually read or rewrite the Obsidian vault.
+The main branch contains the application. The server reads SQLite at runtime; it does not continually read or rewrite the Obsidian vault.
 
 ## Local run
 
@@ -27,7 +27,7 @@ Create the password file outside the checkout, then set its absolute path:
 export STAMP_BOOK_PASSWORD_FILE=/absolute/path/to/private-password-file
 # Local reverse proxy is the default host binding.
 export ORIGIN=http://localhost:8770
-docker compose build
+docker compose pull
 docker compose run --rm stamp-book npm run web:import -- --vault vault --data /data
 docker compose up -d
 docker compose ps
@@ -35,7 +35,7 @@ docker compose ps
 
 The Compose secret mounts that file at `/run/secrets/app_password`; it is not baked into the image. Docker Compose file secrets are mounted files, not an encrypted secret vault. Ensure the file is readable by UID 1000 inside your container runtime, while restricting host access appropriately.
 
-The default host binding is `127.0.0.1:8770`. To expose the prototype on your LAN, set both the bind address and its actual browser origin before starting:
+The default host binding is `127.0.0.1:8770`. To expose the app on your LAN, set both the bind address and its actual browser origin before starting:
 
 ```sh
 export STAMP_BOOK_BIND=0.0.0.0
@@ -58,7 +58,7 @@ Run one replica against one local SQLite volume. Do not attach the same database
 
 Put the container behind your existing HTTPS reverse proxy and set `ORIGIN=https://your-hostname`. Preserve the original host/protocol forwarding expected by your proxy configuration. HTTPS enables secure cookies and the browser capabilities required for an installable PWA. Plain HTTP on another machine's LAN IP is useful for layout testing, but does not establish that phone installation or offline capabilities work.
 
-The prototype's mobile UI and draft recovery are distinct from automatic offline synchronization. Do not assume unsent edits have reached the server; check the saved state. A native companion app and background sync are outside this prototype.
+The app's mobile UI and draft recovery are distinct from automatic offline synchronization. Do not assume unsent edits have reached the server; check the saved state. A native companion app and background sync are outside this prototype.
 
 ## Backup and restore
 
@@ -87,3 +87,18 @@ Start a separate server against the restored data, verify representative pages, 
 ## Validation status
 
 The Linux Node 24 image passed build, import, authenticated editing, restart persistence, revision restore, image upload and backup/restore checks. See [container verification](container-verification.md) for the exact tested image and limits. A successful macOS Node 22 test is not a substitute for testing the Node 24 Linux image. Pin the image to a tested digest before production deployment.
+
+## CI images and deployment artifacts
+
+App CI tests every pull request and main push. Successful main pushes and `v*` tags publish multi-platform images (linux/amd64 and linux/arm64) to GHCR. The `main` tag tracks the current application; `sha-<full commit>` identifies a build. The deployment artifact includes Compose, this guide, configuration examples and an `image.env` pinning the published digest. Copy its `STAMP_BOOK_IMAGE` value into `.env` to deploy that exact build.
+
+Before upgrading, back up your data, then run `docker compose pull` and `docker compose up -d`. Keep the previous image digest and backup for rollback; an older image may require restoring its corresponding database backup after schema changes. Never delete the data volume during an upgrade.
+
+To build locally instead of pulling the published image:
+
+```sh
+docker compose -f compose.yaml -f compose.build.yaml build
+docker compose -f compose.yaml -f compose.build.yaml up -d
+```
+
+For initial setup copy `.env.example` to `.env`, set the password file path, bind address and public origin, and explicitly import the bundled catalogue once. The release artifact works without cloning the repository.

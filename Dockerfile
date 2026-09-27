@@ -1,4 +1,4 @@
-FROM node:24-bookworm-slim
+FROM node:24-bookworm-slim AS build
 WORKDIR /app
 
 # Keep the lockfile authoritative, including the bundler needed by web:build.
@@ -6,8 +6,20 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
 RUN npm run web:build \
-    && mkdir -p /data /backups \
-    && chown node:node /data /backups
+    && npm prune --omit=dev
+
+FROM node:24-bookworm-slim AS runtime
+WORKDIR /app
+LABEL org.opencontainers.image.source="https://github.com/ironicbadger/ktz-usa-stamp-tracker"
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/web ./web
+COPY --from=build /app/web-dist ./web-dist
+COPY --from=build /app/src ./src
+COPY --from=build /app/static ./static
+COPY --from=build /app/data ./data
+COPY --from=build /app/vault ./vault
+RUN mkdir -p /data /backups && chown node:node /data /backups
 
 ENV NODE_ENV=production HOST=0.0.0.0 PORT=8770 DATA_DIR=/data
 USER node
