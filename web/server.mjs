@@ -160,7 +160,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
    if(route==='/'){
     const raw=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('stamp_feature='))?.slice(14);
     let previous='';try{previous=decodeURIComponent(raw||'')}catch{}
-    const {html,featuredKey}=renderHome(collection.model,{previous});
+    const {html,featuredKey}=renderHome(collection.model,{previous,page:collection.renderPage});
     res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Vary':'Cookie','Set-Cookie':`stamp_feature=${encodeURIComponent(featuredKey)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=31536000${expectedOrigin(req).startsWith('https:')?'; Secure':''}`});
     return res.end(html);
    }

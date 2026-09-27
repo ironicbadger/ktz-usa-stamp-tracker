@@ -77,5 +77,5 @@ export function createSite(model,catalogue,assetVersion) {
  for(const p of places)if(p.associationsBody?.trim())search.push({title:`${p.title} — Associations`,kind:'Associations',url:p.url+'#associations',text:`${p.title} ${p.associationsBody}`});
  for(const p of places)for(const v of p.data.visits){search.push({title:`${p.title} — ${v.date}`,kind:'Visit',url:p.url+'#'+v.anchor,text:`${p.title} ${v.date} ${v.notes||''} ${v.trip||''}`});for(const s of v.stamps)search.push({title:s.name,kind:s.type==='main'?'Main stamp':'Substamp',url:p.url+'#'+s.anchor,text:`${s.name} ${s.location||''} ${s.notes||''} ${v.date} ${p.title}`})}
  for(const p of places)for(const l of p.locations||[])search.push({title:l.name,kind:'Stamping location',url:p.url+'#'+l.anchor,text:[p.title,l.name,...(l.aliases||[]),...l.reports.flatMap(r=>[r.access||'',r.notes||'',r.availability,...r.stamps.map(s=>s.name)])].join(' ')});
- return {pages,search};
+ return {pages,search,layout};
 }
