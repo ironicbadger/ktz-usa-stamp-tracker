@@ -12,7 +12,7 @@ const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',
 let checks=0;const check=(ok,message)=>{assert.ok(ok,message);checks++;console.log('PASS '+message)};
 const title='QA web authoring '+Date.now(),key='Places/'+title;
 async function settle(view){await view.evaluate(()=>{document.activeElement?.blur();return new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))})}
-async function save(){await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.locator('#status').filter({hasText:'Changes saved.'}).waitFor();}
+async function save(){await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.waitForURL(url=>!url.pathname.startsWith('/edit'));check(true,'Save returns to readable page');await page.getByRole('link',{name:'Edit this page',exact:true}).click();await page.getByRole('button',{name:'Save changes',exact:true}).waitFor();}
 async function api(url,method='GET',body){return page.evaluate(async({url,method,body})=>{const session=await fetch('/api/session').then(r=>r.json());const r=await fetch(url,{method,headers:{'Content-Type':'application/json','X-CSRF-Token':session.csrf},body:body?JSON.stringify(body):undefined});const data=await r.json();if(!r.ok)throw Error(JSON.stringify(data));return data},{url,method,body})}
 try{
  await page.goto(base+'/edit/');await page.getByLabel('Editor password').fill(password);await page.getByRole('button',{name:'Sign in',exact:true}).click();await page.getByRole('heading',{name:'Edit your stamp book'}).waitFor();check(true,'Password login and catalogue');
@@ -37,5 +37,26 @@ try{
  await page.getByRole('textbox',{name:'About this place',exact:true}).fill('Recovered local draft.');await page.reload();await page.getByRole('button',{name:'Restore draft'}).click();check((await page.getByRole('textbox',{name:'About this place',exact:true}).innerText()).includes('Recovered local draft'),'Local draft survives reload and restores explicitly');await save();
  const beforeConflict=await api('/api/records?key='+encodeURIComponent(key));await api('/api/records?key='+encodeURIComponent(key),'PUT',{record:beforeConflict.record,expectedRevision:beforeConflict.record.revision,summary:'Concurrent browser QA edit'});await page.getByRole('textbox',{name:'About this place',exact:true}).fill('Conflicting unsaved text');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.locator('#status').filter({hasText:'This page was changed after you opened it.'}).waitFor();check(true,'Stale save rejected with recovery instructions');const afterConflict=await api('/api/records?key='+encodeURIComponent(key));check(!afterConflict.record.prose.about.html.includes('Conflicting unsaved'),'Stale save does not overwrite newer revision');check(await page.evaluate(key=>localStorage.getItem('stamp-book-draft:'+key)?.includes('Conflicting unsaved'),key),'Conflict retains local draft');await page.reload();await page.getByRole('button',{name:'Discard draft'}).click();
  const reader=await context.newPage();await reader.goto(base+'/places/'+title.toLowerCase().replaceAll(' ','-')+'/');check(await reader.locator('#associations').innerText().then(t=>t.includes('book read')),'Reader shows Associations');check(await reader.locator('#visits').innerText().then(t=>t.includes('short visit')),'Reader shows saved visit');await settle(reader);await reader.screenshot({path:path.join(out,'reader-desktop.png'),fullPage:true});await reader.setViewportSize({width:390,height:844});check(await reader.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Reader 390px has no overflow');await settle(reader);await reader.screenshot({path:path.join(out,'reader-mobile.png'),fullPage:true});
+ const uploadKey=key+' upload',uploadTitle=title+' upload';
+ await api('/api/records','POST',{record:{key:uploadKey,kind:'Places',data:{title:uploadTitle,states:['GA'],passport_region:'Southeast',visits:[]},body:''}});
+ await page.goto(base+'/places/'+uploadTitle.toLowerCase().replaceAll(' ','-')+'/');
+ await page.getByRole('link',{name:'Edit mode',exact:true}).click();
+ check(new URL(page.url()).searchParams.get('key')===uploadKey,'Edit mode targets the current page');
+ await page.getByLabel('Find a page',{exact:true}).fill(title+' trip');check(await page.locator('.page-picker').getByRole('link',{name:title+' trip',exact:true}).isVisible(),'Page search remains available while editing');
+ await page.getByLabel('Upload stamps to create cancellations',{exact:true}).setInputFiles({name:'2020-01-01-example.png',mimeType:'image/png',buffer:image});
+ await page.locator('#status').filter({hasText:'1 cancellation(s) added.'}).waitFor();
+ check(await page.getByLabel('Collected date',{exact:true}).inputValue()==='','Upload never defaults the collection date to today or a filename date');
+ check(await page.getByLabel('Visit date',{exact:true}).inputValue()==='','Upload starts with an undated visit');
+ await page.getByLabel('Name',{exact:true}).fill('An unexpected cancellation');await page.getByLabel('Collected date',{exact:true}).fill('2019-06-17');
+ check(await page.getByLabel('Visit date',{exact:true}).inputValue()==='2019-06-17','Entered collection date establishes a new visit date');
+ await page.getByLabel('Visit date',{exact:true}).fill('2019-06-16');
+ await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.waitForURL(url=>url.pathname.startsWith('/places/'));
+ const uploaded=await api('/api/records?key='+encodeURIComponent(uploadKey));
+ check(!Object.hasOwn(uploaded.record.data,'stamps'),'Uploading creates a collected cancellation without an expected list');
+ check(uploaded.record.data.visits[0].stamps[0].photos.length===1,'Upload and cancellation are saved together');
+ check(uploaded.record.data.visits[0].stamps[0].date==='2019-06-17'&&uploaded.record.data.visits[0].date==='2019-06-16','Collected date persists independently from visit date');
+ check(await page.locator('.primary-date time').getAttribute('datetime')==='2019-06-17','Reader shows actual collection date in primary stamp box');
+ await page.getByRole('link',{name:'Edit this page',exact:true}).click();await page.getByLabel('Collected date',{exact:true}).fill('2018-04-23');await save();
+ check((await api('/api/records?key='+encodeURIComponent(uploadKey))).record.data.visits[0].stamps[0].date==='2018-04-23','Existing collected date can be corrected');
  check(errors.length===0,'No browser JavaScript errors');fs.writeFileSync(path.join(out,'editor-result.json'),JSON.stringify({base,key,checks,errors},null,2));console.log(JSON.stringify({checks,key,errors}));
 }finally{await browser.close()}

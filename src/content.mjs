@@ -69,6 +69,7 @@ export function validatePlace(p,file) {
   assert(Array.isArray(v.stamps),context,'stamps must be a list (use [] when empty)');
   for(const s of v.stamps) {
    assert(s&&text(s.name)&&['main','sub'].includes(s.type),context,'each stamp needs a name and type: main or sub');
+   assert(s.date===undefined||validDate(s.date),context,'collected date must be a real YYYY-MM-DD date');
    assert(s.location===undefined||typeof s.location==='string',context,'stamp location must be text');
    assert(s.notes===undefined||typeof s.notes==='string',context,'stamp notes must be text');
    assert(Array.isArray(s.photos)&&s.photos.every(text),context,'stamp photos must be a list (use [] when empty)');
@@ -105,7 +106,7 @@ export function loadRecords(records,{assets=[],vault}={}) {
  for(const p of places)for(const [i,v] of p.data.visits.entries()) {
   v.legacyAnchor=`visit-${v.date}-${i+1}`;
   v.anchor=v.id?`visit-${v.id}`:v.legacyAnchor;
-  v.stamps.forEach((s,j)=>{s.legacyAnchor=`${v.legacyAnchor}-stamp-${j+1}`;s.anchor=s.id?`stamp-${s.id}`:s.legacyAnchor;s.date=v.date;s.visit=v;s.place=p});
+  v.stamps.forEach((s,j)=>{s.legacyAnchor=`${v.legacyAnchor}-stamp-${j+1}`;s.anchor=s.id?`stamp-${s.id}`:s.legacyAnchor;s.date=s.date||v.date;s.visit=v;s.place=p});
   if(v.trip) {
    const key=v.trip.slice(2,-2);
    if(!nodes.some(n=>n.key===key))nodes.push({kind:'Trips',key,title:key.slice(6),data:{title:key.slice(6)},body:'',url:`/trips/${slug(key.slice(6))}/`,outgoing:new Set()});
