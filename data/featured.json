@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Yosemite National Park",
+    "image": "/images/featured/yose.jpg",
+    "credit": "NPS / Cindy Jacoby",
+    "source": "https://www.nps.gov/yose/index.htm",
+    "description": "Granite walls, quiet trails, and another page waiting to be filled.",
+    "alt": "Yosemite Valley from Tunnel View"
+  },
+  {
+    "title": "Great Smoky Mountains National Park",
+    "image": "/images/featured/grsm.jpg",
+    "credit": "NPS Photo",
+    "source": "https://www.nps.gov/grsm/index.htm",
+    "description": "Forest paths and misty ridges. A little room to wander.",
+    "alt": "Autumn leaves in the mist in Great Smoky Mountains"
+  },
+  {
+    "title": "Olympic National Park",
+    "image": "/images/featured/olym.jpg",
+    "credit": "NPS Photo",
+    "source": "https://www.nps.gov/olym/index.htm",
+    "description": "Old forests, ocean air, and a quieter kind of adventure.",
+    "alt": "Trees and ferns in the temperate forests of Olympic"
+  },
+  {
+    "title": "Grand Canyon National Park",
+    "image": "/images/featured/grca.jpg",
+    "credit": "NPS / M. Quinn",
+    "source": "https://www.nps.gov/grca/index.htm",
+    "description": "A long view, a slow sunset, and a place to remember.",
+    "alt": "Sunset over Grand Canyon from Mather Point"
+  }
+]

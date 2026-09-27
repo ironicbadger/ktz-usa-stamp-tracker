@@ -10,6 +10,8 @@ RUN npm run web:build \
 
 FROM node:24-bookworm-slim AS runtime
 WORKDIR /app
+ARG APP_VERSION=development
+LABEL org.opencontainers.image.version=$APP_VERSION
 LABEL org.opencontainers.image.source="https://github.com/ironicbadger/ktz-usa-stamp-tracker"
 COPY --from=build /app/package*.json ./
 COPY --from=build /app/node_modules ./node_modules

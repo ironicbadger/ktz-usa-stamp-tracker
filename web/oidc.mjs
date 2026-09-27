@@ -49,7 +49,7 @@ export function createOIDC(settings,origin){
    try{tokens=await client.authorizationCodeGrant(await config(),new URL(req.url,origin),{pkceCodeVerifier:transaction.verifier,expectedState:transaction.state,expectedNonce:transaction.nonce,idTokenExpected:true})}catch{throw failure('The identity provider could not verify this sign-in. Please try again.')}
    const claims=tokens.claims();
    if(!claims||typeof claims.sub!=='string'||!settings.allowedSubjects.includes(claims.sub))throw failure('This identity is not allowed to edit this book.',403);
-   return {destination:transaction.destination,identity:{subject:claims.sub,issuer:claims.iss,name:typeof claims.name==='string'?claims.name:claims.sub}};
+   return {destination:transaction.destination,identity:{subject:claims.sub,issuer:claims.iss,name:[claims.name,claims.preferred_username,claims.email].find(v=>typeof v==='string'&&v.trim())||claims.sub}};
   }
  };
 }
