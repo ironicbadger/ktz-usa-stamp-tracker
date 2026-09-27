@@ -1,3 +1,19 @@
+# Design QA — Compact navigation (v1.1.2)
+
+The theme control is now an accessible sun/moon icon in the shared top navigation,
+with Edit mode immediately beside it. The editor header uses the same icon.
+The homepage's title, introductory sentence and separate page-actions row are
+removed. Content starts directly with the book progress panel; section gaps and
+initial top padding are reduced. The other reading pages retain their per-page
+Edit this page and History links.
+
+The desktop dark layout and white mode were inspected. A 320px check identified
+the existing search form's 220px minimum width; the new header group overrides
+that minimum so the search field can shrink. Final live mobile verification is
+required after the release's versioned stylesheet is loaded. All 104 tests pass.
+
+---
+
 # Design QA — Homepage consistency (v1.1.1)
 
 Final result: passed.

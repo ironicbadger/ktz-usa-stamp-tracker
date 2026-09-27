@@ -1,3 +1,5 @@
+import {appVersion} from './version.mjs';
+import {themeToggle} from './theme-controls.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -13,10 +15,11 @@ export function renderCollection(store,replacement){
  const normalized=records.map(normalizeRichRecord);
  const assets=store.listAssets().map(a=>({path:a.path,file:path.join(store.uploadsDir,a.path)}));
  const model=loadRecords(normalized,{assets});
- const {pages,search,layout}=createSite(model,catalogue,'web-app-v1');
+ const {pages,search,layout}=createSite(model,catalogue,appVersion);
  const decorate=(html,record)=>{
-  const tools=`<nav class="page-tools" aria-label="Page actions"><button class="theme-toggle" type="button" data-theme-toggle>Switch theme</button><a href="/edit/">Edit collection</a>${record?`<a href="/edit/?key=${encodeURIComponent(record.key)}">Edit this page</a><a href="/edit/?key=${encodeURIComponent(record.key)}&view=history">History</a>`:''}</nav>`;
-  return html.replace('</head>','<script src="/web/theme.js"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" href="/web/icon-192.png"><link rel="stylesheet" href="/web/reader.css"><link rel="stylesheet" href="/web/theme.css"><script src="/web/pwa.js" defer></script></head>').replace('<main id="content">','<main id="content">'+tools);
+  const tools=record?`<nav class="page-tools" aria-label="Page actions"><a href="/edit/?key=${encodeURIComponent(record.key)}">Edit this page</a><a href="/edit/?key=${encodeURIComponent(record.key)}&view=history">History</a></nav>`:'';
+  const controls=`<div class="header-tools"><div class="header-controls">${themeToggle}<a href="/edit/">Edit mode</a></div>`;
+  return html.replace('</head>',`<script src="/web/theme.js?v=${appVersion}"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" href="/web/icon-192.png"><link rel="stylesheet" href="/web/reader.css?v=${appVersion}"><link rel="stylesheet" href="/web/theme.css?v=${appVersion}"><script src="/web/pwa.js" defer></script></head>`).replace('<form action="/search/" role="search">',controls+'<form action="/search/" role="search">').replace('</form></header>','</form></div></header>').replace('<main id="content">','<main id="content">'+tools);
  };
  for(const [url,html] of pages)pages.set(url,decorate(html,records.find(r=>recordURL(r)===url)));
  for(const item of search)item.text=plainText(item.text);
