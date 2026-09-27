@@ -27,6 +27,9 @@ export function renderCollection(store,replacement){
 }
 export function editorRecord(record){
  const copy=structuredClone(record);
+ const ids=new Set((copy.data.stamps||[]).map(s=>s.id).filter(Boolean));
+ for(const [i,s]of (copy.data.stamps||[]).entries())if(!s.id){let id=`known-${i+1}`;while(ids.has(id))id+='-legacy';s.id=id;ids.add(id)}
+ for(const v of copy.data.visits||[])for(const s of v.stamps||[])if(!s.cancellation_id){const matching=(copy.data.stamps||[]).filter(c=>c.name.trim().toLowerCase()===s.name.trim().toLowerCase()&&(c.type||'main')===s.type);if(matching.length===1)s.cancellation_id=matching[0].id;}
  for(const [i,v] of (copy.data.visits||[]).entries()){
   const oldVisit=`visit-${v.date}-${i+1}`;
   if(!v.id){v.id=`legacy-${v.date}-${i+1}`;v.anchor_aliases=[...new Set([...(v.anchor_aliases||[]),oldVisit])];}

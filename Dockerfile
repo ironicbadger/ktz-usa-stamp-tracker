@@ -20,6 +20,7 @@ COPY --from=build /app/web-dist ./web-dist
 COPY --from=build /app/src ./src
 COPY --from=build /app/static ./static
 COPY --from=build /app/data ./data
+COPY --from=build /app/scripts/enrich-park-facts.mjs ./scripts/enrich-park-facts.mjs
 COPY --from=build /app/vault ./vault
 RUN mkdir -p /data /backups && chown node:node /data /backups
 

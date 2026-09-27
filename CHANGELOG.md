@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0
+
+- Compact per-visit stamp tables with spreadsheet paste, bulk type changes and removal.
+- One editable stamp name, optional photos, actual collection dates and Main, Additional or Limited edition types.
+- Choose a featured stamp; default to the first main stamp. Name-only stamps retain a blank photo slot.
+- Collapse place details, associations, uncollected known stamps and stamping locations. Edit photos through the thumbnail or Edit photo action.
+- Add sourced short descriptions and founding/authorization dates for all 429 catalogue places, plus verified acreage for 424. Apply missing facts explicitly with the included enrichment command; existing authored fields and collection data are preserved.
+- Preserve legacy notes, locations, photo references and revision history. No schema changes. Older releases do not understand the new limited-edition type; keep this release or restore a matching backup when rolling back.
+
 ## 1.1.4
 
 - Edit mode opens the current page and retains page search; saving returns to the reader.

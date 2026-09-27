@@ -44,7 +44,7 @@ function validateLocations(p,file) {
    assert(r&&id(r.id)&&['authored','imported'].includes(r.origin),file,'report requires an ID and origin');reportIDs.push(r.id);
    assert(availability.includes(r.availability),file,'invalid location availability');
    for(const key of ['access','notes'])assert(r[key]===undefined||typeof r[key]==='string',file,`report ${key} must be text`);
-   assert(Array.isArray(r.stamps)&&r.stamps.every(s=>s&&text(s.name)&&['main','sub'].includes(s.type)&&availability.includes(s.availability)),file,'reported stamps need a name, type and availability');
+   assert(Array.isArray(r.stamps)&&r.stamps.every(s=>s&&text(s.name)&&['main','sub','limited'].includes(s.type)&&availability.includes(s.availability)),file,'reported stamps need a name, type and availability');
    assert(Boolean(r.source)!==Boolean(r.visit_id),file,'report requires exactly one source or visit reference');
    if(r.visit_id){assert(r.origin==='authored'&&p.visits.some(v=>v.id===r.visit_id),file,'observation must reference an existing visit ID');assert(r.date===undefined&&r.checked===undefined,file,'observation inherits its visit date')}
    if(r.source)assert(safeURL(r.source.url)&&validDate(r.source.checked),file,'published source requires an HTTP(S) URL and real checked date');
@@ -52,6 +52,8 @@ function validateLocations(p,file) {
  }
  unique(reportIDs,'report');
  for(const v of p.visits)for(const stamp of v.stamps)assert(stamp.location_id===undefined||locations.some(l=>l.id===stamp.location_id),file,'stamp refers to an unknown location ID');
+ assert(p.fact_sources===undefined||(Array.isArray(p.fact_sources)&&p.fact_sources.every(s=>s&&text(s.label)&&safeURL(s.url))),file,'fact sources need a label and an HTTP(S) URL');
+ assert(p.established_label===undefined||text(p.established_label),file,'established label must be text');
  assert(p.area===undefined||text(p.area),file,'area must be text with units');
  assert(p.established===undefined||validDate(p.established),file,'established must be a real ISO date');
  assert(p.map===undefined||text(p.map),file,'map must be an attachment reference');
@@ -68,7 +70,7 @@ export function validatePlace(p,file) {
   assert(!v.trip||(/^\[\[Trips\/[^\]|#]+\]\]$/.test(v.trip)&&!v.trip.includes('..')),context,'trip must be [[Trips/Trip name]]');
   assert(Array.isArray(v.stamps),context,'stamps must be a list (use [] when empty)');
   for(const s of v.stamps) {
-   assert(s&&text(s.name)&&['main','sub'].includes(s.type),context,'each stamp needs a name and type: main or sub');
+   assert(s&&text(s.name)&&['main','sub','limited'].includes(s.type),context,'each stamp needs a name and type: main or sub or limited');
    assert(s.date===undefined||validDate(s.date),context,'collected date must be a real YYYY-MM-DD date');
    assert(s.location===undefined||typeof s.location==='string',context,'stamp location must be text');
    assert(s.notes===undefined||typeof s.notes==='string',context,'stamp notes must be text');
@@ -177,7 +179,7 @@ export function loadRecords(records,{assets=[],vault}={}) {
   }
   return {html:sanitize(notes.join('')),associationsHtml:sanitize(associations.join('')),associationsBody:associationBody.join(''),associationAliases,hasAssociations};
  }
- for(const n of nodes){if(n.kind==='Places')Object.assign(n,render(n.body,n,true));else n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
+ for(const n of nodes){if(n.kind==='Places')Object.assign(n,render(n.body,n,true));else n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Places')for(const s of n.data.stamps||[])s.images=(s.photos||[]).map(ref=>photo(ref,n));if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
  for(const p of places){
   Object.assign(p,cancellationAlbum(p));
   if(p.data.map)p.map=photo(p.data.map,p);

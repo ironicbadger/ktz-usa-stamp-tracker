@@ -8,15 +8,34 @@ A page's text uses a visual editor with bold, italic, headings, lists, links and
 
 Write an optional edit summary and choose **Preview** to see the reader page without publishing. **Save changes** validates the complete record and appends a revision. After a successful save, the app returns to that page in the reader so you can see the result. Local typing alone does not publish. **Jump to save** reaches the actions without a floating panel covering fields.
 
-## Visits and cancellations
+## Visits and stamps
 
-Add a visit with its date, optional trip and short rich-text notes. Add each collected cancellation beneath that visit. Select an expected cancellation when it is known, or record an unlisted one by name and type. Each collected cancellation has an editable **Collected date**, which may differ from its visit date. Legacy cancellations without their own date fall back to the recorded visit date. New visits start with a blank date; uploading never inserts today’s date. Photographs can be selected from files or the phone's image picker/camera where supported; the server decodes, rotates and optimizes raster uploads.
+Each visit has one compact stamp table. Enter a name, choose **Main**, **Additional**, or **Limited edition**, and optionally add photographs. The collected date defaults to the visit date and can be overridden per row. New visits start undated; uploading never inserts today's date. Short prose and inline links belong in the visit note below the table.
 
-**Upload stamps — one cancellation per image** creates collected cancellation drafts with their photos already attached. You do not need an expected cancellation first. Enter each name and collection date, then save. You can upload within an existing visit, or use the page-level upload to create a new visit; the first collection date you enter also dates that new visit, which you can adjust independently. To attach multiple photographs of the same cancellation, use its existing photograph picker.
+Use **Add row** for a name-only stamp, or expand **Upload several stamp photos** to create one row per image. Click a row's photo cell to add or remove photographs of that same stamp. Photos are decoded, rotated and optimized on upload.
 
-The expected-cancellation list is optional and independent of visits. Its first entry is the primary large square; use the up/down controls to reorder it. Additional expected cancellations remain separate from repeated impressions collected on later visits. An unspecified list stays unspecified unless you add entries.
+**Paste rows** accepts tab-separated name, type and optional YYYY-MM-DD date columns copied from a spreadsheet. Invalid rows reject the whole batch. Check rows to change their type together or remove them together. Tab moves between the ordinary editable cells. On small screens the table scrolls horizontally within its own region.
 
-Existing photos, legacy free-text locations, extra imported fields and old impression anchors are preserved. Removing an item edits the current draft; past saved revisions remain available. A referenced visit, location or expected cancellation cannot be removed in a way that leaves the record invalid: saving reports the problem.
+Choose **Featured** on any row to put that stamp first on the place page and use it in state/region grids. Without an override, the first main stamp is featured. Selecting a collected impression also selects that impression's photograph and date. A stamp without a photograph has a blank square. Removing the featured row clears its override.
+
+**Other known stamps** is a collapsed table for stamps you know exist but have not collected. A name and type are sufficient. **Record in visit…** moves a known stamp into the chosen visit table, keeping its identity. There is no separate expected-cancellation selector in the collected-stamp form. Renaming an existing linked stamp updates its known definition and linked visit rows; dates and photographs remain specific to each visit.
+
+Legacy per-stamp notes, location text, extra imported fields, photos and anchors remain stored. They are no longer repeated as routine entry fields. Removing an item edits the draft; saved versions remain in History. Referenced visits/locations cannot be deleted if doing so would leave a report invalid.
+
+## NPS place facts
+
+**Place details & about**, **Associations**, and **Stamping locations** start collapsed. The facts section includes source links for imported details. Dates from the NPS chronology are labeled **Established / authorized**: its chronology includes original authorizations and predecessor designations, not exclusively the date of the current name.
+
+`data/park-facts.json` contains sourced descriptions and dates for all 429 catalogue entries, and acreage for 424. Acreage comes from the June 30, 2026 NPS gross-acreage report, with multi-state rows and expressly listed additions combined. Four historic trails and Ronald Reagan Boyhood Home have no separately verified acreage in that report; their area remains blank. Source names, source notes and verification dates are retained in the data.
+
+To fill missing fields in an explicitly chosen database, run:
+
+```sh
+node scripts/enrich-park-facts.mjs --data /path/to/data
+node scripts/enrich-park-facts.mjs --data /path/to/data --apply
+```
+
+The first command reports proposed changes. Applying creates revisions and preserves authored facts, existing prose, visits and photos. It never runs automatically at app startup. Review the preview before applying it to a production database.
 
 ## Stamping locations
 
@@ -38,4 +57,4 @@ The browser keeps a recovery draft on the current device. After a reload, explic
 - Uploading creates a draft cancellation with its photo attached; saving publishes it. An upload from an abandoned draft may remain as an unreferenced asset. No garbage collector deletes it automatically; preserving history requires care before any future cleanup.
 - No page-deletion UI or permanent history purge. No native phone application has been built. The same API and domain model could support one later if PWA capabilities prove insufficient.
 
-Use HTTPS for real remote editing and phone PWA installation. The LAN demo is fictional and meant for reviewing the prototype. See [deployment](deployment.md) for persistence, backup and restore.
+Use HTTPS for real remote editing and phone PWA installation. The local authoring preview uses an isolated production snapshot; changes there do not publish to production. See [deployment](deployment.md) for persistence, backup and restore.

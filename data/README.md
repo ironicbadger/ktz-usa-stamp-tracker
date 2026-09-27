@@ -6,3 +6,10 @@ Catalogue provenance
 - Geographic/NPS facts are prefilled. No visits, collection claims, photographs, descriptions, or travel experiences are imported.
 
 Sources: https://www.nps.gov/subjects/gisandmapping/nps-maps.htm and https://americasnationalparks.org/passport-to-your-national-parks/passport-cancellation-locations/
+
+Place-fact enrichment (2026-09-27)
+
+- `park-facts.json` covers the same 429 catalogue entries, without changing catalogue scope. Short NPS introductions/summaries and original establishment/authorization dates are sourced per entry.
+- Gross area in acres comes from the NPS June 30, 2026 report; source row names are retained. Multi-state rows are combined, as are Big Cypress Addition and Everglades Expansion according to the workbook footnotes. American Memorial Park uses the NPS Geodiversity Atlas.
+- No acreage is invented for Ala Kahakai, Captain John Smith Chesapeake, Lewis and Clark, Selma to Montgomery, or Ronald Reagan Boyhood Home. These five records retain an explanation of the gap.
+- Use `scripts/enrich-park-facts.mjs --data <directory>` for a dry run, then add `--apply` to fill missing fields with revision history. It preserves authored fields and never imports visits, collection claims or photographs.

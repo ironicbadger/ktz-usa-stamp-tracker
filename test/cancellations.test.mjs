@@ -39,13 +39,13 @@ test('explicit identities survive renamed cancellations; repeats group newest fi
  assert.equal(newer.cancellationRecord, entry);
 });
 
-test('the first YAML entry stays primary even when a later main cancellation has a newer photograph', () => {
+test('the first main stamp is primary even when an additional stamp is listed earlier', () => {
  const p = place({stamps: [{id: 'first', name: 'First listed', type: 'sub'}, {id: 'later', name: 'Later main'}], visits: [{stamps: [impression('Later main', '2026-09-26', {cancellation_id: 'later', images: ['/attachments/later.png']})]}]});
  const {cancellations} = cancellationAlbum(p);
- assert.equal(cancellations[0].id, 'first');
- assert.equal(cancellations[0].collected, false);
- assert.equal(cancellations[0].impressions[0]?.date, undefined);
- assert.equal(cancellations[1].image, '/attachments/later.png');
+ assert.equal(cancellations[0].id, 'later');
+ assert.equal(cancellations[0].collected, true);
+ assert.equal(cancellations[0].image, '/attachments/later.png');
+ assert.equal(cancellations[1].id, 'first');
 });
 
 test('legacy matching is unambiguous by normalized name and type; ambiguous and unmatched records remain visible', () => {
@@ -116,4 +116,21 @@ test('loadContent resolves representative photos and exposes cancellation links 
  assert.equal(p.data.visits[0].stamps[0].anchor, 'visit-2026-09-26-1-stamp-1');
  assert.equal(p.data.visits[0].stamps[0].cancellationRecord, p.cancellations[0]);
  assert.equal(p.cancellations[1].collected, false);
+});
+
+test('featured selection can choose a limited edition impression without reordering stored data',()=>{
+ const first=impression('Main','2020-01-01',{id:'first',images:['/main.png']});
+ const limited=impression('250th','2026-01-01',{id:'anniversary',type:'limited',images:['/limited.png']});
+ const p=place({featured_stamp_id:'anniversary',visits:[{stamps:[first,limited]}]});
+ const result=cancellationAlbum(p);
+ assert.equal(result.cancellations[0].name,'250th');assert.equal(result.cancellations[0].image,'/limited.png');
+ assert.equal(p.data.visits[0].stamps[0].id,'first');
+});
+test('a featured impression without a photograph stays blank, while dates refer to that impression',()=>{
+ const p=place({featured_stamp_id:'earlier',visits:[{stamps:[impression('Main','2020-01-01',{id:'earlier'})]},{stamps:[impression('Main','2026-01-01',{id:'later',images:['/later.png']})]}]});
+ const result=cancellationAlbum(p).cancellations[0];assert.equal(result.image,undefined);assert.equal(result.impressions[0].date,'2020-01-01');
+});
+test('limited edition and name-only known stamps validate, but dangling featured IDs do not',()=>{
+ const data=validPlace({stamps:[{id:'known',name:'250th anniversary',type:'limited'}],featured_stamp_id:'known'});
+ assert.doesNotThrow(()=>validatePlace(data,'test'));data.featured_stamp_id='absent';assert.throws(()=>validatePlace(data,'test'),/featured stamp/);
 });
