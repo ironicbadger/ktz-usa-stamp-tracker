@@ -1,0 +1,3 @@
+if('serviceWorker' in navigator&&window.isSecureContext)navigator.serviceWorker.register('/sw.js').catch(()=>{});
+function connectivity(){let banner=document.querySelector('.offline-banner');if(!navigator.onLine&&!banner){banner=document.createElement('div');banner.className='offline-banner';banner.setAttribute('role','status');banner.textContent='Offline · previously opened pages may be out of date. Reconnect to save changes.';document.body.prepend(banner)}else if(navigator.onLine)banner?.remove()}
+addEventListener('online',connectivity);addEventListener('offline',connectivity);connectivity();

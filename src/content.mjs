@@ -78,14 +78,28 @@ export function validatePlace(p,file) {
  validateCancellations(p,file);
 }
 export function loadContent(vault) {
- const nodes=[];
+ const records=[];
  for(const kind of ['Places','Trips','Regions'])for(const file of walk(path.join(vault,kind)).filter(f=>f.endsWith('.md'))) {
   const {data,body}=parseNote(fs.readFileSync(file,'utf8'),file);
+  const key=path.relative(vault,file).replaceAll(path.sep,'/').slice(0,-3);
+  records.push({kind,key,file,data,body});
+ }
+ const assets=walk(path.join(vault,'Attachments')).filter(f=>!path.basename(f).startsWith('.')).map(file=>({path:path.relative(path.join(vault,'Attachments'),file).replaceAll(path.sep,'/'),file}));
+ return loadRecords(records,{assets,vault});
+}
+// The web app supplies records from SQLite directly. The file adapter above is
+// retained for the static builder and one-time imports, never for runtime edits.
+export function loadRecords(records,{assets=[],vault}={}) {
+ const nodes=[];
+ for(const record of records){
+  const {kind,key,body='',file=key}=record,data=structuredClone(record.data);
+  assert(['Places','Trips','Regions'].includes(kind),file,'unknown content kind');
+  assert(typeof key==='string'&&key.startsWith(kind+'/'),file,'invalid content key');
+  assert(typeof body==='string',file,'body must be text');
   if(kind==='Places')validatePlace(data,file);
   assert(text(data.title),file,'title is required');
   if(kind==='Regions')assert(regions.includes(data.title),file,'unknown region title');
-  const key=path.relative(vault,file).replaceAll(path.sep,'/').slice(0,-3);
-  nodes.push({kind,key,file,data,body,title:data.title,url:`/${kind.toLowerCase()}/${slug(path.basename(file,'.md'))}/`,outgoing:new Set()});
+  nodes.push({kind,key,file,data,body,title:data.title,url:`/${kind.toLowerCase()}/${slug(path.basename(key))}/`,outgoing:new Set()});
  }
  const places=nodes.filter(n=>n.kind==='Places').sort((a,b)=>a.title.localeCompare(b.title));
  for(const p of places)for(const [i,v] of p.data.visits.entries()) {
@@ -101,7 +115,6 @@ export function loadContent(vault) {
  const urls=new Set();
  for(const n of nodes){assert(!urls.has(n.url),n.key,`duplicate page URL ${n.url}`);urls.add(n.url)}
  const usedAssets=new Set();
- const assets=walk(path.join(vault,'Attachments')).filter(f=>!path.basename(f).startsWith('.'));
  function findNote(ref,from) {
   const clean=ref.replace(/\.md$/,'');
   const exact=nodes.find(n=>n.key===clean);if(exact)return exact;
@@ -112,12 +125,12 @@ export function loadContent(vault) {
   const raw=ref.replace(/^!?(\[\[)/,'').replace(/\]\]$/,'').split('|')[0];
   const clean=decodeURIComponent(raw).replace(/^\//,'');
   assert(!clean.split('/').includes('..'),from.key,'attachment paths cannot contain ..');
-  let found=assets.filter(f=>path.relative(vault,f).replaceAll(path.sep,'/')===clean);
-  if(!found.length)found=assets.filter(f=>path.basename(f)===clean);
+  let found=assets.filter(asset=>'Attachments/'+asset.path===clean||asset.path===clean);
+  if(!found.length)found=assets.filter(asset=>path.basename(asset.path)===clean);
   assert(found.length===1,from.key,`attachment "${raw}" ${found.length?'is ambiguous':'does not exist'}`);
-  assert(/\.(png|jpe?g|webp|gif|avif)$/i.test(found[0]),from.key,'photos must be PNG, JPEG, WebP, GIF or AVIF');
-  usedAssets.add(found[0]);
-  return '/attachments/'+path.relative(path.join(vault,'Attachments'),found[0]).split(path.sep).map(encodeURIComponent).join('/');
+  assert(/\.(png|jpe?g|webp|gif|avif)$/i.test(found[0].path),from.key,'photos must be PNG, JPEG, WebP, GIF or AVIF');
+  usedAssets.add(found[0].file);
+  return '/attachments/'+found[0].path.split('/').map(encodeURIComponent).join('/');
  }
  function render(body,from,splitAssociations=false) {
   const wikified=body.replace(/(!?)\[\[([^\]]+)\]\]/g,(_,embed,raw)=> {
@@ -138,6 +151,8 @@ export function loadContent(vault) {
    allowedSchemes:['http','https','mailto'],
    transformTags:{a:(tag,attrs)=> {
     if(attrs.href?.endsWith('.md')&&!/^https?:/.test(attrs.href)){const target=findNote(attrs.href,from);from.outgoing.add(target.key);attrs.href=target.url}
+    const linkedNode=nodes.find(node=>node.url===attrs.href?.split('#')[0]);
+    if(linkedNode)from.outgoing.add(linkedNode.key);
     if(/^https?:/.test(attrs.href||'')){attrs.target='_blank';attrs.rel='noopener noreferrer'}
     return {tagName:tag,attribs:attrs};
    },img:(tag,attrs)=>({tagName:tag,attribs:{...attrs,src:attrs.src?.startsWith('/attachments/')?attrs.src:photo(attrs.src||'',from),loading:'lazy'}})}

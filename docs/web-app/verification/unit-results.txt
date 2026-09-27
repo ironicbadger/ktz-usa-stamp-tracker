@@ -1,0 +1,510 @@
+
+> ktz-usa-stamp-tracker@1.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: Associations is freeform Markdown below Visits, with ordinary inline external links and wiki backlinks
+ok 1 - Associations is freeform Markdown below Visits, with ordinary inline external links and wiki backlinks
+  ---
+  duration_ms: 39.006375
+  type: 'test'
+  ...
+# Subtest: nested headings and cross-section reference links retain source-order IDs and definitions
+ok 2 - nested headings and cross-section reference links retain source-order IDs and definitions
+  ---
+  duration_ms: 5.242709
+  type: 'test'
+  ...
+# Subtest: only top-level H2 Associations sections move; fenced and quoted examples remain notes
+ok 3 - only top-level H2 Associations sections move; fenced and quoted examples remain notes
+  ---
+  duration_ms: 4.811625
+  type: 'test'
+  ...
+# Subtest: repeated sections merge without losing content or their legacy anchors
+ok 4 - repeated sections merge without losing content or their legacy anchors
+  ---
+  duration_ms: 4.977333
+  type: 'test'
+  ...
+# Subtest: quoted or nested Associations headings cannot claim the relocated section anchor
+ok 5 - quoted or nested Associations headings cannot claim the relocated section anchor
+  ---
+  duration_ms: 5.359667
+  type: 'test'
+  ...
+# Subtest: empty Associations keeps its authored anchor without an empty visible section
+ok 6 - empty Associations keeps its authored anchor without an empty visible section
+  ---
+  duration_ms: 4.871959
+  type: 'test'
+  ...
+# Subtest: unsafe markup is sanitized and broken wikilinks still fail
+ok 7 - unsafe markup is sanitized and broken wikilinks still fail
+  ---
+  duration_ms: 8.24575
+  type: 'test'
+  ...
+# Subtest: Templater stores date only on visit and creates an editable trip after prompts finish
+ok 8 - Templater stores date only on visit and creates an editable trip after prompts finish
+  ---
+  duration_ms: 7.342417
+  type: 'test'
+  ...
+# Subtest: Templater cancellation does not mutate notes or create trips
+ok 9 - Templater cancellation does not mutate notes or create trips
+  ---
+  duration_ms: 1.584167
+  type: 'test'
+  ...
+# Subtest: Templater attaches multiple photos and a main stamp to the chosen visit without repeating date
+ok 10 - Templater attaches multiple photos and a main stamp to the chosen visit without repeating date
+  ---
+  duration_ms: 1.83125
+  type: 'test'
+  ...
+# Subtest: Templater refuses to overwrite a concurrently edited visit
+ok 11 - Templater refuses to overwrite a concurrently edited visit
+  ---
+  duration_ms: 1.835208
+  type: 'test'
+  ...
+# Subtest: location authoring works without visits for published sources
+ok 12 - location authoring works without visits for published sources
+  ---
+  duration_ms: 1.259666
+  type: 'test'
+  ...
+# Subtest: on-site report references a generated visit ID and does not prompt for a second date
+ok 13 - on-site report references a generated visit ID and does not prompt for a second date
+  ---
+  duration_ms: 1.178125
+  type: 'test'
+  ...
+# Subtest: renaming retains aliases, reports and the original collected location text
+ok 14 - renaming retains aliases, reports and the original collected location text
+  ---
+  duration_ms: 2.580875
+  type: 'test'
+  ...
+# Subtest: cancelled or invalid location prompts never change visits or locations
+ok 15 - cancelled or invalid location prompts never change visits or locations
+  ---
+  duration_ms: 2.097667
+  type: 'test'
+  ...
+# Subtest: concurrent location or visit edits prevent the entire location draft from saving
+ok 16 - concurrent location or visit edits prevent the entire location draft from saving
+  ---
+  duration_ms: 3.015167
+  type: 'test'
+  ...
+# Subtest: Add stamp chooses a known location by name and keeps its snapshot
+ok 17 - Add stamp chooses a known location by name and keeps its snapshot
+  ---
+  duration_ms: 1.478959
+  type: 'test'
+  ...
+# Subtest: new discovery and stamp save together, and photo cancellation saves neither
+ok 18 - new discovery and stamp save together, and photo cancellation saves neither
+  ---
+  duration_ms: 1.668708
+  type: 'test'
+  ...
+# Subtest: editing a legacy visit assigns stable identities and retains its old visit and stamp links
+ok 19 - editing a legacy visit assigns stable identities and retains its old visit and stamp links
+  ---
+  duration_ms: 0.96275
+  type: 'test'
+  ...
+# Subtest: location updates edit the available-stamp list without removing stamps from prior reports
+ok 20 - location updates edit the available-stamp list without removing stamps from prior reports
+  ---
+  duration_ms: 1.31125
+  type: 'test'
+  ...
+# Subtest: expected cancellations can be authored before any visit without creating impressions
+ok 21 - expected cancellations can be authored before any visit without creating impressions
+  ---
+  duration_ms: 0.71825
+  type: 'test'
+  ...
+# Subtest: renaming expected cancellation keeps unknown fields and links old impressions without rewriting them
+ok 22 - renaming expected cancellation keeps unknown fields and links old impressions without rewriting them
+  ---
+  duration_ms: 0.901042
+  type: 'test'
+  ...
+# Subtest: Add stamp selects an expected cancellation and repeats do not duplicate its expected entry
+ok 23 - Add stamp selects an expected cancellation and repeats do not duplicate its expected entry
+  ---
+  duration_ms: 0.765875
+  type: 'test'
+  ...
+# Subtest: Add stamp saves a newly discovered expected entry and its impression together
+ok 24 - Add stamp saves a newly discovered expected entry and its impression together
+  ---
+  duration_ms: 0.684625
+  type: 'test'
+  ...
+# Subtest: cancelled expected-list edits and concurrent list edits never partially save
+ok 25 - cancelled expected-list edits and concurrent list edits never partially save
+  ---
+  duration_ms: 1.847542
+  type: 'test'
+  ...
+# Subtest: Add stamp cancellation leaves both expected list and collected impressions untouched
+ok 26 - Add stamp cancellation leaves both expected list and collected impressions untouched
+  ---
+  duration_ms: 0.730917
+  type: 'test'
+  ...
+# Subtest: expected YAML order and default type define all slots, including uncollected and more than nine
+ok 27 - expected YAML order and default type define all slots, including uncollected and more than nine
+  ---
+  duration_ms: 1.232667
+  type: 'test'
+  ...
+# Subtest: explicit identities survive renamed cancellations; repeats group newest first with an older photo fallback
+ok 28 - explicit identities survive renamed cancellations; repeats group newest first with an older photo fallback
+  ---
+  duration_ms: 5.410958
+  type: 'test'
+  ...
+# Subtest: the first YAML entry stays primary even when a later main cancellation has a newer photograph
+ok 29 - the first YAML entry stays primary even when a later main cancellation has a newer photograph
+  ---
+  duration_ms: 0.197875
+  type: 'test'
+  ...
+# Subtest: legacy matching is unambiguous by normalized name and type; ambiguous and unmatched records remain visible
+ok 30 - legacy matching is unambiguous by normalized name and type; ambiguous and unmatched records remain visible
+  ---
+  duration_ms: 0.347666
+  type: 'test'
+  ...
+# Subtest: unknown expected count differs from an explicit empty list and missing photos differ from uncollected
+ok 31 - unknown expected count differs from an explicit empty list and missing photos differ from uncollected
+  ---
+  duration_ms: 0.120458
+  type: 'test'
+  ...
+# Subtest: display identities cannot collide with authored IDs
+ok 32 - display identities cannot collide with authored IDs
+  ---
+  duration_ms: 0.08975
+  type: 'test'
+  ...
+# Subtest: a valid cancellation ID named details cannot collide with the collection disclosure
+ok 33 - a valid cancellation ID named details cannot collide with the collection disclosure
+  ---
+  duration_ms: 0.40425
+  type: 'test'
+  ...
+# Subtest: expected list validation rejects malformed records, duplicate identities, and broken references
+ok 34 - expected list validation rejects malformed records, duplicate identities, and broken references
+  ---
+  duration_ms: 1.469958
+  type: 'test'
+  ...
+# Subtest: loadContent resolves representative photos and exposes cancellation links without changing impression anchors
+ok 35 - loadContent resolves representative photos and exposes cancellation links without changing impression anchors
+  ---
+  duration_ms: 15.270667
+  type: 'test'
+  ...
+# Subtest: multiple states and main stamps share one page and one album slot; trips auto-populate
+ok 36 - multiple states and main stamps share one page and one album slot; trips auto-populate
+  ---
+  duration_ms: 36.252833
+  type: 'test'
+  ...
+# Subtest: repeat dates and repeated main stamps retain separate visits and generated anchors
+ok 37 - repeat dates and repeated main stamps retain separate visits and generated anchors
+  ---
+  duration_ms: 6.130292
+  type: 'test'
+  ...
+# Subtest: authored trip body, wiki backlinks and nested photo paths render
+ok 38 - authored trip body, wiki backlinks and nested photo paths render
+  ---
+  duration_ms: 5.772666
+  type: 'test'
+  ...
+# Subtest: invalid dates, missing photos, malformed stamps and duplicate YAML keys fail clearly
+ok 39 - invalid dates, missing photos, malformed stamps and duplicate YAML keys fail clearly
+  ---
+  duration_ms: 5.105
+  type: 'test'
+  ...
+# Subtest: broken wikilinks fail and script HTML is not published
+ok 40 - broken wikilinks fail and script HTML is not published
+  ---
+  duration_ms: 6.939458
+  type: 'test'
+  ...
+# Subtest: trip grouping excludes visits assigned to other trips
+ok 41 - trip grouping excludes visits assigned to other trips
+  ---
+  duration_ms: 5.240792
+  type: 'test'
+  ...
+# Subtest: location rendering inherits dates, preserves history, links impressions and indexes location names
+ok 42 - location rendering inherits dates, preserves history, links impressions and indexes location names
+  ---
+  duration_ms: 7.697166
+  type: 'test'
+  ...
+# Subtest: sidebar keeps a primary square and up to nine additional cancellations while preserving every impression
+ok 43 - sidebar keeps a primary square and up to nine additional cancellations while preserving every impression
+  ---
+  duration_ms: 7.284041
+  type: 'test'
+  ...
+# Subtest: blank places have a single collection empty state and omit unsupported facts
+ok 44 - blank places have a single collection empty state and omit unsupported facts
+  ---
+  duration_ms: 3.468125
+  type: 'test'
+  ...
+# Subtest: unknown park location is labeled as state context without claiming a park pin
+ok 45 - unknown park location is labeled as state context without claiming a park pin
+  ---
+  duration_ms: 3.414459
+  type: 'test'
+  ...
+# Subtest: managed stamp anchors and preserved legacy aliases survive visit date changes
+ok 46 - managed stamp anchors and preserved legacy aliases survive visit date changes
+  ---
+  duration_ms: 3.876666
+  type: 'test'
+  ...
+# Subtest: legacy notes work without locations, facts or managed IDs
+ok 47 - legacy notes work without locations, facts or managed IDs
+  ---
+  duration_ms: 2.092125
+  type: 'test'
+  ...
+# Subtest: source validation rejects malformed reports, dates, references and duplicate identities
+ok 48 - source validation rejects malformed reports, dates, references and duplicate identities
+  ---
+  duration_ms: 0.725708
+  type: 'test'
+  ...
+# Subtest: observations inherit visit dates and cannot carry a duplicate date or dangling visit
+ok 49 - observations inherit visit dates and cannot carry a duplicate date or dangling visit
+  ---
+  duration_ms: 0.537583
+  type: 'test'
+  ...
+# Subtest: imports append without replacing names, authored corrections or historical snapshots
+ok 50 - imports append without replacing names, authored corrections or historical snapshots
+  ---
+  duration_ms: 5.744208
+  type: 'test'
+  ...
+# Subtest: renames and aliases resolve old names without rewriting them; ambiguous names stay plain
+ok 51 - renames and aliases resolve old names without rewriting them; ambiguous names stay plain
+  ---
+  duration_ms: 0.196375
+  type: 'test'
+  ...
+# Subtest: file import preserves body, unrelated properties and records; invalid import leaves file unchanged
+ok 52 - file import preserves body, unrelated properties and records; invalid import leaves file unchanged
+  ---
+  duration_ms: 13.230958
+  type: 'test'
+  ...
+# Subtest: every catalogue locator retains sourced NPS coordinates and visible pins
+ok 53 - every catalogue locator retains sourced NPS coordinates and visible pins
+  ---
+  duration_ms: 73.48725
+  type: 'test'
+  ...
+# Subtest: unknown locations show explicitly labeled state context without a fabricated pin
+ok 54 - unknown locations show explicitly labeled state context without a fabricated pin
+  ---
+  duration_ms: 0.288041
+  type: 'test'
+  ...
+# Subtest: Yellowstone and Moores Creek have legible regional labels and distinct sourced geography
+ok 55 - Yellowstone and Moores Creek have legible regional labels and distinct sourced geography
+  ---
+  duration_ms: 0.146375
+  type: 'test'
+  ...
+# Subtest: checked-in geography matches its recorded source checksums
+ok 56 - checked-in geography matches its recorded source checksums
+  ---
+  duration_ms: 3.127125
+  type: 'test'
+  ...
+# Subtest: one canonical page exists per represented state or territory, including multiword and dotted names
+ok 57 - one canonical page exists per represented state or territory, including multiword and dotted names
+  ---
+  duration_ms: 36.826833
+  type: 'test'
+  ...
+# Subtest: state main content contains only its members across regions and preserves canonical place URLs
+ok 58 - state main content contains only its members across regions and preserves canonical place URLs
+  ---
+  duration_ms: 9.6145
+  type: 'test'
+  ...
+# Subtest: state albums share regional tiles and filter semantics for photos, missing photos, and substamps
+ok 59 - state albums share regional tiles and filter semantics for photos, missing photos, and substamps
+  ---
+  duration_ms: 9.179292
+  type: 'test'
+  ...
+# Subtest: state navigation opens the canonical page and preserves regional state anchors
+ok 60 - state navigation opens the canonical page and preserves regional state anchors
+  ---
+  duration_ms: 10.177208
+  type: 'test'
+  ...
+# Subtest: equal state membership counts open the first region in stable book order
+ok 61 - equal state membership counts open the first region in stable book order
+  ---
+  duration_ms: 8.635458
+  type: 'test'
+  ...
+# Subtest: search indexes state names and abbreviations and only nonblank associations
+ok 62 - search indexes state names and abbreviations and only nonblank associations
+  ---
+  duration_ms: 8.146334
+  type: 'test'
+  ...
+# (node:27722) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: HTTP authentication, cookie, origin and CSRF boundaries protect records
+ok 63 - HTTP authentication, cookie, origin and CSRF boundaries protect records
+  ---
+  duration_ms: 137.238917
+  type: 'test'
+  ...
+# Subtest: rich-text save, preview, restart, conflict and restore run through real HTTP
+ok 64 - rich-text save, preview, restart, conflict and restore run through real HTTP
+  ---
+  duration_ms: 124.686667
+  type: 'test'
+  ...
+# Subtest: validation and rich document sanitization reject bad edits without saving
+ok 65 - validation and rich document sanitization reject bad edits without saving
+  ---
+  duration_ms: 57.875166
+  type: 'test'
+  ...
+# Subtest: uploads reject malformed files and decode photos into registered WebP
+ok 66 - uploads reject malformed files and decode photos into registered WebP
+  ---
+  duration_ms: 67.202166
+  type: 'test'
+  ...
+# Subtest: browser API creates new places and trips while enforcing canonical URLs
+ok 67 - browser API creates new places and trips while enforcing canonical URLs
+  ---
+  duration_ms: 68.158833
+  type: 'test'
+  ...
+# Subtest: login failures are rate limited and authenticated APIs reject malformed JSON
+ok 68 - login failures are rate limited and authenticated APIs reject malformed JSON
+  ---
+  duration_ms: 228.806041
+  type: 'test'
+  ...
+# Subtest: rich internal links retain backlinks after editing imported wiki prose
+ok 69 - rich internal links retain backlinks after editing imported wiki prose
+  ---
+  duration_ms: 58.144167
+  type: 'test'
+  ...
+# Subtest: oversized JSON and images receive HTTP 413 without resetting the connection
+ok 70 - oversized JSON and images receive HTTP 413 without resetting the connection
+  ---
+  duration_ms: 75.48
+  type: 'test'
+  ...
+# Subtest: canonical editor JSON, not supplied HTML, controls publication
+ok 71 - canonical editor JSON, not supplied HTML, controls publication
+  ---
+  duration_ms: 2.161833
+  type: 'test'
+  ...
+# Subtest: rich links and images reject active or external executable content
+ok 72 - rich links and images reject active or external executable content
+  ---
+  duration_ms: 0.43
+  type: 'test'
+  ...
+# Subtest: editor document complexity has a predictable upper bound
+ok 73 - editor document complexity has a predictable upper bound
+  ---
+  duration_ms: 0.427666
+  type: 'test'
+  ...
+# (node:27724) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: SQLite reconstructs normalized records losslessly and persists across reopen
+ok 74 - SQLite reconstructs normalized records losslessly and persists across reopen
+  ---
+  duration_ms: 7.427708
+  type: 'test'
+  ...
+# Subtest: optimistic revisions reject stale writes and restore appends a revision
+ok 75 - optimistic revisions reject stale writes and restore appends a revision
+  ---
+  duration_ms: 4.626
+  type: 'test'
+  ...
+# Subtest: failed normalized write rolls back all tables and history
+ok 76 - failed normalized write rolls back all tables and history
+  ---
+  duration_ms: 3.432833
+  type: 'test'
+  ...
+# Subtest: backup and restore retain database revisions and uploaded bytes
+ok 77 - backup and restore retain database revisions and uploaded bytes
+  ---
+  duration_ms: 8.821291
+  type: 'test'
+  ...
+# Subtest: repeat import is idempotent and cannot overwrite edited data
+ok 78 - repeat import is idempotent and cannot overwrite edited data
+  ---
+  duration_ms: 200.179333
+  type: 'test'
+  ...
+# Subtest: separate connections cannot overwrite a revision unknowingly
+ok 79 - separate connections cannot overwrite a revision unknowingly
+  ---
+  duration_ms: 2.8745
+  type: 'test'
+  ...
+# Subtest: invalid import validates before creating a database
+ok 80 - invalid import validates before creating a database
+  ---
+  duration_ms: 0.870292
+  type: 'test'
+  ...
+# Subtest: changed source refuses to replace imported edits
+ok 81 - changed source refuses to replace imported edits
+  ---
+  duration_ms: 191.046958
+  type: 'test'
+  ...
+# Subtest: populated QA import preserves every raw field and complete rendered pages
+ok 82 - populated QA import preserves every raw field and complete rendered pages
+  ---
+  duration_ms: 545.271208
+  type: 'test'
+  ...
+1..82
+# tests 82
+# suites 0
+# pass 82
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1111.871209

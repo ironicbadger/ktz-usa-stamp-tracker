@@ -14,3 +14,12 @@ vault/.obsidian/plugins/obsidian-git/data.json
 vault/.obsidian/appearance.json
 
 .qa/
+
+# SQLite prototype runtime and local credentials
+.web-data/
+.web-build/
+web-dist/
+backups/
+secrets/
+*.sqlite
+*.sqlite-*

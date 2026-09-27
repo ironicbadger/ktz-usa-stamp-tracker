@@ -1,0 +1,31 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {chromium} from 'playwright';
+const base=process.env.WEB_QA_URL||'http://localhost:8770';
+const browser=await chromium.launch({channel:'chrome'});
+const context=await browser.newContext();const page=await context.newPage();const results=[];
+try{
+ await page.goto(base+'/states/georgia/');
+ assert.equal(await page.evaluate(()=>window.isSecureContext),true);
+ await page.evaluate(()=>navigator.serviceWorker.ready);
+ await page.reload();await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
+ const manifest=await (await context.request.get(base+'/manifest.webmanifest')).json();
+ assert.equal(manifest.display,'standalone');assert.equal(manifest.icons.length,2);
+ for(const icon of manifest.icons)assert.ok((await context.request.get(base+icon.src)).ok());
+ results.push('Secure-context service worker registered and manifest/icon assets load');
+ await page.goto(base+'/places/yellowstone-national-park/');
+ await page.waitForFunction(async()=>!!(await caches.match(location.href)));
+ await page.evaluate(()=>fetch('/api/session'));
+ let urls=await page.evaluate(async()=>{const names=await caches.keys();return (await Promise.all(names.map(async n=>(await (await caches.open(n)).keys()).map(r=>r.url)))).flat()});
+ assert.ok(urls.some(url=>url.includes('/places/yellowstone-national-park/')));
+ assert.equal(urls.some(url=>url.includes('/api/')||url.includes('/edit')),false);
+ results.push('Public page cached; API and editing sessions excluded');
+ await context.setOffline(true);await page.reload();assert.match(await page.locator('h1').innerText(),/Yellowstone/);assert.match(await page.locator('.offline-banner').innerText(),/Offline/);
+ results.push('Previously opened reader page available offline with visible stale-data notice');
+ await page.goto(base+'/never-opened-offline/');assert.match(await page.locator('h1').innerText(),/offline/i);results.push('Uncached navigation shows explicit offline limitations');
+ await context.setOffline(false);
+ const lan=await browser.newPage();await lan.goto('http://10.42.7.224:8770/states/georgia/');assert.equal(await lan.evaluate(()=>window.isSecureContext),false);await lan.close();results.push('LAN HTTP correctly does not claim installability');
+ fs.mkdirSync('.qa/web-screenshots',{recursive:true});fs.writeFileSync('.qa/web-pwa-results.json',JSON.stringify({passed:true,results},null,2));
+ console.log(JSON.stringify({passed:true,results},null,2));
+}finally{await browser.close()}

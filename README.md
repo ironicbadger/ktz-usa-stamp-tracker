@@ -1,3 +1,33 @@
+# The Stamp Book — SQLite web app prototype
+
+This branch is an isolated web-app experiment. The approved static site remains on `design/modern-stamp-book`; this work lives on `prototype/sqlite-web-app` in a separate Git worktree.
+
+The app uses **SQLite, a locally bundled Tiptap editor, and one Node container**. Reader pages retain the approved classic design. Edit prose, Associations, visits, expected cancellations, collected stamps, photographs and location reports in the browser; preview before saving, inspect history, and restore older revisions. Markdown/Obsidian is a one-time import source, not the runtime database or required editing interface.
+
+## Run the prototype
+
+```sh
+npm ci
+npm run web:build
+npm run web:import -- --vault vault --data .web-data
+# Point to a private file containing an editor password of at least 12 characters.
+APP_PASSWORD_FILE=/absolute/path/to/password-file npm run web:start
+# Reader: http://localhost:8770/ ; editor: http://localhost:8770/edit/
+```
+
+Import never overwrites later browser edits. For a populated **fictional** demonstration, generate `npm run qa:fixture` and import `.qa/vault` into a fresh data directory instead of `vault`. Keep the database and uploads together on a persistent volume.
+
+- [Architecture decision: focused app versus MediaWiki](docs/web-app/architecture.md)
+- [Local/container deployment, HTTPS, backup and restore](docs/web-app/deployment.md)
+- [Editor guide and limitations](docs/web-app/editor-guide.md)
+- [Verification and prototype acceptance](docs/web-app/verification.md)
+
+Public reading is unauthenticated; editing uses a shared owner password with session and CSRF protection. This is a personal prototype, not a multi-user publishing platform. A responsive editor, recovery drafts, manifest/icons and cached offline reading form the PWA foundation. **Phone installation requires HTTPS; saving and opening the editor require a connection.** There is no automatic offline synchronization or native companion app yet.
+
+The original static-site workflow is retained below for reference and migration tests.
+
+---
+
 # Stamp Book
 
 A static stamp collection website authored in an Obsidian vault. Includes 429 blank place notes, nine book regions, 56 state and territory albums, search, visit history, associations, trip pages, photos, and backlinks. No database or server is required.

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "results": [
+    "Secure-context service worker registered and manifest/icon assets load",
+    "Public page cached; API and editing sessions excluded",
+    "Previously opened reader page available offline with visible stale-data notice",
+    "Uncached navigation shows explicit offline limitations",
+    "LAN HTTP correctly does not claim installability"
+  ]
+}

@@ -1,0 +1,22 @@
+services:
+  stamp-book:
+    build: .
+    ports:
+      - "${STAMP_BOOK_BIND:-127.0.0.1}:8770:8770"
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8770"
+      DATA_DIR: /data
+      APP_PASSWORD_FILE: /run/secrets/app_password
+      ORIGIN: "${ORIGIN:-}"
+    secrets:
+      - app_password
+    volumes:
+      - stamp-book-data:/data
+    restart: unless-stopped
+    init: true
+secrets:
+  app_password:
+    file: ${STAMP_BOOK_PASSWORD_FILE:?Set STAMP_BOOK_PASSWORD_FILE to your password file outside the repository}
+volumes:
+  stamp-book-data:
