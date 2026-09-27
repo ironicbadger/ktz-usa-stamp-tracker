@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+- Rebrand the reader, editor, sign-in screens, browser titles and installed PWA as Stampendium.
+- Refresh offline caches so previously cached pages adopt the new branding.
+- Preserve database filenames, volumes, existing URLs, authentication settings, theme preferences and recovery drafts. No data or schema migration.
+
 ## 1.2.0
 
 - Compact per-visit stamp tables with spreadsheet paste, bulk type changes and removal.

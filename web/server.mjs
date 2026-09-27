@@ -180,6 +180,6 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
  const dataDir=process.env.DATA_DIR||path.join(root,'.web-data');
  if(!fs.existsSync(path.join(dataDir,'stamp-book.sqlite')))throw Error('Database is missing. Refusing to create an empty collection; check the data mount or explicitly run the first-install import.');
  const app=createApp({dataDir});const port=Number(process.env.PORT||8770),host=process.env.HOST||'0.0.0.0';
- app.server.listen(port,host,()=>console.log(`The Stamp Book web app listening on ${host}:${port}`));
+ app.server.listen(port,host,()=>console.log(`Stampendium web app listening on ${host}:${port}`));
  for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>app.close().then(()=>process.exit(0)));
 }

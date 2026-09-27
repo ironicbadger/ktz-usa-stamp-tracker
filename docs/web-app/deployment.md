@@ -1,6 +1,6 @@
 > Production updates: use versioned images and follow [releases and recovery](releases.md). Startup keeps seven verified backups in `/data/backups` before migrations.
 
-# Deploying The Stamp Book
+# Deploying Stampendium
 
 The main branch contains the application. The server reads SQLite at runtime; it does not continually read or rewrite the Obsidian vault.
 

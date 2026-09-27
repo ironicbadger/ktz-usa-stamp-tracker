@@ -1,7 +1,7 @@
 # Standalone alternative to compose.yaml; no application password is required.
 services:
   stamp-book:
-    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:v1.1.3}
+    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:v1.2.1}
     ports:
       - "${STAMP_BOOK_BIND:-127.0.0.1}:${STAMP_BOOK_PORT:-8770}:8770"
     environment:
@@ -9,7 +9,7 @@ services:
       PORT: "8770"
       DATA_DIR: /data
       AUTH_MODE: oidc
-      ORIGIN: ${ORIGIN:?Set the HTTPS public origin of The Stamp Book}
+      ORIGIN: ${ORIGIN:?Set the HTTPS public origin of Stampendium}
       OIDC_PROVIDER: ${OIDC_PROVIDER:-oidc}
       OIDC_ISSUER: ${OIDC_ISSUER:?Set the OIDC issuer URL}
       OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:?Set the registered OIDC client ID}
