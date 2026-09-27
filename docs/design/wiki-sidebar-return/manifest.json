@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-26",
+  "status": "Awaiting selection",
+  "displayOrderAuthority": "Actual order of generated images displayed in the wiki-sidebar return set",
+  "supersedes": "../single-stamp-exploration",
+  "sourceContext": [
+    "../mockups/layout-02-stamps-first-selected.png",
+    "../verification/desktop-wikipedia-layout.png",
+    "../verification/yellowstone-filled-collection.png"
+  ],
+  "sourceFacts": "https://www.nps.gov/mocr/index.htm",
+  "options": [
+    {
+      "number": 1,
+      "slug": "open-book",
+      "name": "Open Stamp Book",
+      "image": "01-open-book.png",
+      "prompt": "prompts/open-book.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-fece8329-347b-4d53-8e1e-4c7a70661060.png",
+      "width": 819,
+      "height": 1920,
+      "sha256": "47dcc136553f39312e39545191f7e4ce885c36718d8d022fb4d8459b6f1fa18b"
+    },
+    {
+      "number": 2,
+      "slug": "classic",
+      "name": "Classic Album Infobox",
+      "image": "02-classic.png",
+      "prompt": "prompts/classic.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-fa26cfa0-3da6-458c-ad01-1692f12d4965.png",
+      "width": 819,
+      "height": 1920,
+      "sha256": "486e67f3ddc3ef20742a923dbaccf4d76e0500e4ee442d523acf48d5114800d4"
+    },
+    {
+      "number": 3,
+      "slug": "compact",
+      "name": "Compact Reference Page",
+      "image": "03-compact.png",
+      "prompt": "prompts/compact.txt",
+      "sourceImage": "/Users/alex/.codex/generated_images/01a0df1d-31bf-7342-be37-1cfe87dad35f/exec-0710143e-c4e4-4572-b8a0-630a6ace483d.png",
+      "width": 819,
+      "height": 1920,
+      "sha256": "e841386d03f9d9736d78fbce0ef2d4eb386c500d99242ea86774037c9c8264d8"
+    }
+  ]
+}

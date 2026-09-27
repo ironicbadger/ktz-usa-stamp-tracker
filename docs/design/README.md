@@ -4,7 +4,7 @@ Start here when continuing this project on another Codex host. All image links a
 
 ## Latest design exploration — awaiting selection
 
-The user rejected the current layout as too busy and clarified that 80–90% of places have one stamp; the minority commonly have about six. Start with the [replacement ten full-page renders](single-stamp-exploration/README.md), each showing one stamp by default plus a separately labeled six-stamp component study. Stamping locations must be a minimal collapsed row. No replacement direction has been selected or implemented yet. The display-order mapping in that folder governs the next selection.
+The user rejected the photo-led direction because it depends too heavily on grand scenery, and asked to return to the Wikipedia-style sidebar with empty cancellation slots. Start with the [three revised sidebar studies](wiki-sidebar-return/README.md), each showing the same layout on a modest one-stamp battlefield and six-stamp Yellowstone. Preserve the left Places browser, small cancellations, locator map, classic typography and minimal collapsed stamping locations. Empty album spaces do not imply known missing stamp types. No replacement direction has been selected or implemented yet; the display-order mapping in that folder governs the next selection. The [previous ten-image exploration](single-stamp-exploration/README.md) is historical.
 
 ## Current implementation (under review)
 
