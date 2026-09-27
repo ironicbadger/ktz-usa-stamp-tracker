@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3
+
+- Clicking a place's locator map opens that place in interactive Google Maps, using its name and states instead of opening the static image.
+- Add an explicit Explore interactive map link beneath the preview. No schema changes.
+
+
 ## 1.1.2
 
 - Move the theme switch to a sun/moon icon in the top navigation, beside Edit mode.
