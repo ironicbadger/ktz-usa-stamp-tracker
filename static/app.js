@@ -39,11 +39,12 @@ const placePage=document.querySelector('.place-page');
 if(placePage){
  const narrow=matchMedia('(max-width: 900px)');
  const heading=placePage.querySelector('.place-heading'),overview=placePage.querySelector('.place-overview'),top=placePage.querySelector('.place-top'),rail=placePage.querySelector('.place-rail'),body=placePage.querySelector('.place-body');
+ const locationOverview=placePage.querySelector('.location-summary');
  const summary=placePage.querySelector('.main-summary'),facts=placePage.querySelector('.park-facts'),collection=placePage.querySelector('#stamps'),locations=placePage.querySelector('#stamping-locations'),visits=placePage.querySelector('#visits'),notes=placePage.querySelector('#notes');
  const extra=[...overview.children].filter(e=>e!==visits&&e!==notes&&!e.classList.contains('location-summary'));
  const reflow=()=>{
   if(narrow.matches){for(const node of [heading,summary,collection,locations,visits,notes,...extra,facts])if(node)placePage.append(node)}
-  else{top.prepend(heading);heading.after(rail);if(summary)rail.append(summary);rail.append(facts);for(const node of [collection,locations,visits,notes,...extra])if(node)overview.append(node)}
+  else{top.prepend(heading);top.append(rail);if(summary)rail.append(summary);rail.append(facts);for(const node of [locationOverview,notes,visits,...extra])if(node)overview.append(node);body.append(collection,locations)}
  };
  narrow.addEventListener('change',reflow);reflow();
 }

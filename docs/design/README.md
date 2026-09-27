@@ -4,6 +4,10 @@ Start here when continuing this project on another Codex host. All image links a
 
 ## Current implementation
 
+**Current visual authority:** the user reselected `mockups/refinement-01-narrow-main-stamp-sidebar.png` after trying the Wikipedia variant. Restore its modern sans-serif typography, two separate sidebar cards, and locations → notes → visits → full collection desktop structure. Retain the later 1200px cap, collapsible Places browser and horizontal collection grids. Earlier Wikipedia iteration notes below are historical.
+
+The user explicitly requested a fully populated fictional Yellowstone page. `npm run qa:fixture` rebuilds the isolated preview at port 8767 with two June 2019 visits, two main stamps, four distinct substamps, an original diary inspired by the linked road-trip blog, and a credited NPS photograph of Lower Falls from Artist Point. This authorization applies to the demo only; the real `vault/` remains untouched. See [assets and sources](yellowstone-preview-assets.md) and `verification/yellowstone-filled-*.png`.
+
 The selected design and stamping-location workflow are implemented on the local `design/modern-stamp-book` branch. See [implementation goal](implementation-goal.md), [location model and resolved decisions](location-model.md), [validation](verification/validation.md), and [design QA](../../design-qa.md). Production deployment remains deferred. The notes below preserve the design handoff and reference-image authority.
 
 ## Original handoff status and authority

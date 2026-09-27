@@ -92,3 +92,15 @@ User refinement: replace the left Contents with the location browser and arrange
 Visually reviewed desktop-places-grid.png and mobile-stamp-grid.png in docs/design/verification. Browser checks pass at 320–1435px, with directory collapse restoring article width, search filtering, Escape/focus return, and no overflow. Tested axe checks have no violations; browser reports no errors. All 29 unit tests and both builds/link checks pass.
 
 Final result: passed.
+
+## Filled Yellowstone preview and restored approved mockup — 2026-09-26
+
+Current authority: the user reattached refinement-01-narrow-main-stamp-sidebar.png and requested a complete fictional Yellowstone example. Restored its sans-serif modern-documentation typography, separate main-stamp/facts cards, and desktop locations → notes → visits → collection hierarchy. Kept the subsequently requested 1200px cap, collapsible Places browser and horizontal stamp grids. Mobile retains the approved section order. These deliberate adaptations supersede the intervening Wikipedia styling.
+
+Content verification: exactly two visits (19 and 21 June 2019), two main stamps and four substamps. All six impressions use distinct generated blue SAMPLE artwork. The diary is original fictional prose with links to its three blog inspirations, an inline NPS/Diane Renkin photo credit, and a prominent preview label. Area and establishment date cite NPS. Location availability is unknown and report notes explicitly label the mock data as unverified. Only the isolated fixture vault receives sample records and images.
+
+Visual verification: compared the supplied reference and the new 1435×1096 desktop capture side-by-side in yellowstone-filled-comparison.png. Inspected desktop collection, diary, visits and mobile captures. No cropped artwork, overflowing text or broken media. Directory opens the park's first authored state by default, avoiding several expanded duplicate park entries.
+
+Validation: all 29 unit tests pass; real build 444 pages and demo build 446 pages pass local-link/asset checks. Playwright verifies exact fixture counts, six distinct stamp images, loaded diary photography, 320–1435px widths, mobile order, filtering, report history, visit-to-trip navigation, Escape/focus behavior and zero overflow. Tested axe checks have zero violations; browser console/page errors are empty. LAN preview returns HTTP 200. Real vault still has no sample visits or stamps.
+
+Final result: passed.
