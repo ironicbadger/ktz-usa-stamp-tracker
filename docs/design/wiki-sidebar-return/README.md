@@ -38,4 +38,8 @@ No direction in this set is selected yet. Earlier mobile ordering preferences, e
 
 The user supplied [this exact reference](../references/locator-map-preference.png) and specifically liked its locator maps. Preserve the quiet regional context, state labels, park outline or location pin, and placement beneath the cancellations. This preference does not select every part of the attached layout; it includes the older duplicated Notes/Travel notes structure.
 
-The user asked where the linked visit titles lead and expressed interest in exploring that flow. The generated image has no functional destination. The current implementation renders visit notes on the place page and links to visit anchors; separate visit routes do not exist yet. A proposed next exploration is a short dated visit list on the place page linking to a full visit entry with notes, optional photos, impressions collected that day, and links back to the place and parent trip. Keep this a proposal until the flow is agreed; do not infer authorization to change the content model or build new routes from the question alone.
+The user asked where the linked visit titles lead, then explicitly rejected turning this into a blog. Visits stay inline as short dated notes with an optional natural link to an external blog post. Do not create separate visit pages or duplicate Travel notes.
+
+## Latest cancellation refinement
+
+The user has replaced the fixed six-space interpretation with [an adaptive album](../adaptive-cancellations.md): use the site's expected `stamps` YAML list to determine real slots, from one full-area stamp up to nine in a3×3grid. Keep the overall album footprint stable. This supersedes the neutral future-visit filler spaces shown in the earlier images above.

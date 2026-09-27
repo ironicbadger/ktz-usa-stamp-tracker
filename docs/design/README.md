@@ -8,6 +8,8 @@ The user rejected the photo-led direction because it depends too heavily on gran
 
 ## Current implementation (under review)
 
+Latest refinement: [adaptive cancellation album](adaptive-cancellations.md), driven by the site's expected stamp list, fitting one to nine slots within a fixed sidebar area. Visits remain short inline entries with optional external blog links; no separate visit journal pages. The user's preferred locator map remains the visual reference beneath the album.
+
 **Previous implementation reference:** the user reselected `mockups/refinement-01-narrow-main-stamp-sidebar.png` after trying the Wikipedia variant. Its modern sans-serif typography, two separate sidebar cards, and locations → notes → visits → full collection desktop structure informed the current build, alongside the later 1200px cap, collapsible Places browser and horizontal collection grids. This layout is now under review; do not treat it as approval for further redesign. Earlier Wikipedia iteration notes below are historical.
 
 The user explicitly requested a fully populated fictional Yellowstone page. `npm run qa:fixture` rebuilds the isolated preview at port 8767 with two June 2019 visits, two main stamps, four distinct substamps, an original diary inspired by the linked road-trip blog, and a credited NPS photograph of Lower Falls from Artist Point. This authorization applies to the demo only; the real `vault/` remains untouched. See [assets and sources](yellowstone-preview-assets.md) and `verification/yellowstone-filled-*.png`.
