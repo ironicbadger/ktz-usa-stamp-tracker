@@ -1,6 +1,6 @@
 # The Stamp Book
 
-The main branch is the deployable Stamp Book application.
+The main branch is the development version of the Stamp Book application. Production deployments should pin a versioned release and image digest. See [releases, upgrades and recovery](docs/web-app/releases.md).
 
 The app uses **SQLite, a locally bundled Tiptap editor, and one Node container**. Reader pages retain the approved classic design. Edit prose, Associations, visits, expected cancellations, collected stamps, photographs and location reports in the browser; preview before saving, inspect history, and restore older revisions. Markdown/Obsidian is a one-time import source, not the runtime database or required editing interface.
 

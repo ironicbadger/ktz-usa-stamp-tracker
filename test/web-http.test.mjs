@@ -106,3 +106,9 @@ test('oversized JSON and images receive HTTP 413 without resetting the connectio
  const chunked=await fetch(f.base+'/api/preview',{method:'POST',duplex:'half',headers:{Origin:f.base,Cookie:f.cookie,'X-CSRF-Token':f.csrf,'Content-Type':'application/json'},body:chunks()});assert.equal(chunked.status,413);assert.match((await chunked.json()).error,/too large/i);
  assert.equal(f.app.store.listAssets().length,0);assert.equal(f.app.store.get(key).revision,1);
 });
+
+test('stale editor version cannot save over data after an upgrade',async t=>{
+ const f=await fixture(t);await f.login();const before=f.app.store.get(key);
+ const response=await f.request(recordRoute,{method:'PUT',body:{record:{...before,body:'stale'},expectedRevision:before.revision},headers:{'X-Stamp-Book-Version':'0.0.1'}});
+ assert.equal(response.status,409);assert.equal((await response.json()).code,'update_required');assert.deepEqual(f.app.store.get(key),before);
+});

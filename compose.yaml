@@ -1,6 +1,6 @@
 services:
   stamp-book:
-    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:main}
+    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:v1.1.0}
     ports:
       - "${STAMP_BOOK_BIND:-127.0.0.1}:${STAMP_BOOK_PORT:-8770}:8770"
     environment:
@@ -15,6 +15,7 @@ services:
       - stamp-book-data:/data
     restart: unless-stopped
     init: true
+    stop_grace_period: 60s
 secrets:
   app_password:
     file: ${STAMP_BOOK_PASSWORD_FILE:?Set STAMP_BOOK_PASSWORD_FILE to your password file outside the repository}

@@ -20,6 +20,11 @@ jobs:
         with:
           node-version: '24'
           cache: npm
+      - name: Validate release version
+        env:
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+        run: node scripts/check-version.mjs
       - run: npm ci
       - run: npm run qa:fixture
       - run: npm test
@@ -55,6 +60,7 @@ jobs:
           REF_TYPE: ${{ github.ref_type }}
         run: |
           image="ghcr.io/${REPOSITORY,,}"
+          echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
           echo "name=$image" >> "$GITHUB_OUTPUT"
           echo "tags<<END_TAGS" >> "$GITHUB_OUTPUT"
           echo "$image:sha-$GITHUB_SHA" >> "$GITHUB_OUTPUT"
@@ -72,6 +78,8 @@ jobs:
             org.opencontainers.image.revision=${{ github.sha }}
           provenance: mode=max
           sbom: true
+          build-args: |
+            APP_VERSION=${{ steps.image.outputs.version }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Package deployment files
@@ -83,10 +91,12 @@ jobs:
           cp compose.yaml compose.oidc.yaml .env.example .env.oidc.example deployment/
           cp docs/web-app/oidc.md deployment/oidc.md
           cp docs/web-app/deployment.md deployment/README.md
+          cp docs/web-app/releases.md deployment/releases.md
+          cp CHANGELOG.md deployment/CHANGELOG.md
           printf 'STAMP_BOOK_IMAGE=%s@%s\n' "$IMAGE" "$DIGEST" > deployment/image.env
           printf '%s\n' "$GITHUB_SHA" > deployment/COMMIT
           cd deployment
-          sha256sum compose.yaml compose.oidc.yaml .env.example .env.oidc.example oidc.md README.md image.env COMMIT > SHA256SUMS
+          sha256sum compose.yaml compose.oidc.yaml .env.example .env.oidc.example oidc.md README.md releases.md CHANGELOG.md image.env COMMIT > SHA256SUMS
           echo "Published $IMAGE@$DIGEST" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:

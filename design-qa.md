@@ -1,3 +1,17 @@
+# Design QA — Stamp Book home and themes (v1.1.0)
+
+Final result: passed.
+
+The selected third dark mockup is the visual authority for the new home: charcoal background, amber accents, serif headings, left navigation, split photographic feature, and a three-column grid of region progress. Light mode deliberately uses white, as requested. Existing article structure remains intact and receives shared theme tokens.
+
+Compared the supplied mockup directly with final desktop dark and light renders, then inspected the 390px mobile layout. Fixed missing spacing in the compact brand/progress labels and kept the edit link available on mobile. Final captures are in docs/design/verification/home-v1.1.0/. No actionable P0/P1/P2 mismatch remains.
+
+Intentional differences: real, credited NPS photography replaces generated imagery; completion values reflect the actual collection; decorative mountain flourishes are omitted; a working theme toggle, search, and release version are included. Four photographed parks form the initial randomized feature pool. The feature avoids immediate repeats and links to the actual park page.
+
+Browser checks: dark/white toggle persists across navigation; featured links open matching places; refresh changes the featured park; search finds Yellowstone; mobile has no horizontal overflow; editor and reading pages share the theme; no console errors observed. Automated validation: 104 unit/integration tests pass, including progress semantics, migrations, backup retention, restore with photographs, history, and stale editor protection. Production deployment and CI browser checks are tracked separately from these local observations.
+
+---
+
 # Design QA — Tailscale navigation and primary cancellation
 
 final result: passed

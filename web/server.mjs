@@ -9,7 +9,10 @@ import {renderCollection,recordURL,editorRecord,renderedRecord,root,blankPage} f
 import {normalizeRichRecord} from './rich-text.mjs';
 import {regions,stateNames} from '../src/content.mjs';
 import {createOIDC,oidcSettings} from './oidc.mjs';
+import {appVersion} from './version.mjs';
+import {schemaVersion} from './migrations.mjs';
 import {editorShell} from './editor-shell.mjs';
+import {renderHome} from './home.mjs';
 
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.gif':'image/gif','.avif':'image/avif','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
 const problem=(message,status=400,code='invalid_request')=>Object.assign(Error(message),{status,code});
@@ -41,7 +44,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
  function checkOrigin(req){if(req.headers.origin!==expectedOrigin(req))throw problem('This request must come from the app itself',403,'origin_rejected')}
  function session(req){const token=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('stamp_session='))?.slice(14);const session=token?sessions.get(token):null;if(!session||session.expires<Date.now()){if(token)sessions.delete(token);return null}return {...session,token}}
  function authenticated(req){const user=session(req);if(!user)throw problem('Sign in to edit the collection',401,'unauthorized');return user}
- function mutation(req){checkOrigin(req);const user=authenticated(req);if(!safeEqual(req.headers['x-csrf-token'],user.csrf))throw problem('Your editing session changed. Reload and try again.',403,'csrf_rejected');return user}
+ function mutation(req){if(req.headers['x-stamp-book-version']&&req.headers['x-stamp-book-version']!==appVersion)throw problem('The app was updated. Your recovery draft is kept on this device. Reload and sign in before saving.',409,'update_required');checkOrigin(req);const user=authenticated(req);if(!safeEqual(req.headers['x-csrf-token'],user.csrf))throw problem('Your editing session changed. Reload and try again.',403,'csrf_rejected');return user}
  function cookie(req,token,maxAge){return `stamp_session=${token}; HttpOnly; SameSite=Strict; Path=/; Max-Age=${maxAge}${expectedOrigin(req).startsWith('https:')?'; Secure':''}`}
  function newSession(req,identity){
   for(const [key,value]of sessions)if(value.expires<Date.now())sessions.delete(key);
@@ -56,11 +59,12 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
   res.writeHead(200,{'Content-Type':type||mime[path.extname(file)]||'application/octet-stream','Content-Length':stat.size,'Cache-Control':cache});fs.createReadStream(file).pipe(res);
  }
  const server=http.createServer(async(req,res)=>{
+  res.setHeader('X-Stamp-Book-Version',appVersion);
   res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('X-Frame-Options','SAMEORIGIN');res.setHeader('Referrer-Policy','same-origin');
   res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'");
   try{
    const url=new URL(req.url,'http://localhost');const route=url.pathname;
-   if(route==='/healthz'&&req.method==='GET')return json(res,200,{ok:true,storage:'sqlite'});
+   if(route==='/healthz'&&req.method==='GET')return json(res,200,{ok:true,storage:'sqlite',version:appVersion,schemaVersion});
    if(route==='/api/session'&&req.method==='GET'){const user=session(req);return json(res,200,{authenticated:!!user,authMode,...(oidcAuth?{loginLabel:oidcAuth.label}:{}),...(user?{csrf:user.csrf}:{})})}
    if(route.startsWith('/auth/oidc/')){
     if(!oidcAuth)throw problem('OIDC is not enabled',404);
@@ -89,6 +93,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
    if(route==='/api/logout'&&req.method==='POST'){const user=mutation(req);sessions.delete(user.token);res.setHeader('Set-Cookie',cookie(req,'',0));return json(res,200,{authenticated:false})}
    if(route.startsWith('/api/')){
     const user=req.method==='GET'?authenticated(req):mutation(req);
+    const actorName=user.identity?.name||null;
     const actor=user.identity?`${user.identity.issuer}#${user.identity.subject}`:'editor';
     const key=url.searchParams.get('key');
     if(route==='/api/catalogue'&&req.method==='GET')return json(res,200,{records:store.list().map(r=>({key:r.key,kind:r.kind,title:r.data.title,url:recordURL(r),revision:r.revision})),regions,states:stateNames});
@@ -102,7 +107,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
      const prior=store.get(candidate.key);if(req.method==='PUT'&&!prior)throw problem('Page not found',404);if(prior&&prior.kind!==candidate.kind)throw problem('Page type cannot change');
      renderCollection(store,candidate);
      const summary=String(input.summary||'Updated page').trim().slice(0,500);
-     const saved=req.method==='POST'?store.create(candidate,{summary,actor}):store.save(key,candidate,{expectedRevision:input.expectedRevision,summary,actor});invalidated();
+     const saved=req.method==='POST'?store.create(candidate,{summary,actor,actorName}):store.save(key,candidate,{expectedRevision:input.expectedRevision,summary,actor,actorName});invalidated();
      return json(res,req.method==='POST'?201:200,{record:editorRecord(saved),url:recordURL(saved),rendered:renderedRecord(getCollection(),saved.key)});
     }
     if(route==='/api/preview'&&req.method==='POST'){
@@ -116,14 +121,15 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
     }
     if(route==='/api/restore'&&req.method==='POST'){
      const input=await jsonBody(req),old=store.revision(key,input.revision);if(!old)throw problem('Revision not found',404);renderCollection(store,old);
-     const record=store.restore(key,input.revision,{expectedRevision:input.expectedRevision,actor,summary:String(input.summary||`Restored revision ${input.revision}`).slice(0,500)});invalidated();
+     const record=store.restore(key,input.revision,{expectedRevision:input.expectedRevision,actor,actorName,summary:String(input.summary||`Restored revision ${input.revision}`).slice(0,500)});invalidated();
      return json(res,200,{record:editorRecord(record),url:recordURL(record),rendered:renderedRecord(getCollection(),key)});
     }
     if(route==='/api/uploads'&&req.method==='POST'){
      if(!/^image\/(jpeg|png|webp|gif|avif)(?:;|$)/i.test(req.headers['content-type']||''))throw problem('Choose a JPEG, PNG, WebP, GIF or AVIF image',415);
      const bytes=await body(req,12*1024*1024);let output;
      try{output=await sharp(bytes,{limitInputPixels:60000000,failOn:'error'}).rotate().resize({width:2400,height:2400,fit:'inside',withoutEnlargement:true}).webp({quality:90}).toBuffer()}catch{throw problem('This image could not be read, or is too large',422)}
-     const assetPath=crypto.randomUUID()+'.webp',file=path.join(store.uploadsDir,assetPath);fs.writeFileSync(file,output,{flag:'wx',mode:0o600});
+     const assetPath=crypto.randomUUID()+'.webp',file=path.join(store.uploadsDir,assetPath);fs.writeFileSync(file,output,{flag:'wx',mode:0o600,flush:true});
+     const uploadDirFd=fs.openSync(store.uploadsDir,'r');try{fs.fsyncSync(uploadDirFd)}finally{fs.closeSync(uploadDirFd)}
      try{store.registerAsset({path:assetPath,mime:'image/webp',size:output.length,sha256:crypto.createHash('sha256').update(output).digest('hex'),originalName:String(url.searchParams.get('filename')||'photo').slice(0,250)})}catch(error){fs.rmSync(file,{force:true});throw error}
      invalidated();return json(res,201,{ref:`[[Attachments/${assetPath}]]`,url:'/attachments/'+assetPath});
     }
@@ -150,7 +156,15 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
     const file=path.join(root,'static',relative);if(fs.existsSync(file)&&fs.statSync(file).isFile())return sendFile(res,file);
    }
    if(!store.list().length){res.writeHead(503,{'Content-Type':'text/html; charset=utf-8'});return res.end(blankPage('Import the initial catalogue before opening the collection.'))}
-   const collection=getCollection(),html=collection.pages.get(route)||collection.pages.get(route+'/');
+   const collection=getCollection();
+   if(route==='/'){
+    const raw=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('stamp_feature='))?.slice(14);
+    let previous='';try{previous=decodeURIComponent(raw||'')}catch{}
+    const {html,featuredKey}=renderHome(collection.model,{previous});
+    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-store','Vary':'Cookie','Set-Cookie':`stamp_feature=${encodeURIComponent(featuredKey)}; Path=/; HttpOnly; SameSite=Lax; Max-Age=31536000${expectedOrigin(req).startsWith('https:')?'; Secure':''}`});
+    return res.end(html);
+   }
+   const html=collection.pages.get(route)||collection.pages.get(route+'/');
    res.writeHead(html?200:404,{'Content-Type':'text/html; charset=utf-8','Cache-Control':'no-cache'});return res.end(html||collection.pages.get('/404.html'));
   }catch(error){
    if(res.headersSent){res.destroy();return}
@@ -163,7 +177,9 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
  return {server,store,invalidate:invalidated,close:()=>new Promise(resolve=>server.close(()=>{store.close();resolve()}))};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const app=createApp();const port=Number(process.env.PORT||8770),host=process.env.HOST||'0.0.0.0';
+ const dataDir=process.env.DATA_DIR||path.join(root,'.web-data');
+ if(!fs.existsSync(path.join(dataDir,'stamp-book.sqlite')))throw Error('Database is missing. Refusing to create an empty collection; check the data mount or explicitly run the first-install import.');
+ const app=createApp({dataDir});const port=Number(process.env.PORT||8770),host=process.env.HOST||'0.0.0.0';
  app.server.listen(port,host,()=>console.log(`The Stamp Book web app listening on ${host}:${port}`));
  for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>app.close().then(()=>process.exit(0)));
 }
