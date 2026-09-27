@@ -15,7 +15,7 @@ just lan         # preview on 0.0.0.0:8766
 just obsidian    # open the vault on macOS
 ```
 
-Open `vault/` in Obsidian 1.12.2 or later, enable community plugins, and read **Start here**. Templater provides Record visit, Add stamp, Add stamp photos, Edit visit, and New trip commands. The Git plugin's **Commit-and-sync** sends edits to GitHub using your existing Git authentication. Site code and private Obsidian settings are not published.
+Open `vault/` in Obsidian 1.12.2 or later, enable community plugins, and read **Start here**. Templater provides Record visit, Edit expected cancellations, Add stamp, Add stamp photos, Edit visit, and New trip commands. The Git plugin's **Commit-and-sync** sends edits to GitHub using your existing Git authentication. Site code and private Obsidian settings are not published.
 
 Place notes have prefilled `title`, `park_code`, `states`, `passport_region`, and an empty `visits` list. Each visit stores its date once, optional `[[Trips/Trip name]]`, notes, and stamps (`name`, `type: main|sub`, optional location/notes, `photos`). Trip introductions are editable Markdown; matching visits populate automatically. Put photos in `vault/Attachments/`. A region's optional `map` property accepts an attachment wikilink. See [catalogue provenance](data/README.md) for scope and initial region assignments.
 
@@ -33,7 +33,7 @@ Design decisions, mockups and remote continuation notes: [design handoff](docs/d
 
 ## Design and location authoring
 
-The modern documentation layout uses a readable directory, a narrow main-stamp sidebar, and a full collection on each place page. Stamping locations are authored in the same Obsidian note through **Add or update stamping location**. See [Start here](vault/Start%20here.md) for the workflow and [location model](docs/design/location-model.md) for provenance, history, imports, and optional park facts.
+The classic article layout uses a collapsible Places browser, Tailscale-style navigation spacing, short inline visits, and a compact cancellation album above a sourced locator map. The first listed cancellation has its own large square and Last collected date panel; every additional box stays square in the grid below. The place’s optional top-level `stamps` list defines expected cancellations; repeat impressions share a slot, while all records remain accessible in closed details. Stamping locations are authored in the same Obsidian note through **Add or update stamping location**. See [Start here](vault/Start%20here.md) for the workflow and [location model](docs/design/location-model.md) for provenance, history, imports, and optional park facts.
 
 For an isolated populated preview (fictional QA records only):
 
@@ -43,6 +43,6 @@ node scripts/serve.mjs --out .qa/dist --host 0.0.0.0 --port 8767
 npm run qa:check
 ```
 
-This creates `.qa/vault` and `.qa/dist`; it never populates the real `vault/` or normal `dist/`. The fixture stamp is visibly marked “DESIGN TEST ONLY”. Re-run `qa:fixture` after code changes to refresh that preview.
+This creates `.qa/vault` and `.qa/dist`; it never populates the real `vault/` or normal `dist/`. Fictional stamp artwork is visibly marked SAMPLE or DESIGN TEST ONLY. Re-run `qa:fixture` after code changes to refresh that preview.
 
 With the normal and isolated preview servers running, `QA_CHROME=1 npm run qa:browser` tests the layouts and core interactions using installed Google Chrome. Alternatively, run `npx playwright install chromium` once and then `npm run qa:browser`. Browser captures and raw results go to `.qa/`; the reviewed captures and validation report are retained in [docs/design/verification](docs/design/verification/validation.md).

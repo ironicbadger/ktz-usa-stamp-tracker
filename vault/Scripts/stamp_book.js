@@ -28,18 +28,50 @@ module.exports = async function(tp, action) {
   const commit=(callback)=>tp.hooks.on_all_templates_executed(async()=>{try{await app.fileManager.processFrontMatter(file,callback);notice('Saved.')}catch(error){notice(error.message)}});
   const checked=(fm,index)=>{if(JSON.stringify(fm.visits?.[index])!==JSON.stringify(visits[index]))throw Error('This visit changed while the prompts were open. Please try again.');return fm.visits[index]};
   const locations=current.stamping_locations||[];
+  const cancellations=current.stamps||[];
   const copy=value=>JSON.parse(JSON.stringify(value));
-  const draftVisits=copy(visits),draftLocations=copy(locations);
+  const draftVisits=copy(visits),draftLocations=copy(locations),draftCancellations=copy(cancellations);
+  let cancellationsChanged=false;
   const identity=()=>crypto.randomUUID();
   const realDate=value=>/^\d{4}-\d{2}-\d{2}$/.test(value)&&!isNaN(Date.parse(value))&&new Date(value+'T12:00:00Z').toISOString().slice(0,10)===value;
   const httpURL=value=>{try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password}catch{return false}};
   const statuses=['available','seasonal','unavailable','moved','unknown'];
   const statusLabels=['Available','Seasonal','No longer available','Moved','Unknown'];
   const saveDraft=()=>commit(fm=>{
-   if(JSON.stringify(fm.visits||[])!==JSON.stringify(visits)||JSON.stringify(fm.stamping_locations||[])!==JSON.stringify(locations))throw Error('Visits or locations changed while the prompts were open. Please try again.');
+   if(JSON.stringify(fm.visits||[])!==JSON.stringify(visits)||JSON.stringify(fm.stamping_locations||[])!==JSON.stringify(locations)||JSON.stringify(fm.stamps)!==JSON.stringify(current.stamps))throw Error('Visits, locations or expected cancellations changed while the prompts were open. Please try again.');
    fm.visits=draftVisits;
    if(draftLocations.length)fm.stamping_locations=draftLocations;
+   if(cancellationsChanged)fm.stamps=draftCancellations;
   });
+  const cancellationKey=stamp=>`${stamp.type||'main'}\u0000${stamp.name.trim().toLowerCase()}`;
+  const manageCancellation=record=>{
+   record.id??=identity();cancellationsChanged=true;
+   // Link unambiguous old impressions before a cancellation is renamed. Their
+   // original name, date, photos and impression anchors remain unchanged.
+   if(draftCancellations.filter(s=>cancellationKey(s)===cancellationKey(record)).length===1){
+    for(const visit of draftVisits)for(const stamp of visit.stamps)if(!stamp.cancellation_id&&cancellationKey(stamp)===cancellationKey(record))stamp.cancellation_id=record.id;
+   }
+   return record;
+  };
+  const editCancellation=async(existing)=>{
+   const type=await choose(['Main stamp','Substamp'],['main','sub'],'Cancellation type'+(existing?' — currently '+(existing.type||'main'):''));
+   const name=(await prompt('Cancellation name',existing?.name||(type==='main'?current.title:''))).trim();
+   if(!name)throw Error('Enter a cancellation name.');
+   if(draftCancellations.some(s=>s!==existing&&cancellationKey(s)===cancellationKey({name,type})))throw Error('That cancellation already exists. Choose it from the list.');
+   const record=existing||{id:identity(),name,type};
+   if(existing)manageCancellation(record);else draftCancellations.push(record);
+   record.name=name;record.type=type;
+   return manageCancellation(record);
+  };
+  if(action==='cancellations'){
+   while(true){
+    const selected=await choose(['Save expected list','Add an expected cancellation',...draftCancellations.map(s=>`${s.name} · ${s.type||'main'}`)],[':done',':new',...draftCancellations.map((_,i)=>i)],'Expected cancellations — these do not record a collection');
+    if(selected===':done')break;
+    await editCancellation(selected===':new'?null:draftCancellations[selected]);
+   }
+   for(const record of draftCancellations)manageCancellation(record);
+   cancellationsChanged=true;saveDraft();return;
+  }
   const editLocation=async(existing,observationIndex)=>{
    const old=existing?(existing.reports.filter(r=>r.origin==='authored').at(-1)||existing.reports.at(-1)):{};
    const name=(await prompt('Stamping location name',existing?.name||'')).trim();
@@ -107,8 +139,9 @@ module.exports = async function(tp, action) {
   if(!visits.length){notice('Use Record visit first.');return}
   const index=await selectVisit();
   if(action==='stamp'){
-   const type=await choose(['Main stamp','Substamp'],['main','sub'],'Stamp type');
-   const name=(await prompt('Stamp name',type==='main'?current.title:'')).trim();if(!name){notice('Enter a stamp name.');return}
+   const expected=draftCancellations.length?await choose([...draftCancellations.map(s=>`${s.name} · ${s.type||'main'}`),'Add a newly discovered cancellation'],[...draftCancellations.map((_,i)=>i),':new'],'Choose the cancellation collected'):':new';
+   const cancellation=expected===':new'?await editCancellation(null):manageCancellation(draftCancellations[expected]);
+   const {name}=cancellation,type=cancellation.type||'main';
    const selection=await choose(['No location','Enter a location name only','Add a newly discovered location',...locations.map(l=>l.name)],[':none',':text',':new',...locations.map((_,i)=>i)],'Stamping location');
    let known,location='';
    if(selection===':text')location=await prompt('Stamp location (optional)');
@@ -118,7 +151,7 @@ module.exports = async function(tp, action) {
    const photos=app.vault.getFiles().filter(f=>f.path.startsWith('Attachments/')&&/\.(png|jpe?g|webp|gif|avif)$/i.test(f.path));
    const selected=photos.length?await tp.system.multi_suggester(f=>f.path.slice(12),photos,false,'Select photos, or confirm with none'):[];
    if(selected===null||selected===undefined)return;
-   const stamp={id:identity(),name,type,location,photos:selected.map(f=>`[[${f.path}]]`),notes};
+   const stamp={id:identity(),cancellation_id:cancellation.id,name,type,location,photos:selected.map(f=>`[[${f.path}]]`),notes};
    if(known)stamp.location_id=known.id;
    draftVisits[index].stamps.push(stamp);saveDraft();return;
   }

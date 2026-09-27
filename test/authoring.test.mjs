@@ -66,3 +66,40 @@ test('location updates edit the available-stamp list without removing stamps fro
  const location=baseLocation();location.reports[0].stamps=[{name:'Old cancellation',type:'main',availability:'available'}];
  const env=setup({data:{title:'Test',visits:[],stamping_locations:[location]},prompts:['Old desk','','Seasonal desk','New cancellation','https://www.nps.gov/test/','2026-09-26','Changed listing'],choices:[0,'seasonal',0,'remove',':add','sub','seasonal',':done','source']});await env.run('location');await env.finish();const reports=env.data.stamping_locations[0].reports;assert.equal(reports[0].stamps[0].name,'Old cancellation');assert.equal(reports[1].stamps.length,1);assert.equal(reports[1].stamps[0].name,'New cancellation');assert.equal(reports[1].stamps[0].type,'sub');assert.equal(reports[1].stamps[0].availability,'seasonal');
 });
+
+test('expected cancellations can be authored before any visit without creating impressions',async()=>{
+ const env=setup({data:{title:'Test',visits:[],custom:{keep:true}},prompts:['Park cancellation','Geyser'],choices:[':new','main',':new','sub',':done']});
+ await env.run('cancellations');assert.equal(env.data.stamps,undefined);await env.finish();
+ assert.equal(env.data.stamps.length,2);assert.ok(env.data.stamps.every(s=>s.id));assert.notEqual(env.data.stamps[0].id,env.data.stamps[1].id);
+ assert.deepEqual(env.data.stamps.map(s=>[s.name,s.type]),[['Park cancellation','main'],['Geyser','sub']]);assert.deepEqual(env.data.visits,[]);assert.equal(env.data.custom.keep,true);
+});
+
+test('renaming expected cancellation keeps unknown fields and links old impressions without rewriting them',async()=>{
+ const data={title:'Test',stamps:[{name:'Original',custom:'preserved'}],visits:[{date:'2026-09-25',stamps:[{id:'impression',name:'Original',type:'main',photos:[],notes:'Keep',anchor_aliases:['old-link']}]}]};
+ const env=setup({data,prompts:['Renamed'],choices:[0,'main',':done']});await env.run('cancellations');await env.finish();
+ const expected=env.data.stamps[0],stamp=env.data.visits[0].stamps[0];assert.ok(expected.id);assert.equal(expected.name,'Renamed');assert.equal(expected.custom,'preserved');assert.equal(stamp.cancellation_id,expected.id);
+ assert.equal(stamp.name,'Original');assert.equal(stamp.id,'impression');assert.equal(stamp.notes,'Keep');assert.deepEqual(stamp.anchor_aliases,['old-link']);
+});
+
+test('Add stamp selects an expected cancellation and repeats do not duplicate its expected entry',async()=>{
+ const data={title:'Test',stamps:[{name:'Park',custom:'preserved'}],visits:[{date:'2026-09-25',stamps:[{name:'Park',type:'main',photos:[]}]}]};
+ const env=setup({data,prompts:['New impression notes'],choices:[0,0,':none']});await env.run('stamp');await env.finish();
+ assert.equal(env.data.stamps.length,1);assert.equal(env.data.stamps[0].custom,'preserved');assert.equal(env.data.visits[0].stamps.length,2);
+ assert.ok(env.data.visits[0].stamps.every(s=>s.cancellation_id===env.data.stamps[0].id));assert.equal(env.data.visits[0].stamps[1].name,'Park');assert.equal(env.data.visits[0].stamps[1].notes,'New impression notes');
+});
+
+test('Add stamp saves a newly discovered expected entry and its impression together',async()=>{
+ const env=setup({data:{title:'Test',stamps:[{id:'park',name:'Park',custom:'kept'}],visits:[{date:'2026-09-25',stamps:[]}]},prompts:['Geyser',''],choices:[0,':new','sub',':none']});await env.run('stamp');await env.finish();
+ assert.equal(env.data.stamps.length,2);assert.equal(env.data.stamps[0].custom,'kept');assert.equal(env.data.stamps[1].name,'Geyser');assert.equal(env.data.visits[0].stamps[0].cancellation_id,env.data.stamps[1].id);
+});
+
+test('cancelled expected-list edits and concurrent list edits never partially save',async()=>{
+ const data={title:'Test',visits:[],stamps:[{id:'park',name:'Park'}]};
+ const cancelled=setup({data,prompts:['Geyser'],choices:[':new','sub',null]});await cancelled.run('cancellations');await cancelled.finish();assert.deepEqual(cancelled.data,data);
+ const concurrent=setup({data,prompts:['Geyser'],choices:[':new','sub',':done']});await concurrent.run('cancellations');concurrent.data.stamps[0].name='Changed elsewhere';await concurrent.finish();assert.equal(concurrent.data.stamps.length,1);assert.match(concurrent.notices[0],/changed/);
+});
+
+test('Add stamp cancellation leaves both expected list and collected impressions untouched',async()=>{
+ const data={title:'Test',visits:[{date:'2026-09-25',stamps:[]}]};
+ const env=setup({data,prompts:['Park',''],choices:[0,'main',':none'],photos:[{path:'Attachments/a.png'}],selected:null});await env.run('stamp');await env.finish();assert.deepEqual(env.data,data);
+});

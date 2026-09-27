@@ -4,6 +4,7 @@ import YAML from 'yaml';
 import { marked } from 'marked';
 import sanitizeHtml from 'sanitize-html';
 import {availability,safeURL,currentReport,resolveLocation} from './locations.mjs';
+import {validateCancellations,cancellationAlbum} from './cancellations.mjs';
 
 export const regions = ['North Atlantic','Mid-Atlantic','National Capital','Southeast','Midwest','Southwest','Rocky Mountain','Western','Pacific Northwest & Alaska'];
 export const stateNames = Object.fromEntries('AL:Alabama|AK:Alaska|AZ:Arizona|AR:Arkansas|CA:California|CO:Colorado|CT:Connecticut|DE:Delaware|DC:District of Columbia|FL:Florida|GA:Georgia|HI:Hawaii|ID:Idaho|IL:Illinois|IN:Indiana|IA:Iowa|KS:Kansas|KY:Kentucky|LA:Louisiana|ME:Maine|MD:Maryland|MA:Massachusetts|MI:Michigan|MN:Minnesota|MS:Mississippi|MO:Missouri|MT:Montana|NE:Nebraska|NV:Nevada|NH:New Hampshire|NJ:New Jersey|NM:New Mexico|NY:New York|NC:North Carolina|ND:North Dakota|OH:Ohio|OK:Oklahoma|OR:Oregon|PA:Pennsylvania|RI:Rhode Island|SC:South Carolina|SD:South Dakota|TN:Tennessee|TX:Texas|UT:Utah|VT:Vermont|VA:Virginia|WA:Washington|WV:West Virginia|WI:Wisconsin|WY:Wyoming|AS:American Samoa|GU:Guam|MP:Northern Mariana Islands|PR:Puerto Rico|VI:U.S. Virgin Islands|UM:U.S. Minor Outlying Islands'.split('|').map(s=>s.split(':')));
@@ -74,6 +75,7 @@ export function validatePlace(p,file) {
   }
  }
  validateLocations(p,file);
+ validateCancellations(p,file);
 }
 export function loadContent(vault) {
  const nodes=[];
@@ -141,6 +143,7 @@ export function loadContent(vault) {
  }
  for(const n of nodes){n.html=render(n.body,n);if(n.kind==='Places')for(const v of n.data.visits){v.html=render(v.notes||'',n);if(v.trip)n.outgoing.add(v.trip.slice(2,-2));for(const s of v.stamps){s.html=render(s.notes||'',n);s.images=s.photos.map(ref=>photo(ref,n))}}if(n.kind==='Regions'&&n.data.map)n.map=photo(n.data.map,n)}
  for(const p of places){
+  Object.assign(p,cancellationAlbum(p));
   if(p.data.map)p.map=photo(p.data.map,p);
   p.locations=(p.data.stamping_locations||[]).map(l=>({...l,anchor:`location-${l.id}`,reports:l.reports.map(r=>({...r,visit:r.visit_id?p.data.visits.find(v=>v.id===r.visit_id):undefined})),collected:[]}));
   for(const l of p.locations)l.current=currentReport(l);

@@ -1,26 +1,11 @@
 {
   "results": [
     {
-      "name": "desktop dimensions",
-      "rail": 280,
-      "directory": 240,
-      "images": [
-        {
-          "width": 200,
-          "height": 200,
-          "naturalWidth": 1254,
-          "naturalHeight": 1254
-        },
-        {
-          "width": 200,
-          "height": 200,
-          "naturalWidth": 1254,
-          "naturalHeight": 1254
-        }
-      ],
+      "name": "classic article type, Inter directory, primary and secondary cancellations, inline visits and map",
       "fonts": {
-        "body": "16px",
-        "nav": "15px"
+        "body": "Arial, Helvetica, sans-serif",
+        "heading": "Georgia, \"Times New Roman\", serif",
+        "directory": "\"Inter Navigation\", Arial, Helvetica, sans-serif"
       }
     },
     {
@@ -28,10 +13,156 @@
       "violations": []
     },
     {
-      "name": "location history disclosure"
+      "name": "cancellation slot opens its record",
+      "target": "#cancellation-record-geyser-main"
     },
     {
-      "name": "observation → visit → trip"
+      "name": "saved impression and legacy anchors reveal their details"
+    },
+    {
+      "name": "location anchor and report history disclosure"
+    },
+    {
+      "name": "observation → inline visit → trip"
+    },
+    {
+      "name": "one stamp accessibility",
+      "violations": []
+    },
+    {
+      "name": "modest place, full primary impression and date, no required blog link"
+    },
+    {
+      "name": "one primary plus 0–9 secondary square slots",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 1,
+            "slot": 230
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 2,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 3,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 4,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 5,
+            "slot": 72
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 6,
+            "slot": 72
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 7,
+            "slot": 72
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 8,
+            "slot": 72
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 9,
+            "slot": 72
+          }
+        }
+      ]
+    },
+    {
+      "name": "primary plus nine others, with overflow details retained"
+    },
+    {
+      "name": "repeated primary uses latest collection date and older available photo, with both records retained"
+    },
+    {
+      "name": "uncollected primary accessibility",
+      "violations": []
+    },
+    {
+      "name": "uncollected first YAML cancellation stays primary"
+    },
+    {
+      "name": "primary without photo keeps its own date and never borrows secondary artwork"
+    },
+    {
+      "name": "legacy collection without expected list"
+    },
+    {
+      "name": "empty expected list creates no invented slots"
     },
     {
       "name": "region filters"
@@ -41,39 +172,367 @@
       "violations": []
     },
     {
-      "name": "stamp and location search"
+      "name": "visit and stamp search"
     },
     {
       "name": "search accessibility",
       "violations": []
     },
     {
-      "name": "directory filter and empty state"
+      "name": "collapsible place browser, filter, Escape and focus"
     },
     {
       "name": "keyboard skip link and focus"
     },
     {
-      "name": "viewport 320",
-      "client": 320,
-      "scroll": 320
+      "name": "viewport 1920",
+      "client": 1920,
+      "scroll": 1920
     },
     {
-      "name": "viewport 390",
-      "client": 390,
-      "scroll": 390
+      "name": "primary and secondary counts at 1920px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 1,
+            "slot": 230
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 2,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 3,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 4,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 5,
+            "slot": 72
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 6,
+            "slot": 72
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 7,
+            "slot": 72
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 8,
+            "slot": 72
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 9,
+            "slot": 72
+          }
+        }
+      ]
     },
     {
-      "name": "mobile accessibility",
-      "violations": []
+      "name": "viewport 1440",
+      "client": 1440,
+      "scroll": 1440
     },
     {
-      "name": "mobile directory and section links"
+      "name": "viewport 1280",
+      "client": 1280,
+      "scroll": 1280
     },
     {
-      "name": "viewport 768",
-      "client": 768,
-      "scroll": 768
+      "name": "primary and secondary counts at 1280px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 1,
+            "slot": 230
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 2,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 3,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 4,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 5,
+            "slot": 72
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 6,
+            "slot": 72
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 7,
+            "slot": 72
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 8,
+            "slot": 72
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 9,
+            "slot": 72
+          }
+        }
+      ]
+    },
+    {
+      "name": "viewport 1279",
+      "client": 1279,
+      "scroll": 1279
+    },
+    {
+      "name": "primary and secondary counts at 1279px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 1,
+            "slot": 230
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 2,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 3,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 4,
+            "slot": 111.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 5,
+            "slot": 72
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 6,
+            "slot": 72
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 7,
+            "slot": 72
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 8,
+            "slot": 72
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 230,
+          "primaryHeight": 230,
+          "secondary": {
+            "width": 230,
+            "height": 230,
+            "count": 9,
+            "slot": 72
+          }
+        }
+      ]
     },
     {
       "name": "viewport 1024",
@@ -81,9 +540,488 @@
       "scroll": 1024
     },
     {
-      "name": "viewport 1435",
-      "client": 1435,
-      "scroll": 1435
+      "name": "primary and secondary counts at 1024px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 1,
+            "slot": 210
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 2,
+            "slot": 101.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 3,
+            "slot": 101.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 4,
+            "slot": 101.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 5,
+            "slot": 65.328125
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 6,
+            "slot": 65.328125
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 7,
+            "slot": 65.328125
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 8,
+            "slot": 65.328125
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 210,
+          "primaryHeight": 210,
+          "secondary": {
+            "width": 210,
+            "height": 210,
+            "count": 9,
+            "slot": 65.328125
+          }
+        }
+      ]
+    },
+    {
+      "name": "viewport 768",
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "name": "primary and secondary counts at 768px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 1,
+            "slot": 220
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 2,
+            "slot": 106.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 3,
+            "slot": 106.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 4,
+            "slot": 106.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 5,
+            "slot": 68.65625
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 6,
+            "slot": 68.65625
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 7,
+            "slot": 68.65625
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 8,
+            "slot": 68.65625
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 220,
+          "primaryHeight": 220,
+          "secondary": {
+            "width": 220,
+            "height": 220,
+            "count": 9,
+            "slot": 68.65625
+          }
+        }
+      ]
+    },
+    {
+      "name": "viewport 390",
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "name": "mobile reading order at 390px",
+      "order": [
+        "stamps",
+        "cancellation-details",
+        "stamping-locations",
+        "visits",
+        "notes",
+        "park-facts"
+      ]
+    },
+    {
+      "name": "mobile accessibility",
+      "violations": []
+    },
+    {
+      "name": "mobile directory"
+    },
+    {
+      "name": "primary and secondary counts at 390px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 1,
+            "slot": 240
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 2,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 3,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 4,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 5,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 6,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 7,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 8,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 9,
+            "slot": 75.328125
+          }
+        }
+      ]
+    },
+    {
+      "name": "viewport 320",
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "name": "mobile reading order at 320px",
+      "order": [
+        "stamps",
+        "cancellation-details",
+        "stamping-locations",
+        "visits",
+        "notes",
+        "park-facts"
+      ]
+    },
+    {
+      "name": "primary and secondary counts at 320px",
+      "footprints": [
+        {
+          "count": 1,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": null
+        },
+        {
+          "count": 2,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 1,
+            "slot": 240
+          }
+        },
+        {
+          "count": 3,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 2,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 4,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 3,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 5,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 4,
+            "slot": 116.5
+          }
+        },
+        {
+          "count": 6,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 5,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 7,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 6,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 8,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 7,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 9,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 8,
+            "slot": 75.328125
+          }
+        },
+        {
+          "count": 10,
+          "primaryWidth": 240,
+          "primaryHeight": 240,
+          "secondary": {
+            "width": 240,
+            "height": 240,
+            "count": 9,
+            "slot": 75.328125
+          }
+        }
+      ]
     },
     {
       "name": "200% desktop reflow equivalent"

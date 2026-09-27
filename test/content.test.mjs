@@ -53,12 +53,20 @@ test('location rendering inherits dates, preserves history, links impressions an
  assert.match(html,/Renamed desk/);assert.match(html,/Original desk/);assert.match(html,/Other reports \(1\)/);assert.match(html,/Observed on a visit/);assert.match(html,/August 10, 2025/);assert.match(html,/id="visit-observation"/);assert.match(html,/id="visit-2025-08-10-1"/);assert.match(html,/href="#location-desk"/);assert.ok(site.search.some(e=>e.kind==='Stamping location'&&e.text.includes('Seasonal cancellation')));
  f.data.visits[0].date='2026-09-26';f.write('Places/Yellowstone.md',f.data);model=loadContent(f.vault);assert.equal(model.places[0].locations[0].current.visit.date,'2026-09-26');
 });
-test('only main stamps appear in a bounded sidebar while every impression remains in the collection',t=>{
- const f=fixture(t);for(let i=0;i<5;i++)f.data.visits.push({date:`2026-09-${20+i}`,stamps:[{name:`Repeat ${i}`,type:'main',photos:[]}]});f.write('Places/Yellowstone.md',f.data);
- const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');const rail=html.split('<aside class="place-rail">')[1].split('</aside>')[0];assert.doesNotMatch(rail,/Junior Ranger/);assert.equal((rail.match(/<figure>/g)||[]).length,3);assert.match(rail,/View all main stamps \(7\)/);assert.equal((html.match(/<article class="stamp"/g)||[]).length,8);
+test('sidebar keeps a primary square and up to nine additional cancellations while preserving every impression',t=>{
+ const f=fixture(t);for(let i=0;i<8;i++)f.data.visits.push({date:`2026-09-${20+i}`,stamps:[{name:`Cancellation ${i}`,type:'main',photos:[]}]});
+ f.data.visits.push({date:'2026-09-28',stamps:[{name:'Main one',type:'main',photos:[]}]});f.write('Places/Yellowstone.md',f.data);
+ const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');const rail=html.split('<aside class="place-rail">')[1].split('</aside>')[0];
+ assert.match(rail,/Junior Ranger/);assert.equal((rail.match(/class="cancellation-slot/g)||[]).length,10);assert.match(rail,/data-count="9"/);assert.match(rail,/data-total="11"/);assert.match(rail,/class="primary-cancellation"/);assert.match(rail,/View all 11 cancellations/);
+ assert.match(html,/<details class="collection-details" id="cancellation-details">/);assert.equal((html.match(/<article class="cancellation-record"/g)||[]).length,11);assert.equal((html.match(/<article class="stamp"/g)||[]).length,12);
+ for(const [,anchor] of rail.matchAll(/href="#(cancellation-[^"]+)"/g))assert.ok(html.includes(`id="${anchor}"`));
 });
 test('blank places have a single collection empty state and omit unsupported facts',t=>{
- const f=fixture(t,{visits:[]});f.write('Places/Yellowstone.md',f.data);const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');assert.match(html,/No stamps collected yet/);assert.doesNotMatch(html,/No visits recorded|No place notes|No stamping locations|Established|<dt>Area/);
+ const f=fixture(t,{visits:[]});f.write('Places/Yellowstone.md',f.data);const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');assert.equal((html.match(/No cancellation records yet/g)||[]).length,1);assert.match(html,/No visits recorded yet/);assert.doesNotMatch(html,/No place notes|No stamping locations|Established|<dt>Area|Official park resources/);
+});
+test('unknown park location is labeled as state context without claiming a park pin',t=>{
+ const f=fixture(t,{states:['WY'],visits:[]});f.write('Places/Yellowstone.md',f.data);const html=createSite(loadContent(f.vault),[],'test').pages.get('/places/yellowstone/');
+ assert.match(html,/State context ·/);assert.match(html,/exact park location is not shown/);assert.doesNotMatch(html,/Park location ·/);
 });
 test('managed stamp anchors and preserved legacy aliases survive visit date changes',t=>{
  const f=fixture(t);const v=f.data.visits[0];v.id='stable-visit';v.anchor_aliases=['visit-2020-01-01-1'];v.stamps[0].id='stable-stamp';v.stamps[0].anchor_aliases=['visit-2020-01-01-1-stamp-1'];f.write('Places/Yellowstone.md',f.data);

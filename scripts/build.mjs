@@ -8,7 +8,9 @@ export const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'
 export function build({vault=path.join(root,'vault'),out=path.join(root,'dist')}={}) {
  const model=loadContent(vault);
  const catalogue=JSON.parse(fs.readFileSync(path.join(root,'data/catalogue.json')));
- const version=createHash('sha256').update(fs.readFileSync(path.join(root,'static/site.css'))).update(fs.readFileSync(path.join(root,'static/app.js'))).digest('hex').slice(0,12);
+ const versionHash=createHash('sha256');
+ for(const name of fs.readdirSync(path.join(root,'static')).filter(name=>name.endsWith('.css')).sort())versionHash.update(fs.readFileSync(path.join(root,'static',name)));
+ const version=versionHash.update(fs.readFileSync(path.join(root,'static/app.js'))).digest('hex').slice(0,12);
  const {pages,search}=createSite(model,catalogue,version);
  // Validate the complete model before replacing the last successful output.
  fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(out,{recursive:true});

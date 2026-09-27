@@ -1,40 +1,32 @@
-# Implementation validation
+# Tailscale navigation and primary cancellation validation
 
-Date: 2026-09-26. Branch: `design/modern-stamp-book`.
+Date: 2026-09-26. Branch: `design/modern-stamp-book`. This supersedes [earlier validation](validation-history.md).
 
 ## Results
 
-- `npm test`: **29 tests passed**. Raw output: `unit-results.txt`.
-- `npm run build`: **444 pages from 429 places, 0 trips**.
-- `npm run check`: **444 HTML pages and 325,425 local links/assets/search targets** checked.
-- `npm run qa:fixture` / `npm run qa:check`: **446 pages and 328,325 targets** checked in the isolated populated fixture.
-- `QA_CHROME=1 npm run qa:browser`: passed. Exact browser results are in `browser-results.json`; screenshots are in this directory.
-- `git diff --check`: passed.
-- Actual source content: **429 places, zero visits, zero stamping locations, zero published attachments**, recorded in `content-integrity.json`. `vault/Places`, `vault/Regions`, `vault/Trips`, and `vault/Attachments` have no changes from the cloned commit.
-- HTTP 200 from the host's LAN address on ports 8766 and 8767; both preview servers bind to `0.0.0.0`.
+- `npm test`: **49 passed**, including cancellation matching, repeat/history preservation, authoring cancellation/concurrency, rendered anchor collision and state-context coverage, and sourced-map coverage. Raw output: `unit-results.txt`.
+- Normal build: **444 pages / 429 places / 0 trips**. `npm run check`: **326,298** local links/assets/search targets checked.
+- Isolated QA build: **462 pages / 446 places / 1 trip**. `npm run qa:check`: **348,698** local targets checked.
+- `QA_CHROME=1 npm run qa:browser`: **45 checkpoints passed**, including one primary plus 0–9 additional slots across 1920, 1440, 1280, 1279, 1024, 768, 390 and 320px. **Seven scoped axe scans, zero violations; zero browser errors.** Exact results: `browser-results.json`.
+- Real content integrity: **429 places, zero visits, zero stamping locations, zero expected lists**. No changes in `vault/Places`, `vault/Regions`, `vault/Trips` or `vault/Attachments`; see `content-integrity.json`.
+- Both preview servers bind to `0.0.0.0`. LAN address: `10.42.7.224`; normal site port 8766, fictional preview port 8767.
 
-## Requirement evidence
+## Evidence
 
-| Requirement | Implementation and evidence |
+| Requirement | Evidence |
 | --- | --- |
-| Modern documentation style and readable sizes | `static/site.css`; desktop/mobile screenshots; browser measurements 16px body, 15px directory, 240px directory and 280px rail |
-| Main stamps only in the top rail, vertically stacked and contained | `src/site.mjs`; sidebar unit test; browser 200px cap and intrinsic-ratio assertions; focused comparison |
-| Full main/sub collection, multiple photos, notes, locations, visits | Full-width collection renderer; `desktop-collection.png`, `mobile-collection.png`; content and browser link checks |
-| Notes, visits, locations on one canonical place page | Existing canonical URLs preserved; section IDs and stable visit/stamp identities; generated-link checker; observation → visit → trip browser test |
-| Multi-state directory and region overview links | Three canonical Yellowstone links verified after filtering; content tests; separate expansion buttons and navigation links |
-| Compact factual information and optional map | Existing official NPS links preserved; optional `area`, `established`, attachment `map`; blank facts omitted; optional-map/long-name fixture tested at all widths |
-| Preserve region slots, trips, search and backlinks | Existing tests retained; browser region filters, search and trip navigation; authored backlinks tested |
-| Backward-compatible location schema | `docs/design/location-model.md`; legacy-note validation test; unchanged source notes |
-| Add/update location and Add stamp workflow | New Templater template plus registered command; automated authoring harness tests known/new/name-only locations, source and observation provenance, and stamp-list updates |
-| No duplicate visit date or author-entered IDs | Authoring tests for inherited observation dates and automatically generated identities; site resolves observation dates from visits |
-| Corrections survive imports; historic names and closed/moved locations remain | Pure append-only merge and validated local import command; import idempotence/conflict tests; rename snapshots; report-history UI; moved-location fixture |
-| Safe cancellation and concurrent edits | Draft-only prompts; complete visits/locations snapshot checked before commit; tests prove no partial location/visit changes after cancellation or concurrent edits |
-| Stable new links and legacy compatibility | New visit/stamp identities; old anchors retained when editing a legacy visit; date-change and alias-rendering tests |
-| Responsive order, overflow, keyboard and contrast | Approved mobile order; 320–1435px checks; 200% reflow equivalent; skip-link focus; scoped Axe audits with zero violations |
-| Blank real vault, isolated testing | `.qa/vault` and `.qa/dist` only; fixture-generation script; unchanged source directories and integrity JSON |
-| Desktop/mobile screenshots and visual comparison | `../../../design-qa.md`, three full comparisons, focused rail comparison, representative captures |
-| Documentation and local delivery | README, vault Start here, location-model notes, handoff status and implementation goal updated; normal preview on 8766, optional fictional fixture on 8767 |
-| No production deployment | No deployment command run; no credentials needed or requested |
+| Tailscale navigation with classic article typography | `current-desktop-place.png` ; 1760px shell, Inter Places browser, Georgia/Times headings and Arial body |
+| Separate primary square and adaptive additional squares | `current-desktop-one-stamp.png`, `current-desktop-place.png`, `current-desktop-nine-stamps.png`; geometry assertions across eight widths |
+| YAML defines expectations; repeat impressions share one slot | `src/cancellations.mjs`, model and authoring tests, repeat/legacy/empty/overflow browser fixtures |
+| Missing photos differ from uncollected entries | Count fixtures check collected and photo states; square cells remain blank only when uncollected |
+| Records beyond primary plus nine retained | Eleven-entry fixture; View all opens all detail records |
+| Short inline visits and optional external blog link | Two concise Yellowstone entries; Moores has no blog link; no separate visit pages or duplicated Travel notes |
+| Rarely needed locations closed | Default disclosure assertions; deep links reveal current/historical reports and associated visits |
+| Locator maps and supported facts | 429 sourced park locators, 56 state-only fallbacks; map tests verify pins/provenance and no invented fallback pins; native map ratio and enlarged labels |
+| Responsive mobile order | `current-mobile-place.png`, `current-small-mobile-place.png`, `current-tablet-place.png`; DOM order and overflow assertions |
+| Existing navigation and saved links | Directory/filter/Escape/focus, region filters, search, observation→visit→trip, legacy and canonical impression anchors |
+| Authoring preservation | Expected-list editor and Add stamp draft atomically; renamed expected entries preserve impression names, photos and dates |
+| Visual fidelity review | `../../../design-qa.md`, combined shell and focused navigation comparisons, plus primary state comparisons |
 
 ## Reproduce
 
@@ -45,13 +37,12 @@ npm run build
 npm run check
 npm run qa:fixture
 npm run qa:check
-# In separate terminals:
+# Separate terminals:
 node scripts/serve.mjs --host 0.0.0.0 --port 8766
 node scripts/serve.mjs --out .qa/dist --host 0.0.0.0 --port 8767
-# With installed Google Chrome:
 QA_CHROME=1 npm run qa:browser
-# Or install Playwright Chromium once, then run npm run qa:browser:
-npx playwright install chromium
 ```
 
-The browser test is a local verification command, not part of the lightweight default CI test suite. Authoring tests simulate Obsidian's Templater and frontmatter APIs; this change was not manually exercised inside the native Obsidian application. The existing pinned plugins and native authoring architecture are retained.
+The browser suite uses installed Chrome when `QA_CHROME=1`; alternatively install Playwright Chromium and omit that variable. 720px reflow tests the CSS viewport equivalent of 200% zoom, not native browser zoom controls. Axe results are scoped automated checks, not a comprehensive accessibility certification. Obsidian authoring uses a simulated Templater/frontmatter test harness; no manual native-app test was performed. Map pins indicate administrative centers, not entrances or stamping desks. No production deployment was performed.
+
+The sidebar’s first YAML entry is primary even when uncollected, type sub, or missing its photo. Dedicated fixtures verify that later photographed entries cannot replace it. The Last collected time uses its latest impression, independently from representative-photo fallback. Blank and photo-needed states are visually distinct.

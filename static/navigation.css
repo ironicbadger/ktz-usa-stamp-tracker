@@ -1,0 +1,221 @@
+/* Tailscale docs shell: 1680px of content, 40px side padding, 32px gutters.
+   Keep the article's classic typography and park infobox in site.css. */
+@font-face {
+  font-family: 'Inter Navigation';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter/InterVariable.woff2') format('woff2');
+}
+
+header,
+.layout,
+footer {
+  max-width: 1760px;
+  padding-inline: 40px;
+}
+
+.layout {
+  /* Two columns of Tailscale's ten-column grid; the article takes the rest. */
+  grid-template-columns: calc(20% - 25.6px) minmax(0, 1fr);
+  gap: 32px;
+  padding-top: 32px;
+}
+
+@media (min-width: 1280px) {
+  .place-page {
+    column-gap: 32px;
+  }
+}
+
+.directory {
+  --directory-ink: #292524;
+  --directory-guide: #eeebea;
+  --directory-hover: #f5f5f4;
+  position: sticky;
+  top: 24px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d6d3d1 transparent;
+  padding: 0 0 40px;
+  color: var(--directory-ink);
+  font-family: 'Inter Navigation', Arial, Helvetica, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+.directory-heading {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.directory-heading strong {
+  font-weight: 600;
+}
+
+.directory-close {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: transparent;
+  color: #78716c;
+}
+
+.directory-close:hover {
+  background: var(--directory-hover);
+  color: var(--directory-ink);
+}
+
+.directory #tree-filter {
+  margin-bottom: 16px;
+  padding: 8px 10px;
+  border: 1px solid var(--directory-guide);
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.place-tree {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.tree-region + .tree-region {
+  margin-top: 4px;
+}
+
+.tree-row {
+  gap: 8px;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.tree-row:hover {
+  background: transparent;
+}
+
+.tree-row > a,
+.tree-site {
+  flex: 0 1 auto;
+  width: fit-content;
+  max-width: 100%;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 4px;
+  color: var(--directory-ink);
+  font-weight: 400;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.tree-region > .tree-row > a {
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.tree-row > a:hover,
+.tree-site:hover {
+  background: var(--directory-hover);
+  color: #1c1917;
+  text-decoration: none;
+}
+
+.tree-toggle {
+  flex: 0 0 20px;
+  width: 20px;
+  min-height: 25px;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.tree-toggle:hover {
+  background: var(--directory-hover);
+}
+
+.tree-toggle img {
+  width: 10px;
+  height: 10px;
+  opacity: .6;
+}
+
+.tree-state,
+.tree-sites {
+  margin-left: 10px;
+  padding-left: 8px;
+  border-left: 1px solid var(--directory-guide);
+}
+
+.tree-site {
+  margin: 2px 0 2px 28px;
+  max-width: calc(100% - 28px);
+}
+
+.tree-site[aria-current] {
+  border: 0;
+  background: #f5f5f4;
+  color: #292524;
+  font-weight: 400;
+}
+
+.tree-site[aria-current]:hover {
+  background: #e7e5e4;
+}
+
+/* The park infobox stays useful on laptops. Collapse Places before the
+   article would be squeezed; app.js uses this same breakpoint. */
+@media (max-width: 1279px) {
+  .layout {
+    display: block;
+  }
+
+  body:has(.directory.expanded) header > .directory-toggle {
+    display: block;
+  }
+
+  .directory {
+    position: static;
+    max-height: min(65dvh, 640px);
+    padding: 0 0 24px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--directory-guide);
+  }
+
+  .directory-heading,
+  .directory.expanded #directory-content {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1023px) {
+  header,
+  .layout,
+  footer {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .layout {
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  header,
+  .layout,
+  footer {
+    padding-inline: 16px;
+  }
+}
+
+@media print {
+  .layout {
+    display: block;
+    padding: 0;
+  }
+}

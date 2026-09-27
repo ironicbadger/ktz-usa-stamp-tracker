@@ -1,13 +1,13 @@
 const directory=document.querySelector('.directory');
 const directoryButton=document.querySelector('.directory-toggle');
 const setDirectoryOpen=expanded=>{directory.classList.toggle('expanded',expanded);directoryButton.setAttribute('aria-expanded',String(expanded))};
-const directoryNarrow=matchMedia('(max-width: 900px)');
+const directoryNarrow=matchMedia('(max-width: 1279px)');
 setDirectoryOpen(!directoryNarrow.matches);
 directoryNarrow.addEventListener('change',()=>setDirectoryOpen(!directoryNarrow.matches));
 document.querySelector('.directory-close')?.addEventListener('click',()=>{setDirectoryOpen(false);directoryButton.focus()});
 directoryButton?.addEventListener('click',()=>setDirectoryOpen(!directory.classList.contains('expanded')));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&directory.classList.contains('expanded')){setDirectoryOpen(false);directoryButton.focus()}});
-document.addEventListener('click',event=>{if(directoryNarrow.matches&&!directory.contains(event.target)&&!directoryButton.contains(event.target))setDirectoryOpen(false)});
+
 const toggles=[...document.querySelectorAll('.tree-toggle')];
 const initialOpen=new Map(toggles.map(button=>[button,button.getAttribute('aria-expanded')==='true']));
 const setExpanded=(button,expanded)=>{button.setAttribute('aria-expanded',String(expanded));document.getElementById(button.getAttribute('aria-controls')).hidden=!expanded};
@@ -34,17 +34,32 @@ if(form){
  async function search(){const revision=++request,q=input.value.trim().toLowerCase();results.replaceChildren();if(!q){status.textContent='Enter a name, state, date or note.';return}status.textContent='Searching…';try{const entries=await index;if(revision!==request)return;const terms=q.split(/\s+/),matches=entries.filter(item=>terms.every(term=>item.text.toLowerCase().includes(term)));status.textContent=`${matches.length} result${matches.length===1?'':'s'}${matches.length>100?' · showing the first 100':''}`;for(const item of matches.slice(0,100)){const li=document.createElement('li'),a=document.createElement('a'),small=document.createElement('small');a.href=item.url;a.textContent=item.title;small.textContent=item.kind;li.append(a,small);results.append(li)}}catch(error){status.textContent='Search could not load. Try reloading, or browse All places.'}}
  input.value=new URLSearchParams(location.search).get('q')||'';search();input.addEventListener('input',search);form.addEventListener('submit',e=>{e.preventDefault();history.replaceState(null,'','?q='+encodeURIComponent(input.value));search()});
 }
-// Move existing sections, not copies, so mobile reading and keyboard order match the layout.
+// Move the original sections so reading and keyboard order follow the mobile layout.
 const placePage=document.querySelector('.place-page');
 if(placePage){
- const narrow=matchMedia('(max-width: 900px)');
- const heading=placePage.querySelector('.place-heading'),overview=placePage.querySelector('.place-overview'),top=placePage.querySelector('.place-top'),rail=placePage.querySelector('.place-rail'),body=placePage.querySelector('.place-body');
- const locationOverview=placePage.querySelector('.location-summary');
- const summary=placePage.querySelector('.main-summary'),facts=placePage.querySelector('.park-facts'),collection=placePage.querySelector('#stamps'),locations=placePage.querySelector('#stamping-locations'),visits=placePage.querySelector('#visits'),notes=placePage.querySelector('#notes');
- const extra=[...overview.children].filter(e=>e!==visits&&e!==notes&&!e.classList.contains('location-summary'));
+ const narrow=matchMedia('(max-width: 720px)');
+ const overview=placePage.querySelector('.place-overview'),rail=placePage.querySelector('.place-rail');
+ const album=placePage.querySelector('#stamps'),facts=placePage.querySelector('#park-facts');
+ const notes=placePage.querySelector('#notes'),visits=placePage.querySelector('#visits'),locations=placePage.querySelector('#stamping-locations'),collection=placePage.querySelector('#cancellation-details');
+ const extra=[...overview.children].filter(el=>![notes,visits,locations,collection].includes(el));
  const reflow=()=>{
-  if(narrow.matches){for(const node of [heading,summary,collection,locations,visits,notes,...extra,facts])if(node)placePage.append(node)}
-  else{top.prepend(heading);top.append(rail);if(summary)rail.append(summary);rail.append(facts);for(const node of [locationOverview,notes,visits,...extra])if(node)overview.append(node);body.append(collection,locations)}
+  if(narrow.matches){for(const node of [album,collection,locations,visits,notes,...extra,facts])if(node)placePage.append(node)}
+  else{for(const node of [album,facts])if(node)rail.append(node);for(const node of [notes,visits,locations,collection,...extra])if(node)overview.append(node)}
  };
  narrow.addEventListener('change',reflow);reflow();
 }
+// Deep links reveal their parent disclosures before scrolling to a record.
+function revealHash(){
+ let id;try{id=decodeURIComponent(location.hash.slice(1))}catch{return}
+ if(!id)return;
+ const target=document.getElementById(id);if(!target)return;
+ if(target.matches('details'))target.open=true;
+ for(let parent=target.parentElement;parent;parent=parent.parentElement)if(parent.matches('details'))parent.open=true;
+ requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+}
+window.addEventListener('hashchange',revealHash);
+document.addEventListener('click',event=>{
+ const link=event.target.closest('a[href^="#"]');
+ if(link&&link.hash===location.hash)requestAnimationFrame(revealHash);
+});
+revealHash();

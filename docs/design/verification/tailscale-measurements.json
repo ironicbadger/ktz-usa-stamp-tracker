@@ -1,0 +1,3275 @@
+{
+  "measurements": [
+    {
+      "viewport": 1920,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 80,
+          "y": 129.390625,
+          "width": 1760,
+          "height": 3676.484375
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "1680px",
+          "padding": "0px 40px",
+          "margin": "0px 80px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 120,
+          "y": 129.390625,
+          "width": 1680,
+          "height": 3676.484375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "1680px",
+          "padding": "32px 0px 0px",
+          "margin": "0px",
+          "columnGap": "32px",
+          "gridTemplateColumns": "139.188px 139.188px 139.188px 139.188px 139.188px 139.188px 139.188px 139.188px 139.188px 139.188px",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 120,
+          "y": 161.390625,
+          "width": 310.390625,
+          "height": 3644.484375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "310.391px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 120,
+          "y": 161.390625,
+          "width": 310.390625,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "310.391px",
+          "padding": "16px 0px 80px",
+          "margin": "0px",
+          "columnGap": "4px",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 148.59375,
+            "y": 21.390625,
+            "width": 49.046875,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "49.0469px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 2px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 167,
+            "y": 52.1875,
+            "width": 83.234375,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "83.2344px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 167.59375,
+            "y": 78.984375,
+            "width": 113.390625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "113.391px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 167.59375,
+            "y": 105.78125,
+            "width": 99.953125,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "99.9531px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 167,
+            "y": 132.578125,
+            "width": 183.296875,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "183.297px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 167,
+            "y": 159.375,
+            "width": 200.0625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "200.062px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 167.59375,
+            "y": 186.171875,
+            "width": 187.3125,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "187.312px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 167,
+            "y": 212.96875,
+            "width": 130.640625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "130.641px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 167,
+          "y": 212.96875,
+          "width": 130.640625,
+          "height": 24.796875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "130.641px",
+          "padding": "4px 8px",
+          "margin": "0px 0px 0px 28px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "4px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 1440,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 129.390625,
+          "width": 1440,
+          "height": 3586.296875
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "1360px",
+          "padding": "0px 40px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 129.390625,
+          "width": 1360,
+          "height": 3586.296875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "1360px",
+          "padding": "32px 0px 0px",
+          "margin": "0px",
+          "columnGap": "32px",
+          "gridTemplateColumns": "107.188px 107.188px 107.188px 107.188px 107.188px 107.188px 107.188px 107.188px 107.188px 107.188px",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 161.390625,
+          "width": 246.390625,
+          "height": 3554.296875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "246.391px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 161.390625,
+          "width": 246.390625,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "246.391px",
+          "padding": "16px 0px 80px",
+          "margin": "0px",
+          "columnGap": "4px",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 68.59375,
+            "y": 21.390625,
+            "width": 49.046875,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "49.0469px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 2px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 87,
+            "y": 52.1875,
+            "width": 83.234375,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "83.2344px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 87.59375,
+            "y": 78.984375,
+            "width": 113.390625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "113.391px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 87.59375,
+            "y": 105.78125,
+            "width": 99.953125,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "99.9531px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 87,
+            "y": 132.578125,
+            "width": 183.296875,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "183.297px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 87,
+            "y": 159.375,
+            "width": 199.390625,
+            "height": 41.59375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "199.391px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 87.59375,
+            "y": 202.96875,
+            "width": 187.3125,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "187.312px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 87,
+            "y": 229.765625,
+            "width": 130.640625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "130.641px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 87,
+          "y": 229.765625,
+          "width": 130.640625,
+          "height": 24.796875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "130.641px",
+          "padding": "4px 8px",
+          "margin": "0px 0px 0px 28px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "4px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 1280,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 129.390625,
+          "width": 1280,
+          "height": 3589.203125
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "1200px",
+          "padding": "0px 40px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 129.390625,
+          "width": 1200,
+          "height": 3589.203125
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "1200px",
+          "padding": "32px 0px 0px",
+          "margin": "0px",
+          "columnGap": "32px",
+          "gridTemplateColumns": "91.1875px 91.1875px 91.1875px 91.1875px 91.1875px 91.1875px 91.1875px 91.1875px 91.1875px 91.1875px",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 161.390625,
+          "width": 214.390625,
+          "height": 3557.203125
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "214.391px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "24px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 161.390625,
+          "width": 214.390625,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "214.391px",
+          "padding": "16px 0px 80px",
+          "margin": "0px",
+          "columnGap": "4px",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 68.59375,
+            "y": 4.390625,
+            "width": 49.046875,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "49.0469px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 2px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 87,
+            "y": 35.1875,
+            "width": 83.234375,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "83.2344px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 87.59375,
+            "y": 61.984375,
+            "width": 113.390625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "113.391px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 87.59375,
+            "y": 88.78125,
+            "width": 99.953125,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "99.9531px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 87,
+            "y": 115.578125,
+            "width": 167.390625,
+            "height": 41.59375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "167.391px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 87,
+            "y": 159.171875,
+            "width": 167.390625,
+            "height": 41.59375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "167.391px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 87.59375,
+            "y": 202.765625,
+            "width": 166.796875,
+            "height": 41.59375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "166.797px",
+            "padding": "4px 8px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 87,
+            "y": 246.359375,
+            "width": 130.640625,
+            "height": 24.796875
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "130.641px",
+            "padding": "4px 8px",
+            "margin": "0px 0px 0px 28px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "16.8px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "4px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 87,
+          "y": 246.359375,
+          "width": 130.640625,
+          "height": 24.796875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "130.641px",
+          "padding": "4px 8px",
+          "margin": "0px 0px 0px 28px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.8px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "4px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 1100,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 124.234375,
+          "width": 1100,
+          "height": 3794.4375
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "1020px",
+          "padding": "0px 40px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "15.3518px",
+          "fontWeight": "400",
+          "lineHeight": "23.0277px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 124.234375,
+          "width": 1020,
+          "height": 3794.4375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "1020px",
+          "padding": "31.2969px 0px 0px",
+          "margin": "0px",
+          "columnGap": "31.2969px",
+          "gridTemplateColumns": "70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 70.7031px 0px",
+          "fontSize": "15.3518px",
+          "fontWeight": "400",
+          "lineHeight": "23.0277px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 155.53125,
+          "width": 274.703125,
+          "height": 3763.140625
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "274.703px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "15.3518px",
+          "fontWeight": "400",
+          "lineHeight": "23.0277px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 40,
+          "y": 155.53125,
+          "width": 274.703125,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "274.703px",
+          "padding": "15.6484px 0px 78.2422px",
+          "margin": "0px",
+          "columnGap": "3.91211px",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.6924px",
+          "fontWeight": "400",
+          "lineHeight": "16.4309px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 67.9375,
+            "y": -1.828125,
+            "width": 47.9375,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "47.9375px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px 0px 1.95605px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "600",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 85.953125,
+            "y": 28.265625,
+            "width": 81.375,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "81.375px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px 0px 0px 27.3848px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 86.515625,
+            "y": 54.453125,
+            "width": 110.859375,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "110.859px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 86.515625,
+            "y": 80.640625,
+            "width": 97.71875,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "97.7188px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 85.953125,
+            "y": 106.828125,
+            "width": 179.21875,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "179.219px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px 0px 0px 27.3848px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 85.953125,
+            "y": 133.015625,
+            "width": 195.609375,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "195.609px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px 0px 0px 27.3848px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 86.515625,
+            "y": 159.203125,
+            "width": 183.140625,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "183.141px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 85.953125,
+            "y": 185.390625,
+            "width": 127.71875,
+            "height": 24.234375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "127.719px",
+            "padding": "3.91211px 7.82422px",
+            "margin": "0px 0px 0px 27.3848px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.6924px",
+            "fontWeight": "400",
+            "lineHeight": "16.4309px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "3.91211px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 85.953125,
+          "y": 185.390625,
+          "width": 127.71875,
+          "height": 24.234375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "127.719px",
+          "padding": "3.91211px 7.82422px",
+          "margin": "0px 0px 0px 27.3848px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.6924px",
+          "fontWeight": "400",
+          "lineHeight": "16.4309px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "3.91211px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 1000,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 123.828125,
+          "width": 1000,
+          "height": 3740.09375
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "960px",
+          "padding": "0px 20px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.9917px",
+          "fontWeight": "400",
+          "lineHeight": "22.4875px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 123.828125,
+          "width": 960,
+          "height": 3740.09375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "960px",
+          "padding": "30.9062px 0px 0px",
+          "margin": "0px",
+          "columnGap": "30.9062px",
+          "gridTemplateColumns": "65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 65.0938px 0px",
+          "fontSize": "14.9917px",
+          "fontWeight": "400",
+          "lineHeight": "22.4875px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 154.734375,
+          "width": 257.09375,
+          "height": 3709.1875
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "257.094px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.9917px",
+          "fontWeight": "400",
+          "lineHeight": "22.4875px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 154.734375,
+          "width": 257.09375,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "257.094px",
+          "padding": "15.4531px 0px 77.2656px",
+          "margin": "0px",
+          "columnGap": "3.86328px",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.5215px",
+          "fontWeight": "400",
+          "lineHeight": "16.2258px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 47.59375,
+            "y": -2.8125,
+            "width": 47.359375,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "47.3594px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px 0px 1.93164px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "600",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 65.40625,
+            "y": 26.90625,
+            "width": 80.375,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "80.375px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px 0px 0px 27.043px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 65.96875,
+            "y": 52.765625,
+            "width": 109.5,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "109.5px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 65.96875,
+            "y": 78.625,
+            "width": 96.515625,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "96.5156px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 65.40625,
+            "y": 104.484375,
+            "width": 177,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "177px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px 0px 0px 27.043px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 65.40625,
+            "y": 130.34375,
+            "width": 193.1875,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "193.188px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px 0px 0px 27.043px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 65.96875,
+            "y": 156.203125,
+            "width": 180.875,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "180.875px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 65.40625,
+            "y": 182.0625,
+            "width": 126.140625,
+            "height": 23.9375
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "126.141px",
+            "padding": "3.86328px 7.72656px",
+            "margin": "0px 0px 0px 27.043px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.5215px",
+            "fontWeight": "400",
+            "lineHeight": "16.2258px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "3.86328px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 65.40625,
+          "y": 182.0625,
+          "width": 126.140625,
+          "height": 23.9375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "126.141px",
+          "padding": "3.86328px 7.72656px",
+          "margin": "0px 0px 0px 27.043px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.5215px",
+          "fontWeight": "400",
+          "lineHeight": "16.2258px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "3.86328px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 768,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 122.875,
+          "width": 768,
+          "height": 3851.40625
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "728px",
+          "padding": "0px 20px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.1562px",
+          "fontWeight": "400",
+          "lineHeight": "21.2344px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 122.875,
+          "width": 728,
+          "height": 3851.40625
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "728px",
+          "padding": "30px 0px 0px",
+          "margin": "0px",
+          "columnGap": "30px",
+          "gridTemplateColumns": "42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 42.7969px 0px",
+          "fontSize": "14.1562px",
+          "fontWeight": "400",
+          "lineHeight": "21.2344px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 152.875,
+          "width": 188.390625,
+          "height": 3821.40625
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "188.391px",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.1562px",
+          "fontWeight": "400",
+          "lineHeight": "21.2344px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 152.875,
+          "width": 188.390625,
+          "height": 900
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "188.391px",
+          "padding": "15px 0px 75px",
+          "margin": "0px",
+          "columnGap": "3.75px",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 46.8125,
+            "y": -5.125,
+            "width": 45.96875,
+            "height": 23.25
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "45.9688px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 1.875px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "600",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 64.125,
+            "y": 23.75,
+            "width": 78.015625,
+            "height": 23.25
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "78.0156px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 64.6875,
+            "y": 48.875,
+            "width": 106.28125,
+            "height": 23.25
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "106.281px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 64.6875,
+            "y": 74,
+            "width": 93.6875,
+            "height": 23.25
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "93.6875px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 64.125,
+            "y": 99.125,
+            "width": 144.265625,
+            "height": 39
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "144.266px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 64.125,
+            "y": 140,
+            "width": 144.265625,
+            "height": 39
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "144.266px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 64.6875,
+            "y": 180.875,
+            "width": 143.703125,
+            "height": 39
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "143.703px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 64.125,
+            "y": 221.75,
+            "width": 122.4375,
+            "height": 23.25
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "122.438px",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 64.125,
+          "y": 221.75,
+          "width": 122.4375,
+          "height": 23.25
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "122.438px",
+          "padding": "3.75px 7.5px",
+          "margin": "0px 0px 0px 26.25px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "3.75px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 767,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 122.875,
+          "width": 767,
+          "height": 3651
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "727px",
+          "padding": "0px 20px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 122.875,
+          "width": 727,
+          "height": 3651
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "727px",
+          "padding": "15px 0px 0px",
+          "margin": "0px",
+          "columnGap": "30px",
+          "gridTemplateColumns": "45.6875px 45.6875px 45.6875px 45.6875px 45.6875px 45.6875px 45.6875px 45.6875px 45.6875px 45.6875px",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "none",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "15px 0px 37.5px",
+          "margin": "0px",
+          "columnGap": "3.75px",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 1.875px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "600",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "3.75px 7.5px",
+          "margin": "0px 0px 0px 26.25px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "3.75px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    },
+    {
+      "viewport": 390,
+      "shell": {
+        "class": "scope-kb is-wide container",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 133.875,
+          "width": 390,
+          "height": 4327.375
+        },
+        "styles": {
+          "boxSizing": "content-box",
+          "display": "block",
+          "maxWidth": "1680px",
+          "width": "350px",
+          "padding": "0px 20px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "grid": {
+        "class": "grid grid-cols-10 gap-x-8 pt-4 md:pt-8",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 20,
+          "y": 133.875,
+          "width": 350,
+          "height": 4327.375
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "grid",
+          "maxWidth": "none",
+          "width": "350px",
+          "padding": "15px 0px 0px",
+          "margin": "0px",
+          "columnGap": "30px",
+          "gridTemplateColumns": "8px 8px 8px 8px 8px 8px 8px 8px 8px 8px",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "nav": {
+        "class": "js-docHighlight col-span-10 hidden md:col-span-3 md:row-span-2 md:block xl:col-span-2",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "none",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "0px",
+          "margin": "0px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "14.0625px",
+          "fontWeight": "400",
+          "lineHeight": "21.0938px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      },
+      "scroll": {
+        "class": "flex max-h-[90vh] flex-col gap-1 overflow-y-auto pb-10 pt-4 text-sm md:pb-20",
+        "text": "ToggleStartQuickstartToggleInstall TailscaleToggleQuick guidesOpe",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "flex",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "15px 0px 37.5px",
+          "margin": "0px",
+          "columnGap": "3.75px",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(24, 23, 23)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "borderRadius": "0px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "auto",
+          "maxHeight": "900px"
+        }
+      },
+      "topLinks": [
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 mb-0.5 pl-2 font-semibold -outline-offset-1 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Start",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 1.875px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "600",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Quickstart",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Install Tailscale",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Quick guides",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "OpenVPN migration guide",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer ml-7 text-sm",
+          "text": "Legacy VPN migration guide",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 hover:bg-stone-100 hover:cursor-pointer",
+          "text": "Set up an identity provider",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        },
+        {
+          "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+          "text": "What is Tailscale?",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "boxSizing": "border-box",
+            "display": "block",
+            "maxWidth": "none",
+            "width": "auto",
+            "padding": "3.75px 7.5px",
+            "margin": "0px 0px 0px 26.25px",
+            "columnGap": "normal",
+            "gridTemplateColumns": "none",
+            "fontSize": "13.125px",
+            "fontWeight": "400",
+            "lineHeight": "15.75px",
+            "color": "rgb(41, 37, 36)",
+            "backgroundColor": "rgb(245, 245, 244)",
+            "borderRadius": "3.75px",
+            "borderLeft": "0px solid rgb(238, 235, 234)",
+            "position": "static",
+            "top": "auto",
+            "overflowY": "visible",
+            "maxHeight": "none"
+          }
+        }
+      ],
+      "active": {
+        "class": "rounded py-1 px-2 text-stone-800 hover:text-stone-900 bg-stone-100 hover:bg-stone-200 ml-7 text-sm",
+        "text": "What is Tailscale?",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "styles": {
+          "boxSizing": "border-box",
+          "display": "block",
+          "maxWidth": "none",
+          "width": "auto",
+          "padding": "3.75px 7.5px",
+          "margin": "0px 0px 0px 26.25px",
+          "columnGap": "normal",
+          "gridTemplateColumns": "none",
+          "fontSize": "13.125px",
+          "fontWeight": "400",
+          "lineHeight": "15.75px",
+          "color": "rgb(41, 37, 36)",
+          "backgroundColor": "rgb(245, 245, 244)",
+          "borderRadius": "3.75px",
+          "borderLeft": "0px solid rgb(238, 235, 234)",
+          "position": "static",
+          "top": "auto",
+          "overflowY": "visible",
+          "maxHeight": "none"
+        }
+      }
+    }
+  ],
+  "scrolling": {
+    "pageScroll": 600,
+    "stickyTop": 144,
+    "navScroll": 0,
+    "navClientHeight": 900,
+    "navScrollHeight": 4944
+  }
+}

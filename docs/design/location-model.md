@@ -22,9 +22,11 @@ Place frontmatter may include `area` (text with units), `established` (ISO date)
 
 ## Collection and responsive decisions
 
-The main-stamp summary shows up to three most recent collected main impressions, ordered by visit date descending, then note order. Each links to its full collection record and visit date. Further impressions are reachable through the all-main-stamps link. Full collection keeps every impression, grouped into main and substamps, in the same deterministic order. Missing photos use a compact textual status rather than invented artwork. Main-stamp images have a 200px width cap and preserve aspect ratio.
+The sidebar uses the [adaptive cancellation album](adaptive-cancellations.md): the first expected entry has its own primary square and collection-date panel; the remaining main stamps and substamps use an adaptive album capped at nine additional square slots. Repeat impressions remain grouped in closed cancellation details. Every collected impression, photo, location snapshot and visit link is retained. Missing photos and uncollected expected entries are distinct.
 
-Mobile order, confirmed by the user: title and section links, main-stamp summary and collection, stamping locations, visits and notes, park facts. Directory navigation expands in normal document flow. Tablet collapses the right rail below the content when a readable three-column layout no longer fits. No nested scrolling rail or overlay content is required.
+Stamping locations are a closed native disclosure with only its label and count visible. Expanding reveals reports, access information, provenance and history. Direct links reveal the relevant disclosure automatically.
+
+Mobile order, confirmed by the user: title, cancellation album and details, stamping locations, visits, place notes, park facts. Directory navigation expands in normal document flow at tablet widths. Below 720px, the sidebar joins that reading order; desktop keeps a broad reading column inside the responsive Tailscale-style frame.
 
 ## YAML example (documentation only)
 
