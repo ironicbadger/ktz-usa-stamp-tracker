@@ -1,13 +1,11 @@
 /* Home content inherits the reader shell, fonts, colors and navigation. */
-.collection-home{--home-gap:24px;--home-section-gap:32px}
-.collection-home>h1{border-bottom:1px solid var(--line);padding-bottom:10px}
-.collection-home>.home-intro{color:var(--muted);margin-bottom:var(--home-gap)}
+.collection-home{--home-gap:16px;--home-section-gap:24px}
 .collection-home progress{appearance:none;-webkit-appearance:none;display:block;width:100%;height:7px;border:0;border-radius:2px;overflow:hidden;background:var(--track);color:var(--bar)}
 .collection-home progress::-webkit-progress-bar{background:var(--track)}
 .collection-home progress::-webkit-progress-value{background:var(--bar)}
 .collection-home progress::-moz-progress-bar{background:var(--bar)}
 .book-progress{display:grid;grid-template-columns:1fr auto;gap:12px var(--home-gap);padding:18px;border:1px solid var(--line);margin-bottom:var(--home-gap)}
-.book-progress h2{font-size:21px;margin:0}.book-progress p{font-size:14px;color:var(--muted);margin:6px 0 0}.book-progress strong{font:400 34px/1.25 Georgia,serif;align-self:center}.book-progress progress{grid-column:1/-1}
+.book-progress h1{font-size:21px;margin:0}.book-progress p{font-size:14px;color:var(--muted);margin:6px 0 0}.book-progress strong{font:400 34px/1.25 Georgia,serif;align-self:center}.book-progress progress{grid-column:1/-1}
 .featured-site{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(220px,1fr);border:1px solid var(--line)}
 .featured-photo{display:block;min-width:0}.featured-photo img{width:100%;height:100%;max-height:320px;object-fit:cover}
 .featured-copy{padding:var(--home-gap);display:flex;flex-direction:column;align-items:flex-start}.featured-copy .kicker{margin:0 0 12px}.featured-copy h2{font-size:26px;margin-bottom:8px}.featured-region{font-size:14px;color:var(--muted);margin:0}.featured-description{font-size:16px;line-height:1.6;margin:18px 0}.featured-link{font-size:14px;margin-top:auto}.featured-link span{margin-left:6px}
@@ -15,4 +13,6 @@
 .home-regions{margin-top:var(--home-section-gap)}.home-regions>h2{border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:16px}
 .region-progress-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.region-progress-item{display:flex;flex-direction:column;padding:16px;border:1px solid var(--line);color:var(--ink);min-width:0}.region-progress-item:hover{text-decoration:none;background:var(--soft)}.region-progress-item h3{font-size:21px;margin-bottom:12px;color:var(--link)}.region-progress-item>div{display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted);margin-top:auto;margin-bottom:8px}.completion-note{margin-top:12px}.release-version{margin-top:var(--home-section-gap);font-size:12px}.empty-feature{padding:var(--home-gap);border:1px solid var(--line)}
 @media(max-width:900px){.region-progress-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-site{grid-template-columns:minmax(0,1.4fr) minmax(210px,1fr)}.featured-copy{padding:18px}}
-@media(max-width:600px){.collection-home{--home-gap:18px;--home-section-gap:28px}.featured-site{grid-template-columns:1fr}.featured-photo img{height:210px}.featured-copy h2{font-size:26px}.region-progress-grid{grid-template-columns:1fr}.region-progress-item{padding:16px}.book-progress{padding:16px}}
+@media(max-width:600px){.collection-home{--home-gap:14px;--home-section-gap:20px}.featured-site{grid-template-columns:1fr}.featured-photo img{height:210px}.featured-copy h2{font-size:26px}.region-progress-grid{grid-template-columns:1fr}.region-progress-item{padding:16px}.book-progress{padding:16px}}
+
+.book-home .layout{padding-top:16px}.book-progress{padding:12px 16px;gap:8px 16px}.book-progress p{margin-top:4px}

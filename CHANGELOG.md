@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.2
+
+- Move the theme switch to a sun/moon icon in the top navigation, beside Edit mode.
+- Remove the homepage title, subheading and separate actions row; tighten section spacing.
+- Version reader/editor style URLs so updated styling is loaded on release changes.
+- No database schema changes.
+
+
 ## 1.1.1
 
 - Bring the homepage into the existing reader shell: shared top navigation, Places directory, typography, spacing and borders.
