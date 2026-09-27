@@ -1,3 +1,29 @@
+# Design QA — Homepage consistency (v1.1.1)
+
+Final result: passed.
+
+The existing reader pages now control the homepage design. The separate fixed
+brand/navigation sidebar and editorial typography have been removed. The home
+reuses the reader layout function, including top navigation, the collapsible
+Places tree, page actions, search and footer. Typography inherits site.css;
+colors inherit the shared dark/white theme. Featured and progress sections use
+the reader's restrained borders and normal heading hierarchy.
+
+Compared the live Olympic page with the revised home in desktop dark and white
+modes, and checked the 390px mobile layout and 900px tablet layout. The mobile
+Places menu opens correctly, and no horizontal overflow was observed. The
+random feature and all completion counts are preserved. No actionable visual
+consistency issue remains. Captures: docs/design/verification/home-v1.1.1/.
+
+Lesson: a new home page must extend the existing book shell; an independently
+styled landing page breaks continuity even when attractive in isolation.
+
+Validation: all 104 tests pass. This patch has no schema change; startup backups
+and migration protection remain unchanged. CI and live deployment verification
+follow separately.
+
+---
+
 # Design QA — Stamp Book home and themes (v1.1.0)
 
 Final result: passed.

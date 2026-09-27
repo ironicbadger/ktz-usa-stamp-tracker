@@ -13,14 +13,14 @@ export function renderCollection(store,replacement){
  const normalized=records.map(normalizeRichRecord);
  const assets=store.listAssets().map(a=>({path:a.path,file:path.join(store.uploadsDir,a.path)}));
  const model=loadRecords(normalized,{assets});
- const {pages,search}=createSite(model,catalogue,'web-app-v1');
- for(const [url,html] of pages){
-  const record=records.find(r=>recordURL(r)===url);
+ const {pages,search,layout}=createSite(model,catalogue,'web-app-v1');
+ const decorate=(html,record)=>{
   const tools=`<nav class="page-tools" aria-label="Page actions"><button class="theme-toggle" type="button" data-theme-toggle>Switch theme</button><a href="/edit/">Edit collection</a>${record?`<a href="/edit/?key=${encodeURIComponent(record.key)}">Edit this page</a><a href="/edit/?key=${encodeURIComponent(record.key)}&view=history">History</a>`:''}</nav>`;
-  pages.set(url,html.replace('</head>','<script src="/web/theme.js"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" href="/web/icon-192.png"><link rel="stylesheet" href="/web/reader.css"><link rel="stylesheet" href="/web/theme.css"><script src="/web/pwa.js" defer></script></head>').replace('<main id="content">','<main id="content">'+tools));
- }
+  return html.replace('</head>','<script src="/web/theme.js"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" href="/web/icon-192.png"><link rel="stylesheet" href="/web/reader.css"><link rel="stylesheet" href="/web/theme.css"><script src="/web/pwa.js" defer></script></head>').replace('<main id="content">','<main id="content">'+tools);
+ };
+ for(const [url,html] of pages)pages.set(url,decorate(html,records.find(r=>recordURL(r)===url)));
  for(const item of search)item.text=plainText(item.text);
- return {model,pages,search};
+ return {model,pages,search,renderPage:body=>decorate(layout('The collection',body))};
 }
 export function editorRecord(record){
  const copy=structuredClone(record);

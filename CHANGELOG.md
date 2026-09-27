@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1
+
+- Bring the homepage into the existing reader shell: shared top navigation, Places directory, typography, spacing and borders.
+- Retain randomized featured parks, whole-book and regional progress, and both themes.
+- No schema changes. Startup backups and safe migration checks are unchanged.
+
+
 ## 1.1.0
 
 - A photographic featured-place home page, rotating on refresh without immediate
