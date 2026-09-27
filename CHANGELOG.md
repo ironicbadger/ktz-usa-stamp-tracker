@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.4
+
+- Edit mode opens the current page and retains page search; saving returns to the reader.
+- Upload photos to create collected cancellations directly, without expected entries.
+- Edit actual collection dates independently from visit dates; new dates start blank.
+- Preserve existing dates, release safeguards, themes and interactive maps. No schema changes.
+
 ## 1.1.3
 
 - Clicking a place's locator map opens that place in interactive Google Maps, using its name and states instead of opening the static image.
