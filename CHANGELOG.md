@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2
+
+- Open cancellation photos in an accessible in-page viewer with collection date, stamp details, visit notes and navigation between photos.
+- Size the secondary cancellation grid to its actual rows while keeping individual stamps square.
+- No database or schema changes.
+
 ## 1.2.1
 
 - Rebrand the reader, editor, sign-in screens, browser titles and installed PWA as Stampendium.

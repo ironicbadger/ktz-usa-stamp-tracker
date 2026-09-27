@@ -63,3 +63,36 @@ document.addEventListener('click',event=>{
  if(link&&link.hash===location.hash)requestAnimationFrame(revealHash);
 });
 revealHash();
+
+// Keep stamp photography and its visit context in the reader.
+document.addEventListener('click',event=>{
+ const link=event.target.closest('.stamp-photo-link');
+ if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+ const card=link.closest('.stamp'),info=card?.querySelector('.stamp-viewer-info');
+ if(!info||typeof HTMLDialogElement==='undefined')return;
+ event.preventDefault();
+ const photos=[...card.querySelectorAll('.stamp-photo-link')];let index=photos.indexOf(link);
+ const dialog=document.createElement('dialog');dialog.className='stamp-viewer';dialog.setAttribute('aria-labelledby','stamp-viewer-title');
+ const close=document.createElement('button');close.type='button';close.className='stamp-viewer-close';close.textContent='Close';close.autofocus=true;
+ const body=document.createElement('div');body.className='stamp-viewer-body';
+ const figure=document.createElement('div');figure.className='stamp-viewer-figure';
+ const image=document.createElement('img');image.className='stamp-viewer-image';
+ const failure=document.createElement('p');failure.hidden=true;failure.textContent='This photo could not load. Close the viewer and try again.';failure.setAttribute('role','status');
+ image.addEventListener('error',()=>{failure.hidden=false});image.addEventListener('load',()=>{failure.hidden=true});
+ figure.append(image,failure);
+ const controls=document.createElement('div');controls.className='stamp-viewer-controls';
+ const previous=document.createElement('button'),next=document.createElement('button'),count=document.createElement('span');
+ previous.type=next.type='button';previous.textContent='Previous photo';next.textContent='Next photo';count.setAttribute('aria-live','polite');
+ const show=()=>{image.src=photos[index].href;image.alt=photos[index].querySelector('img').alt;failure.hidden=true;count.textContent=`Photo ${index+1} of ${photos.length}`;previous.disabled=index===0;next.disabled=index===photos.length-1};
+ previous.onclick=()=>{index--;show()};next.onclick=()=>{index++;show()};
+ if(photos.length>1){controls.append(previous,count,next);figure.append(controls)}
+ const details=document.createElement('div');details.className='stamp-viewer-details';details.append(info.content.cloneNode(true));
+ // Visit prose can contain heading IDs; the modal must not duplicate them.
+ details.querySelectorAll('[id]:not(#stamp-viewer-title)').forEach(node=>node.removeAttribute('id'));
+ body.append(figure,details);dialog.append(close,body);document.body.append(dialog);
+ close.onclick=()=>dialog.close();
+ dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+ details.querySelector('.stamp-viewer-visit').addEventListener('click',()=>dialog.close());
+ dialog.addEventListener('close',()=>{document.documentElement.classList.remove('stamp-viewer-open');dialog.remove();link.focus({preventScroll:true})},{once:true});
+ show();dialog.showModal();document.documentElement.classList.add('stamp-viewer-open');
+});
