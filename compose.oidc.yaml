@@ -1,7 +1,7 @@
 # Standalone alternative to compose.yaml; no application password is required.
 services:
   stamp-book:
-    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:v1.2.6}
+    image: ${STAMP_BOOK_IMAGE:-ghcr.io/ironicbadger/ktz-usa-stamp-tracker:v1.2.7}
     ports:
       - "${STAMP_BOOK_BIND:-127.0.0.1}:${STAMP_BOOK_PORT:-8770}:8770"
     environment:

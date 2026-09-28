@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.7
+
+- Place the Trips section directly below Visits on desktop and mobile place pages.
+
 ## 1.2.6
 
 - Draw a continuous focus ring around the entire header search control so the Search button cannot obscure the input outline.
