@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.8
+
+- Merge reader search and command actions into the existing top-nav search box, with click, typing and Command-K / Control-K entry points.
+- Includes Trips below Visits from 1.2.7. No database changes.
+
 ## 1.2.7
 
 - Place the Trips section directly below Visits on desktop and mobile place pages.

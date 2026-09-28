@@ -2,8 +2,10 @@
 const make=(tag,text,attrs={})=>{const node=document.createElement(tag);if(text)node.textContent=text;for(const [key,value]of Object.entries(attrs))node.setAttribute(key,value);return node};
 let palette,searchIndex,indexPromise;
 const shortcut=/Mac|iPhone|iPad/.test(navigator.platform)?'⌘K':'Ctrl+K';
-const trigger=make('button','Search & actions '+shortcut,{type:'button',class:'command-trigger','aria-haspopup':'dialog'});
-(document.querySelector('.header-controls')||document.querySelector('.editor-header')||document.querySelector('header'))?.append(trigger);
+const headerSearch=document.querySelector('#header-search');
+const trigger=headerSearch||make('button','Search & actions '+shortcut,{type:'button',class:'command-trigger','aria-haspopup':'dialog'});
+if(headerSearch){headerSearch.placeholder='Search & actions… '+shortcut;headerSearch.setAttribute('aria-label','Search places and actions');headerSearch.setAttribute('aria-haspopup','dialog');headerSearch.addEventListener('input',()=>openPalette(headerSearch.value));headerSearch.form?.addEventListener('submit',event=>{event.preventDefault();openPalette(headerSearch.value)})}
+else document.querySelector('.editor-header')?.append(trigger);
 const navigate=url=>{const target=new URL(url,location.origin);if(target.origin===location.origin)location.assign(target.href)};
 function reveal(node){for(let p=node.parentElement;p;p=p.parentElement)if(p.matches('details'))p.open=true;node.scrollIntoView({block:'center'});node.focus()}
 function pageCommands(){
@@ -22,11 +24,12 @@ function pageCommands(){
  if(!editor)for(const node of document.querySelectorAll('main details>summary'))commands.push({label:node.textContent.trim(),group:'This page',run:()=>{node.parentElement.open=true;reveal(node)}});
  return commands;
 }
-function openPalette(){
+function openPalette(query=''){
  if(palette?.open){palette.querySelector('input').focus();return}
  const origin=document.activeElement;palette=make('dialog','',{class:'command-palette','aria-labelledby':'command-title'});
  const heading=make('h2','Search & actions',{id:'command-title'}),close=make('button','Close',{type:'button',class:'command-close'});
  const input=make('input','',{type:'search',placeholder:'Find a place, trip, visit, or action…',role:'combobox','aria-label':'Search places and actions','aria-controls':'command-results','aria-expanded':'true','aria-autocomplete':'list',autocomplete:'off'});
+ input.value=query;if(headerSearch)headerSearch.value='';
  const list=make('div','',{id:'command-results',role:'listbox','aria-label':'Search results'}),status=make('p','',{class:'command-status',role:'status'});
  const top=make('div','',{class:'command-heading'});top.append(heading,close);palette.append(top,input,status,list);document.body.append(palette);
  const dialog=palette;let selected=0,results=[],pendingAction,commands=pageCommands();
@@ -44,5 +47,5 @@ function openPalette(){
  if(!searchIndex&&!indexPromise)indexPromise=fetch('/search.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(data=>{searchIndex=data}).catch(()=>{searchIndex=[]}).finally(()=>{indexPromise=null});
  indexPromise?.then(()=>{if(dialog.open)paint()});paint();palette.showModal();input.focus();
 }
-trigger.addEventListener('click',openPalette);
+trigger.addEventListener('click',()=>openPalette(headerSearch?.value||''));
 document.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&!event.altKey&&event.key.toLowerCase()==='k'){event.preventDefault();openPalette()}});
