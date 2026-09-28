@@ -1,7 +1,7 @@
 import {escape as e, stateNames} from './content.mjs';
 import {getLocatorMap} from './locator-maps.mjs';
 
-const date = value => new Intl.DateTimeFormat('en-US', {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'}).format(new Date(value + 'T12:00:00Z'));
+import {formatDate as date} from './trip-dates.mjs';
 const aliases = record => [...new Set([record.legacyAnchor, ...(record.anchor_aliases || [])])].filter(id => id && id !== record.anchor).map(id => `<span id="${e(id)}" class="anchor-alias"></span>`).join('');
 
 function cancellationSlot(cancellation, primary = false) {

@@ -1,3 +1,4 @@
+import {validateAuthoredDates} from './date-validation.mjs';
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -23,6 +24,7 @@ function checkRecord(input){
  if(!input||typeof input!=='object'||!['Places','Trips','Regions'].includes(input.kind))throw problem('Choose a valid page type');
  if(typeof input.key!=='string'||input.key.length>250||!input.key.startsWith(input.kind+'/')||input.key.slice(input.kind.length+1).includes('/')||input.key.includes('..')||/[\\\x00-\x1f]/.test(input.key))throw problem('Invalid page identity');
  if(!input.data||typeof input.data.title!=='string'||!input.data.title.trim()||input.data.title.length>250)throw problem('A page title of up to 250 characters is required');
+ validateAuthoredDates(input.data);
  return normalizeRichRecord({...input,body:input.body||''});
 }
 export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-data'),password=process.env.APP_PASSWORD,passwordFile=process.env.APP_PASSWORD_FILE,origin=process.env.ORIGIN,oidc=oidcSettings(),authMode=process.env.AUTH_MODE||(oidc.issuer?'oidc':'password')}={}){
@@ -120,7 +122,7 @@ export function createApp({dataDir=process.env.DATA_DIR||path.join(root,'.web-da
      return json(res,200,{record,html:renderCollection(store,record).pages.get(recordURL(record))});
     }
     if(route==='/api/restore'&&req.method==='POST'){
-     const input=await jsonBody(req),old=store.revision(key,input.revision);if(!old)throw problem('Revision not found',404);renderCollection(store,old);
+     const input=await jsonBody(req),old=store.revision(key,input.revision);if(!old)throw problem('Revision not found',404);validateAuthoredDates(old.data);renderCollection(store,old);
      const record=store.restore(key,input.revision,{expectedRevision:input.expectedRevision,actor,actorName,summary:String(input.summary||`Restored revision ${input.revision}`).slice(0,500)});invalidated();
      return json(res,200,{record:editorRecord(record),url:recordURL(record),rendered:renderedRecord(getCollection(),key)});
     }

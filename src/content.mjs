@@ -100,6 +100,7 @@ export function loadRecords(records,{assets=[],vault}={}) {
   assert(typeof key==='string'&&key.startsWith(kind+'/'),file,'invalid content key');
   assert(typeof body==='string',file,'body must be text');
   if(kind==='Places')validatePlace(data,file);
+  if(kind==='Trips'&&data.start_date)assert(validDate(data.start_date),file,'trip start_date must be a valid YYYY-MM-DD date');
   assert(text(data.title),file,'title is required');
   if(kind==='Regions')assert(regions.includes(data.title),file,'unknown region title');
   nodes.push({kind,key,file,data,body,title:data.title,url:`/${kind.toLowerCase()}/${slug(path.basename(key))}/`,outgoing:new Set()});

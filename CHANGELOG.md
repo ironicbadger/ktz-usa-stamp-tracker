@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.4
+
+- Group trips by year, newest first, with ISO dates before names. Use an optional authored start date or the earliest linked visit; keep undated trips last.
+- Reject incomplete years in editor and API saves, and display stored years with four digits.
+- No database or schema migration.
+
 ## 1.2.3
 
 - Add a prominent Add trip action to the Trips page and the top of the editor catalogue.
