@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.6
+
+- Draw a continuous focus ring around the entire header search control so the Search button cannot obscure the input outline.
+- Includes the command palette, trip context and simplified dates from 1.2.5. No database changes.
+
 ## 1.2.5
 
 - Simplify the featured stamp collection date to a single line in a consistent font size.
