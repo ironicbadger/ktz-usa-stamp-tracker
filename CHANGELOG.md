@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.5
+
+- Simplify the featured stamp collection date to a single line in a consistent font size.
+
+- Add a Command-K / Control-K search and action palette across the reader and editor, with navigation, page search, creation, contextual editor actions and field focusing.
+- Show linked trips prominently on place pages, with explicit trip labels on visits. Hide the section when no visits belong to trips.
+- No database or schema migration.
+
 ## 1.2.4
 
 - Group trips by year, newest first, with ISO dates before names. Use an optional authored start date or the earliest linked visit; keep undated trips last.

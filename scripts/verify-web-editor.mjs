@@ -87,5 +87,8 @@ try{
  const shortcutTitle='Shortcut trip '+Date.now();await page.getByLabel('Title',{exact:true}).fill(shortcutTitle);await page.getByRole('textbox',{name:'Page text',exact:true}).fill('Created from the Trips page.');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.waitForURL('**/trips/shortcut-trip-*/');
  check((await page.locator('#content').innerText()).includes('Created from the Trips page.'),'New trip saves directly to its readable page');
  await page.goto(base+'/trips/');check(await page.getByRole('link',{name:shortcutTitle,exact:true}).count()===1,'New trip appears in Trips');
+ await page.keyboard.press('Control+k');const commandInput=page.getByRole('combobox',{name:'Search places and actions'});await commandInput.fill('Add trip');await page.keyboard.press('Enter');await page.getByRole('heading',{name:'New trip',exact:true}).waitFor();check(true,'Command palette opens new trip');
+ await page.keyboard.press('Control+k');await commandInput.fill('Edit Start date');await page.keyboard.press('Enter');await page.waitForFunction(()=>document.activeElement?.getAttribute('aria-label')==='Start date (optional)');check(true,'Command palette focuses authoring fields');
+ await page.keyboard.press('Control+k');await commandInput.fill('Save changes');await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('.command-palette'));check(true,'Escape closes command palette with a nonempty search');
  check(errors.length===0,'No browser JavaScript errors');fs.writeFileSync(path.join(out,'editor-result.json'),JSON.stringify({base,key,checks,errors},null,2));console.log(JSON.stringify({checks,key,errors}));
 }finally{await browser.close()}

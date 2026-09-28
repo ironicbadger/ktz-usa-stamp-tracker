@@ -13,9 +13,7 @@ function cancellationSlot(cancellation, primary = false) {
 function primaryDate(cancellation) {
   const latest = cancellation.impressions[0]?.date;
   if (!latest) return '';
-  const parsed = new Date(latest + 'T12:00:00Z');
-  const month = new Intl.DateTimeFormat('en-US', {month: 'long', timeZone: 'UTC'}).format(parsed);
-  return `<div class="primary-date"><span class="primary-date-label">Collected</span><time datetime="${latest}"><span class="sr-only">${date(latest)}</span><span class="date-day" aria-hidden="true">${parsed.getUTCDate()}</span><span class="date-month-year" aria-hidden="true"><span>${month}</span><span>${parsed.getUTCFullYear()}</span></span></time></div>`;
+  return `<div class="primary-date">Collected <time datetime="${e(latest)}">${date(latest)}</time></div>`;
 }
 
 function cancellationAlbum(p) {
@@ -51,9 +49,16 @@ function visits(p, nodes) {
   return `<section id="visits" class="visits"><h2>Visits</h2>${p.data.visits.length ? p.data.visits.map(v => {
     const trip = v.trip && nodes.find(n => n.key === v.trip.slice(2, -2));
     const stampLink = v.stamps.length ? `<a href="#${e(v.stamps[0].anchor)}">${v.stamps.length} stamp${v.stamps.length === 1 ? '' : 's'}</a>` : '';
-    const meta = [trip ? `<a href="${trip.url}">${e(trip.title)}</a>` : '', stampLink].filter(Boolean).join(' · ');
-    return `<article class="visit" id="${e(v.anchor)}">${aliases(v)}<time datetime="${v.date}">${date(v.date)}</time><div class="visit-content"><div class="prose">${v.html || '<p class="muted">Visit recorded.</p>'}</div>${meta ? `<p class="visit-meta">${meta}</p>` : ''}</div></article>`;
+    const meta = stampLink;
+    const tripLabel = trip ? `<p class="visit-trip">Part of trip: <a href="${trip.url}">${e(trip.title)}</a></p>` : '';
+    return `<article class="visit" id="${e(v.anchor)}">${aliases(v)}<time datetime="${v.date}">${date(v.date)}</time><div class="visit-content">${tripLabel}<div class="prose">${v.html || '<p class="muted">Visit recorded.</p>'}</div>${meta ? `<p class="visit-meta">${meta}</p>` : ''}</div></article>`;
   }).join('') : '<p class="muted">No visits recorded yet.</p>'}</section>`;
+}
+
+function placeTrips(p,nodes){
+ const linked=nodes.filter(n=>n.kind==='Trips'&&p.data.visits.some(v=>v.trip===`[[${n.key}]]`));
+ if(!linked.length)return '';
+ return `<section id="place-trips" class="place-trips"><h2>Trips</h2><ul>${linked.map(t=>{const visits=p.data.visits.filter(v=>v.trip===`[[${t.key}]]`).sort((a,b)=>a.date.localeCompare(b.date));return `<li><a href="${t.url}">${e(t.title)}</a><p>${date(visits[0].date)}${visits.length>1?` – ${date(visits.at(-1).date)}`:''} · ${visits.length} ${visits.length===1?'visit':'visits'} here</p></li>`}).join('')}</ul></section>`;
 }
 
 export function placeContent(p, context) {
@@ -63,5 +68,5 @@ export function placeContent(p, context) {
   const associations = p.associationsHtml?.trim() ? `<section id="associations" class="associations"><h2>Associations</h2>${associationAnchors}<div class="prose">${p.associationsHtml}</div></section>` : p.hasAssociations ? `<span id="associations">${associationAnchors}</span>` : '';
   const locations = p.locations.length ? `<details id="stamping-locations" class="stamping-locations"><summary>Stamping locations <span class="disclosure-count">${p.locations.length}</span></summary><div class="disclosure-body">${p.locations.map(locationCard).join('')}</div></details>` : '<span id="stamping-locations"></span>';
   const linked = backlinks({...p, backlinks: p.backlinks.filter(b => !p.data.visits.some(v => v.trip === `[[${b.key}]]`))});
-  return `<div class="place-page"><div class="place-heading"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Regions</a><span>/</span><a href="${regionURL(p.data.passport_region)}">${e(p.data.passport_region)}</a></nav><h1>${e(p.title)}</h1><p class="place-states">${p.data.states.map(s => e(stateNames[s])).join(', ')}</p>${p.data.design_preview ? '<p class="preview-label">Sample collection</p>' : ''}</div><aside class="place-rail">${cancellationAlbum(p)}${parkFacts(p, context)}</aside><div class="place-overview">${notes}${visits(p, nodes)}${associations}${locations}${cancellationDetails(p, stampCard)}${linked}</div></div>`;
+  return `<div class="place-page"><div class="place-heading"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Regions</a><span>/</span><a href="${regionURL(p.data.passport_region)}">${e(p.data.passport_region)}</a></nav><h1>${e(p.title)}</h1><p class="place-states">${p.data.states.map(s => e(stateNames[s])).join(', ')}</p>${p.data.design_preview ? '<p class="preview-label">Sample collection</p>' : ''}</div><aside class="place-rail">${cancellationAlbum(p)}${parkFacts(p, context)}</aside><div class="place-overview">${notes}${placeTrips(p,nodes)}${visits(p, nodes)}${associations}${locations}${cancellationDetails(p, stampCard)}${linked}</div></div>`;
 }

@@ -5,7 +5,7 @@ import sharp from 'sharp';
 import {root} from './render.mjs';
 const out=path.join(root,'web-dist');fs.mkdirSync(out,{recursive:true});
 await build({entryPoints:[path.join(root,'web/editor.js')],bundle:true,outfile:path.join(out,'editor.bundle.js'),format:'esm',minify:true,target:['es2022'],legalComments:'eof'});
-for(const name of ['editor.css','reader.css','home.css','theme.css','theme.js','pwa.js','sw.js','offline.html'])fs.copyFileSync(path.join(root,'web',name),path.join(out,name));
+for(const name of ['commands.js','commands.css','editor.css','reader.css','home.css','theme.css','theme.js','pwa.js','sw.js','offline.html'])fs.copyFileSync(path.join(root,'web',name),path.join(out,name));
 const icon=fs.readFileSync(path.join(root,'static/icons/postage-stamp.svg'));
 for(const size of [192,512])await sharp(icon).resize(size-48,size-48).extend({top:24,bottom:24,left:24,right:24,background:'#ffffff'}).png().toFile(path.join(out,`icon-${size}.png`));
 fs.writeFileSync(path.join(out,'manifest.webmanifest'),JSON.stringify({id:'/',name:'Stampendium',short_name:'Stampendium',description:'Your places, visits and collected cancellations.',start_url:'/',scope:'/',display:'standalone',background_color:'#ffffff',theme_color:'#ffffff',icons:[192,512].map(size=>({src:`/web/icon-${size}.png`,sizes:`${size}x${size}`,type:'image/png',purpose:'any'}))}));
