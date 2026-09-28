@@ -81,5 +81,11 @@ try{
  result=await api('/api/records?key='+encodeURIComponent(uploadKey));check(result.record.data.visits[0].stamps.at(-1).cancellation_id===result.record.data.stamps[0].id,'Known stamp records directly into a visit with its identity');
  await sheet.getByLabel('Stamp name for row 4',{exact:true}).fill('Renamed visitor desk');await save();result=await api('/api/records?key='+encodeURIComponent(uploadKey));check(result.record.data.stamps[0].name==='Renamed visitor desk','One editable name updates its linked known stamp');
  await sheet.getByLabel('Select stamp row 2',{exact:true}).check();await sheet.getByRole('button',{name:'Remove selected',exact:true}).click();await save();result=await api('/api/records?key='+encodeURIComponent(uploadKey));check(!result.record.data.featured_stamp_id,'Removing selected featured row restores default selection');
+ await page.goto(base+'/trips/');await page.getByRole('link',{name:'Add trip',exact:true}).click();await page.getByRole('heading',{name:'New trip',exact:true}).waitFor();
+ check(await page.getByLabel('Title',{exact:true}).inputValue()==='','Trips shortcut opens a blank trip editor');
+ await page.getByRole('button',{name:'Save changes',exact:true}).click();check((await page.locator('#status').innerText()).includes('Give the page a title'),'New trip requires a title');
+ const shortcutTitle='Shortcut trip '+Date.now();await page.getByLabel('Title',{exact:true}).fill(shortcutTitle);await page.getByRole('textbox',{name:'Page text',exact:true}).fill('Created from the Trips page.');await page.getByRole('button',{name:'Save changes',exact:true}).click();await page.waitForURL('**/trips/shortcut-trip-*/');
+ check((await page.locator('#content').innerText()).includes('Created from the Trips page.'),'New trip saves directly to its readable page');
+ await page.goto(base+'/trips/');check(await page.getByRole('link',{name:shortcutTitle,exact:true}).count()===1,'New trip appears in Trips');
  check(errors.length===0,'No browser JavaScript errors');fs.writeFileSync(path.join(out,'editor-result.json'),JSON.stringify({base,key,checks,errors},null,2));console.log(JSON.stringify({checks,key,errors}));
 }finally{await browser.close()}

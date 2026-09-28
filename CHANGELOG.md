@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.3
+
+- Add a prominent Add trip action to the Trips page and the top of the editor catalogue.
+- Open a blank trip editor directly, retain that destination through sign-in, and return to the readable trip after saving.
+- No database or schema changes.
+
 ## 1.2.2
 
 - Open cancellation photos in an accessible in-page viewer with collection date, stamp details, visit notes and navigation between photos.

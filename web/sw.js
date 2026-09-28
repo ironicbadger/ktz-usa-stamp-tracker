@@ -1,4 +1,4 @@
-const CACHE='stamp-book-reader-v5',LIMIT=70;
+const CACHE='stamp-book-reader-v6',LIMIT=70;
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(['/web/offline.html','/site.css','/navigation.css','/web/reader.css','/web/theme.css','/web/theme.js','/web/home.css','/web/pwa.js','/web/icon-192.png','/web/icon-512.png'])).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('stamp-book-reader-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{

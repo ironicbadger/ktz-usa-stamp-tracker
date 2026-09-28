@@ -21,7 +21,10 @@ export function renderCollection(store,replacement){
   const controls=`<div class="header-tools"><div class="header-controls">${themeToggle}<a href="${record?'/edit/?key='+encodeURIComponent(record.key):'/edit/'}">Edit mode</a></div>`;
   return html.replace('</head>',`<script src="/web/theme.js?v=${appVersion}"></script><link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#ffffff"><link rel="apple-touch-icon" href="/web/icon-192.png"><link rel="stylesheet" href="/web/reader.css?v=${appVersion}"><link rel="stylesheet" href="/web/theme.css?v=${appVersion}"><script src="/web/pwa.js" defer></script></head>`).replace('<form action="/search/" role="search">',controls+'<form action="/search/" role="search">').replace('</form></header>','</form></div></header>').replace('<main id="content">','<main id="content">'+tools);
  };
- for(const [url,html] of pages)pages.set(url,decorate(html,records.find(r=>recordURL(r)===url)));
+ for(const [url,html] of pages){
+  const content=url==='/trips/'?html.replace('<h1>Trips</h1>','<div class="trips-heading"><h1>Trips</h1><a class="add-trip" href="/edit/?new=trip">Add trip</a></div>'):html;
+  pages.set(url,decorate(content,records.find(r=>recordURL(r)===url)));
+ }
  for(const item of search)item.text=plainText(item.text);
  return {model,pages,search,renderPage:body=>decorate(layout('The collection',body))};
 }
